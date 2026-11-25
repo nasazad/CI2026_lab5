@@ -90,3 +90,32 @@ square in the last 30 actions.
 See [`results/primitive-navigation`](results/primitive-navigation) for the
 report, seeds, learning curves, per-cave results, and representative traces.
 The offline notebook options are the same as for the earlier benchmarks.
+
+## Follow-up: share learned rules, test retreat penalties and self-replay
+
+The new LCS instantiates rules from observed partial conditions, combining
+their learned strengths for the six original commands. It does not plan a
+path, mask a command, or observe hidden map attributes. Factorized conditions
+can transfer action credit between similar observations. The wider-memory
+variant also reads raw records at more offsets relative to the agent; the
+remembered entrance is just a previous `at_start` observation, not a route.
+
+The experiment was screened twice on validation maps, then confirmed on a
+new 600-map test set. The [experiment log](results/learning-search/experiment-log.md)
+records the expectation, settings, and measured outcome for each change,
+including training-only incentives and unsuccessful variants. Test scoring
+always uses the original simulator reward.
+
+```sh
+python -B -m unittest -v test_transfer test_randomized test_navigation test_shared_rules
+python -B benchmark_rule_search.py --profiles shared_td shared_n12 early25 early100 novel20 early25_novel20 shared_curriculum self_replay --seeds 0 1 --checkpoints 800 1600 5000 --output results/learning-search/screen-1
+python -B benchmark_rule_search.py --profiles self_replay early100 replay_uniform replay4 replay_early100 replay_wide replay_long --checkpoints 1600 5000 10000 --output results/learning-search/screen-2
+python -B benchmark_rule_search.py --profiles exact shared_n12 early25 early100 shared_curriculum self_replay replay_wide notebook --checkpoints 5000 --test --output results/learning-search/final
+python -B benchmark_rule_search.py --split penalty --profiles shared_n12 early25 early100 early250 early500 early1000 replay_wide replay_wide_early1000 --checkpoints 5000 --test --output results/learning-search/penalty-dose
+python -B render_penalty_dose.py
+```
+
+The last command uses an independent split for the penalty sweep. A
+training-only penalty of 1,000 applies to an empty exit without ever
+leaving the entrance, not to later retreats. See the
+[results summary](results/learning-search/report.md) for both held-out runs.

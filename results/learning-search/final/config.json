@@ -1,0 +1,141 @@
+{
+  "python": "3.14.3",
+  "validation_seed": 74207,
+  "test_seed": 180173,
+  "training_layout_seed_base": 7000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    5000
+  ],
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "test",
+  "profiles": {
+    "exact": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Exact covering control: little sharing between memory records.",
+      "curriculum": false,
+      "kind": "exact"
+    },
+    "shared_n12": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Propagate a successful exit to earlier actions over a longer horizon.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early25": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 25,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Make retreat without leaving the entrance less attractive in training.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early100": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 100,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Measure whether a stronger early-retreat penalty only causes stalling.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "shared_curriculum": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Control for self-replay: same easy start, no extra replay.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "self_replay": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": false
+      },
+      "reason": "Revisit actual successful episodes to preserve rare useful experience.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "replay_wide": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true
+      },
+      "reason": "Expose farther raw observations to distinguish return situations.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "notebook": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Planner baseline; reference only, not a learned primitive solution.",
+      "curriculum": false,
+      "kind": "notebook"
+    }
+  }
+}

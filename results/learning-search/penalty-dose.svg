@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 395" role="img" aria-labelledby="title desc">
+<title id="title">The cost of penalizing immediate retreat</title>
+<desc id="desc">On 600 unseen maps, a 1000-point penalty removed immediate retreats but increased timeouts and deaths. The best original mean score among the six doses was obtained at 250.</desc>
+<rect width="930" height="395" rx="14" fill="#f8fafc"/>
+<g font-family="system-ui, sans-serif" fill="#172838">
+<text x="26" y="37" font-size="24" font-weight="700">The cost of penalizing immediate retreat</text>
+<text x="26" y="61" font-size="14">600 fresh caves per seed · five seeds · original scoring at test time</text>
+<text x="27" y="108" font-size="17" font-weight="700">Outcome rates</text>
+<text x="572" y="108" font-size="17" font-weight="700">Mean score</text>
+<path d="M65,306.0 h446" stroke="#cdd7df"/>
+<text x="57" y="310.0" text-anchor="end" font-size="11">0%</text>
+<path d="M65,263.0 h446" stroke="#cdd7df"/>
+<text x="57" y="267.0" text-anchor="end" font-size="11">25%</text>
+<path d="M65,220.0 h446" stroke="#cdd7df"/>
+<text x="57" y="224.0" text-anchor="end" font-size="11">50%</text>
+<path d="M65,177.0 h446" stroke="#cdd7df"/>
+<text x="57" y="181.0" text-anchor="end" font-size="11">75%</text>
+<path d="M65,134.0 h446" stroke="#cdd7df"/>
+<text x="57" y="138.0" text-anchor="end" font-size="11">100%</text>
+<text x="65.0" y="327" text-anchor="middle" font-size="11">0</text>
+<text x="154.2" y="327" text-anchor="middle" font-size="11">25</text>
+<text x="243.4" y="327" text-anchor="middle" font-size="11">100</text>
+<text x="332.6" y="327" text-anchor="middle" font-size="11">250</text>
+<text x="421.8" y="327" text-anchor="middle" font-size="11">500</text>
+<text x="511.0" y="327" text-anchor="middle" font-size="11">1,000</text>
+<text x="288.0" y="350" text-anchor="middle" font-size="13">Tested penalties (not to scale)</text>
+<polyline points="65.0,134.0 154.2,170.8 243.4,216.8 332.6,275.0 421.8,293.0 511.0,306.0" stroke="#436486" stroke-width="2.5" fill="none"/>
+<circle cx="65.0" cy="134.0" r="4" fill="#436486" stroke="white"/>
+<circle cx="154.2" cy="170.8" r="4" fill="#436486" stroke="white"/>
+<circle cx="243.4" cy="216.8" r="4" fill="#436486" stroke="white"/>
+<circle cx="332.6" cy="275.0" r="4" fill="#436486" stroke="white"/>
+<circle cx="421.8" cy="293.0" r="4" fill="#436486" stroke="white"/>
+<circle cx="511.0" cy="306.0" r="4" fill="#436486" stroke="white"/>
+<polyline points="65.0,306.0 154.2,302.6 243.4,278.8 332.6,254.4 421.8,222.9 511.0,193.6" stroke="#99601b" stroke-width="2.5" fill="none"/>
+<circle cx="65.0" cy="306.0" r="4" fill="#99601b" stroke="white"/>
+<circle cx="154.2" cy="302.6" r="4" fill="#99601b" stroke="white"/>
+<circle cx="243.4" cy="278.8" r="4" fill="#99601b" stroke="white"/>
+<circle cx="332.6" cy="254.4" r="4" fill="#99601b" stroke="white"/>
+<circle cx="421.8" cy="222.9" r="4" fill="#99601b" stroke="white"/>
+<circle cx="511.0" cy="193.6" r="4" fill="#99601b" stroke="white"/>
+<polyline points="65.0,306.0 154.2,306.0 243.4,306.0 332.6,306.0 421.8,306.0 511.0,283.5" stroke="#a13b35" stroke-width="2.5" fill="none"/>
+<circle cx="65.0" cy="306.0" r="4" fill="#a13b35" stroke="white"/>
+<circle cx="154.2" cy="306.0" r="4" fill="#a13b35" stroke="white"/>
+<circle cx="243.4" cy="306.0" r="4" fill="#a13b35" stroke="white"/>
+<circle cx="332.6" cy="306.0" r="4" fill="#a13b35" stroke="white"/>
+<circle cx="421.8" cy="306.0" r="4" fill="#a13b35" stroke="white"/>
+<circle cx="511.0" cy="283.5" r="4" fill="#a13b35" stroke="white"/>
+<polyline points="65.0,306.0 154.2,304.8 243.4,302.2 332.6,296.4 421.8,295.7 511.0,291.0" stroke="#097360" stroke-width="2.5" fill="none"/>
+<circle cx="65.0" cy="306.0" r="4" fill="#097360" stroke="white"/>
+<circle cx="154.2" cy="304.8" r="4" fill="#097360" stroke="white"/>
+<circle cx="243.4" cy="302.2" r="4" fill="#097360" stroke="white"/>
+<circle cx="332.6" cy="296.4" r="4" fill="#097360" stroke="white"/>
+<circle cx="421.8" cy="295.7" r="4" fill="#097360" stroke="white"/>
+<circle cx="511.0" cy="291.0" r="4" fill="#097360" stroke="white"/>
+<path d="M610,306.0 h270" stroke="#cdd7df"/>
+<text x="602" y="310.0" text-anchor="end" font-size="11">-150</text>
+<path d="M610,256.9 h270" stroke="#cdd7df"/>
+<text x="602" y="260.9" text-anchor="end" font-size="11">-100</text>
+<path d="M610,207.7 h270" stroke="#cdd7df"/>
+<text x="602" y="211.7" text-anchor="end" font-size="11">-50</text>
+<path d="M610,158.6 h270" stroke="#cdd7df"/>
+<text x="602" y="162.6" text-anchor="end" font-size="11">0</text>
+<path d="M610,134.0 h270" stroke="#cdd7df"/>
+<text x="602" y="138.0" text-anchor="end" font-size="11">25</text>
+<text x="610.0" y="327" text-anchor="middle" font-size="11">0</text>
+<text x="664.0" y="327" text-anchor="middle" font-size="11">25</text>
+<text x="718.0" y="327" text-anchor="middle" font-size="11">100</text>
+<text x="772.0" y="327" text-anchor="middle" font-size="11">250</text>
+<text x="826.0" y="327" text-anchor="middle" font-size="11">500</text>
+<text x="880.0" y="327" text-anchor="middle" font-size="11">1,000</text>
+<text x="745.0" y="350" text-anchor="middle" font-size="13">Tested penalties (not to scale)</text>
+<polyline points="610.0,159.6 664.0,156.1 718.0,159.6 772.0,146.4 826.0,164.7 880.0,283.5" stroke="#283f54" stroke-width="2.5" fill="none"/>
+<circle cx="610.0" cy="159.6" r="4" fill="#283f54" stroke="white"/>
+<circle cx="664.0" cy="156.1" r="4" fill="#283f54" stroke="white"/>
+<circle cx="718.0" cy="159.6" r="4" fill="#283f54" stroke="white"/>
+<circle cx="772.0" cy="146.4" r="4" fill="#283f54" stroke="white"/>
+<circle cx="826.0" cy="164.7" r="4" fill="#283f54" stroke="white"/>
+<circle cx="880.0" cy="283.5" r="4" fill="#283f54" stroke="white"/>
+<circle cx="33" cy="373" r="4" fill="#436486"/>
+<text x="42" y="377" font-size="12">Immediate retreat</text>
+<circle cx="189" cy="373" r="4" fill="#99601b"/>
+<text x="198" y="377" font-size="12">Timeout</text>
+<circle cx="301" cy="373" r="4" fill="#a13b35"/>
+<text x="310" y="377" font-size="12">Death</text>
+<circle cx="397" cy="373" r="4" fill="#097360"/>
+<text x="406" y="377" font-size="12">Gold exit</text>
+</g></svg>
