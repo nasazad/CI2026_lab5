@@ -33,6 +33,8 @@ from randomized_lcs import IndexedLCS, RelativeInputs
 
 VALIDATION_SEED, FINAL_TEST_SEED, TRAIN_SEED_BASE = 101, 2026, 7000
 POLICIES = ("coordinate_lcs", "relative_lcs", "notebook_baseline")
+CLIMB_POLICIES = ("relative_lcs", "relative_climb_guard")
+CLIMB_VALIDATION_SEED, CLIMB_TEST_SEED = 941, 3120
 CHECKPOINTS, EXTENSIONS = (1600, 5000, 10000), (25000, 50000)
 MIN_GOLD_GAIN, TIMEOUT_TRIGGER = 0.02, 0.10
 
@@ -55,13 +57,20 @@ def distinct_layouts(random_layout, n, rng, reserved):
     return tuple(result)
 
 
-def make_split(random_layout, validation_size, test_size):
+def make_split(random_layout, validation_size, test_size, *, climb_ablation=False):
     issue5_train, issue5 = make_layouts(random_layout)
     reserved = set(issue5_train) | set(issue5) | {FIXED_LAYOUT}
+    if climb_ablation:
+        # The follow-up was proposed after inspecting the main run. Reserve
+        # its 300+500 maps before drawing the independent follow-up split.
+        distinct_layouts(random_layout, 300, Random(VALIDATION_SEED), reserved)
+        distinct_layouts(random_layout, 500, Random(FINAL_TEST_SEED), reserved)
+    validation_seed = CLIMB_VALIDATION_SEED if climb_ablation else VALIDATION_SEED
+    test_seed = CLIMB_TEST_SEED if climb_ablation else FINAL_TEST_SEED
     validation = distinct_layouts(
-        random_layout, validation_size, Random(VALIDATION_SEED), reserved
+        random_layout, validation_size, Random(validation_seed), reserved
     )
-    test = distinct_layouts(random_layout, test_size, Random(FINAL_TEST_SEED), reserved)
+    test = distinct_layouts(random_layout, test_size, Random(test_seed), reserved)
     return Split(tuple(issue5), validation, test, frozenset(reserved))
 
 
@@ -95,8 +104,14 @@ def training_stream(seed, count):
 
 
 def classifier_model(policy, seed, rules=()):
-    if policy == "relative_lcs":
-        return IndexedLCS(RelativeInputs(NB), seed, 3, rules)
+    if policy in CLIMB_POLICIES:
+        return IndexedLCS(
+            RelativeInputs(NB),
+            seed,
+            3,
+            rules,
+            climb_guard=policy == "relative_climb_guard",
+        )
     return IndexedLCS(DeadReckoning(), seed, 4, rules)
 
 
@@ -186,9 +201,11 @@ def training_chunk(task):
     }
 
 
-def qualifying_extensions(previous, current):
+def qualifying_extensions(previous, current, policies=POLICIES):
     candidates = []
-    for policy in POLICIES[:2]:
+    for policy in policies:
+        if policy == "notebook_baseline":
+            continue
         old = {row["seed"]: row for row in previous if row["policy"] == policy}
         new = {row["seed"]: row for row in current if row["policy"] == policy}
         delta = [
@@ -249,7 +266,7 @@ def final_evaluation(task):
     return rows, results, horizons
 
 
-def trace_examples(split, seed, states, rows):
+def trace_examples(split, seed, states, rows, policies):
     outcomes = {
         (row["policy"], row["cave_id"]): row["outcome"]
         for row in rows
@@ -257,22 +274,30 @@ def trace_examples(split, seed, states, rows):
     }
     choices = {}
     for i, layout in enumerate(split.test, 1):
-        absolute, relative, baseline = (outcomes[policy, i] for policy in POLICIES)
-        labels = {
-            "relative_gold_coordinate_not_gold": relative == "gold"
-            and absolute != "gold",
-            "coordinate_gold_relative_not_gold": absolute == "gold"
-            and relative != "gold",
-            "baseline_gold_both_lcs_not_gold": baseline == "gold"
-            and "gold" not in (absolute, relative),
-            "relative_timeout": relative == "timeout",
-        }
+        if policies == CLIMB_POLICIES:
+            control, guarded = (outcomes[policy, i] for policy in policies)
+            labels = {
+                "guard_recovers_gold": guarded == "gold" and control != "gold",
+                "guard_loses_gold": control == "gold" and guarded != "gold",
+                "guard_still_times_out": guarded == "timeout",
+            }
+        else:
+            absolute, relative, baseline = (outcomes[policy, i] for policy in policies)
+            labels = {
+                "relative_gold_coordinate_not_gold": relative == "gold"
+                and absolute != "gold",
+                "coordinate_gold_relative_not_gold": absolute == "gold"
+                and relative != "gold",
+                "baseline_gold_both_lcs_not_gold": baseline == "gold"
+                and "gold" not in (absolute, relative),
+                "relative_timeout": relative == "timeout",
+            }
         for label, condition in labels.items():
             if condition:
                 choices.setdefault(label, (i, layout))
 
     models = {
-        policy: restore(policy, seed, states[policy, seed]) for policy in POLICIES
+        policy: restore(policy, seed, states[policy, seed]) for policy in policies
     }
     traces = {}
     for label, (i, layout) in choices.items():
@@ -287,8 +312,8 @@ def trace_examples(split, seed, states, rows):
     return traces
 
 
-def show_checkpoint(rows):
-    for policy in POLICIES:
+def show_checkpoint(rows, policies):
+    for policy in policies:
         runs = [row for row in rows if row["policy"] == policy]
         print(
             f"{runs[0]['episodes']:>6} {policy:>18}  "
@@ -302,9 +327,15 @@ def show_checkpoint(rows):
 
 def run(args):
     notebook = load_notebook(args.notebook)
-    split = make_split(notebook.random_layout, args.validation_size, args.test_size)
+    split = make_split(
+        notebook.random_layout,
+        args.validation_size,
+        args.test_size,
+        climb_ablation=args.climb_ablation,
+    )
+    policies = CLIMB_POLICIES if args.climb_ablation else POLICIES
     budgets = args.checkpoints + args.extensions
-    model_keys = [(policy, seed) for policy in POLICIES for seed in args.seeds]
+    model_keys = [(policy, seed) for policy in policies for seed in args.seeds]
     states, curves, decisions = {}, [], []
     previous, current, last = [], [], 0
     with ProcessPoolExecutor(
@@ -314,7 +345,11 @@ def run(args):
     ) as pool:
         for target in budgets:
             if target in args.extensions:
-                allowed = qualifying_extensions(previous, current) if previous else []
+                allowed = (
+                    qualifying_extensions(previous, current, policies)
+                    if previous
+                    else []
+                )
                 decisions.append(
                     {
                         "target": target,
@@ -340,11 +375,11 @@ def run(args):
             }
             curves.extend(current)
             last = target
-            show_checkpoint(current)
+            show_checkpoint(current, policies)
 
         overtime = {
             policy
-            for policy in POLICIES
+            for policy in policies
             if mean(
                 row["timeout"] / row["caves"]
                 for row in current
@@ -356,9 +391,12 @@ def run(args):
             f"Frozen evaluation at {last} episodes; horizon check: {sorted(overtime)}",
             flush=True,
         )
+        references = (
+            [] if args.climb_ablation else [("fixed_reference", s) for s in args.seeds]
+        )
         jobs = [
             (p, s, states.get((p, s)), last, p in overtime)
-            for p, s in model_keys + [("fixed_reference", s) for s in args.seeds]
+            for p, s in model_keys + references
         ]
         results = list(pool.map(final_evaluation, jobs))
 
@@ -367,7 +405,7 @@ def run(args):
     horizon = [row for _, _, data in results for row in data]
     global NB
     NB = notebook
-    traces = trace_examples(split, args.seeds[0], states, rows)
+    traces = trace_examples(split, args.seeds[0], states, rows, policies)
     out = args.output
     out.mkdir(parents=True, exist_ok=True)
     write_csv(out / "validation-curve.csv", curves)
@@ -394,8 +432,10 @@ def run(args):
             "training_layout_seed_base": TRAIN_SEED_BASE,
             "training_action_limit": MAX_STEPS,
             "test_action_limit": TEST_ACTION_LIMIT,
-            "validation_seed": VALIDATION_SEED,
-            "test_seed": FINAL_TEST_SEED,
+            "validation_seed": CLIMB_VALIDATION_SEED
+            if args.climb_ablation
+            else VALIDATION_SEED,
+            "test_seed": CLIMB_TEST_SEED if args.climb_ablation else FINAL_TEST_SEED,
             "validation_caves": len(split.validation),
             "fresh_test_caves": len(split.test),
             "required_checkpoints": args.checkpoints,
@@ -406,6 +446,7 @@ def run(args):
             "timeout_trigger": TIMEOUT_TRIGGER,
             "horizon_checked_on_validation": sorted(overtime),
             "ga_enabled": False,
+            "climb_ablation": args.climb_ablation,
         },
     )
 
@@ -415,7 +456,12 @@ def main():
     parser.add_argument(
         "--notebook", type=Path, help="exact pinned notebook, for offline use"
     )
-    parser.add_argument("--output", type=Path, default=Path("results/issue-2"))
+    parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--climb-ablation",
+        action="store_true",
+        help="compare a relative-input LCS with and without blocking climb away from the entrance",
+    )
     parser.add_argument("--seeds", type=int, nargs="+", default=list(range(5)))
     parser.add_argument("--workers", type=int, default=5)
     parser.add_argument("--checkpoints", type=int, nargs="+", default=list(CHECKPOINTS))
@@ -423,6 +469,10 @@ def main():
     parser.add_argument("--validation-size", type=int, default=300)
     parser.add_argument("--test-size", type=int, default=500)
     args = parser.parse_args()
+    if args.output is None:
+        args.output = Path(
+            "results/issue-2-climb" if args.climb_ablation else "results/issue-2"
+        )
     budgets = args.checkpoints + args.extensions
     if budgets != sorted(set(budgets)) or budgets[0] < 1:
         parser.error("training budgets must be positive and strictly increasing")

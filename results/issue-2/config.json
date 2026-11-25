@@ -39,5 +39,6 @@
   "horizon_checked_on_validation": [
     "relative_lcs"
   ],
-  "ga_enabled": false
+  "ga_enabled": false,
+  "climb_ablation": false
 }

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 377" role="img" aria-labelledby="title desc">
+<title id="title">Learning across randomized caves</title>
+<desc id="desc">Validation gold rate and mean score at each training checkpoint. The notebook baseline is far ahead; neither LCS improves from 5,000 to 10,000 episodes.</desc>
+<rect width="920" height="377" rx="14" fill="#f8fafc"/>
+<g font-family="system-ui, sans-serif" fill="#172838">
+<text x="28" y="36" font-size="24" font-weight="700">Learning across randomized caves</text>
+<text x="28" y="60" font-size="14">Validation means over 5 seeds on the same 300 caves · greedy evaluation at 120 actions</text>
+<circle cx="34" cy="85" r="5" fill="#aa452c"/>
+<text x="46" y="90" font-size="13">Coordinate LCS</text>
+<circle cx="208" cy="85" r="5" fill="#126351"/>
+<text x="220" y="90" font-size="13">Relative LCS</text>
+<circle cx="341" cy="85" r="5" fill="#335b91"/>
+<text x="353" y="90" font-size="13">Notebook baseline</text>
+<text x="31" y="125" font-size="17" font-weight="700">Gold returned</text>
+<path d="M77,309 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="67" y="313" text-anchor="end" font-size="12">0%</text>
+<path d="M77,268 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="67" y="272" text-anchor="end" font-size="12">10%</text>
+<path d="M77,227 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="67" y="231" text-anchor="end" font-size="12">20%</text>
+<path d="M77,186 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="67" y="190" text-anchor="end" font-size="12">30%</text>
+<path d="M77,145 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="67" y="149" text-anchor="end" font-size="12">40%</text>
+<text x="77" y="333" text-anchor="middle" font-size="12">1,600</text>
+<text x="214.619" y="333" text-anchor="middle" font-size="12">5,000</text>
+<text x="417" y="333" text-anchor="middle" font-size="12">10,000</text>
+<text x="247" y="355" text-anchor="middle" font-size="13">Training episodes</text>
+<polyline points="77.0,309.0 214.6,309.0 417.0,309.0" fill="none" stroke="#aa452c" stroke-width="2.5"/>
+<circle cx="77.0" cy="309.0" r="4.8" fill="#aa452c" stroke="white"/>
+<circle cx="214.6" cy="309.0" r="4.8" fill="#aa452c" stroke="white"/>
+<circle cx="417.0" cy="309.0" r="4.8" fill="#aa452c" stroke="white"/>
+<polyline points="77.0,302.2 214.6,297.2 417.0,298.6" fill="none" stroke="#126351" stroke-width="2.5"/>
+<circle cx="77.0" cy="302.2" r="4.8" fill="#126351" stroke="white"/>
+<circle cx="214.6" cy="297.2" r="4.8" fill="#126351" stroke="white"/>
+<circle cx="417.0" cy="298.6" r="4.8" fill="#126351" stroke="white"/>
+<polyline points="77.0,180.5 214.6,177.8 417.0,177.8" fill="none" stroke="#335b91" stroke-width="2.5"/>
+<circle cx="77.0" cy="180.5" r="4.8" fill="#335b91" stroke="white"/>
+<circle cx="214.6" cy="177.8" r="4.8" fill="#335b91" stroke="white"/>
+<circle cx="417.0" cy="177.8" r="4.8" fill="#335b91" stroke="white"/>
+<text x="480" y="125" font-size="17" font-weight="700">Mean score</text>
+<path d="M526,309 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="516" y="313" text-anchor="end" font-size="12">-100</text>
+<path d="M526,268 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="516" y="272" text-anchor="end" font-size="12">0</text>
+<path d="M526,227 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="516" y="231" text-anchor="end" font-size="12">100</text>
+<path d="M526,186 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="516" y="190" text-anchor="end" font-size="12">200</text>
+<path d="M526,145 h340" stroke="#ccd6df" stroke-width="1"/>
+<text x="516" y="149" text-anchor="end" font-size="12">300</text>
+<text x="526" y="333" text-anchor="middle" font-size="12">1,600</text>
+<text x="663.619" y="333" text-anchor="middle" font-size="12">5,000</text>
+<text x="866" y="333" text-anchor="middle" font-size="12">10,000</text>
+<text x="696" y="355" text-anchor="middle" font-size="13">Training episodes</text>
+<polyline points="526.0,278.6 663.6,268.4 866.0,268.4" fill="none" stroke="#aa452c" stroke-width="2.5"/>
+<circle cx="526.0" cy="278.6" r="4.8" fill="#aa452c" stroke="white"/>
+<circle cx="663.6" cy="268.4" r="4.8" fill="#aa452c" stroke="white"/>
+<circle cx="866.0" cy="268.4" r="4.8" fill="#aa452c" stroke="white"/>
+<polyline points="526.0,305.6 663.6,287.4 866.0,288.7" fill="none" stroke="#126351" stroke-width="2.5"/>
+<circle cx="526.0" cy="305.6" r="4.8" fill="#126351" stroke="white"/>
+<circle cx="663.6" cy="287.4" r="4.8" fill="#126351" stroke="white"/>
+<circle cx="866.0" cy="288.7" r="4.8" fill="#126351" stroke="white"/>
+<polyline points="526.0,150.5 663.6,149.5 866.0,149.5" fill="none" stroke="#335b91" stroke-width="2.5"/>
+<circle cx="526.0" cy="150.5" r="4.8" fill="#335b91" stroke="white"/>
+<circle cx="663.6" cy="149.5" r="4.8" fill="#335b91" stroke="white"/>
+<circle cx="866.0" cy="149.5" r="4.8" fill="#335b91" stroke="white"/>
+</g></svg>

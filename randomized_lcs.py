@@ -84,9 +84,10 @@ class IndexedLCS(LearningCS):
     Thus only the rules in that internal-message bucket need testing.
     """
 
-    def __init__(self, memory, seed, arity, rules=()):
+    def __init__(self, memory, seed, arity, rules=(), *, climb_guard=False):
         super().__init__(memory=memory, seed=seed)
         self.arity = arity
+        self.climb_guard = climb_guard
         self.buckets = defaultdict(list)
         for rule in rules:
             self._insert(rule)
@@ -103,14 +104,19 @@ class IndexedLCS(LearningCS):
 
     def applicable(self, messages):
         return [
-            r for r in self.buckets.get(self._key(messages), ()) if r.matches(messages)
+            r
+            for r in self.buckets.get(self._key(messages), ())
+            if r.matches(messages) and self.action_available(r.action, messages)
         ]
+
+    def action_available(self, action, messages):
+        return not self.climb_guard or "climb" not in action or "at_start" in messages
 
     def match(self, messages):
         match = self.applicable(messages)
         present = {rule.action for rule in match}
         for action in self.actions:
-            if action not in present:
+            if action not in present and self.action_available(action, messages):
                 rule = LearnedClassifier(
                     messages, action, self.initial_strength, stamp=self.t
                 )

@@ -46,5 +46,18 @@ and 240 actions on validation only.
 
 The [`results/issue-2`](results/issue-2) data include per-seed learning
 curves, average-per-cave outcomes, the exact layouts, and representative
-traces. For offline use, pass `--notebook` to the benchmark and set
+traces. The [report](results/issue-2/report.md) summarizes both experiments.
+Run `python -B render_learning_curves.py` to regenerate the main chart.
+For offline use, pass `--notebook` to the benchmark and set
 `WUMPUS_BASELINE_NOTEBOOK` for the tests to your copy of the pinned notebook.
+
+To reproduce the exploratory follow-up, which tests whether blocking only
+`climb` away from the entrance helps the relative-input variant:
+
+```sh
+python -B benchmark_randomized.py --climb-ablation
+```
+
+This run retrains both guarded and unguarded agents on the same streams and
+uses a new validation/test split, separate from the main experiment. It
+records results in [`results/issue-2-climb`](results/issue-2-climb).

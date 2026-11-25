@@ -130,6 +130,26 @@ class RandomizedTests(unittest.TestCase):
             benchmark.qualifying_extensions(before, after), ["relative_lcs"]
         )
 
+    def test_climb_ablation_reserves_main_evaluation_maps(self):
+        main = benchmark.make_split(self.nb.random_layout, 300, 500)
+        ablation = benchmark.make_split(
+            self.nb.random_layout, 30, 50, climb_ablation=True
+        )
+        self.assertFalse(set(ablation.validation + ablation.test) & main.reserved)
+        self.assertTrue(main.reserved <= ablation.reserved)
+
+    def test_guard_changes_only_climb_outside_start(self):
+        regular = IndexedLCS(RelativeInputs(self.nb), seed=0, arity=3)
+        guarded = IndexedLCS(RelativeInputs(self.nb), seed=0, arity=3, climb_guard=True)
+        away = frozenset({"ahead_safe", "home_behind", "no_gold"})
+        home = frozenset({"ahead_safe", "home_here", "no_gold", "at_start"})
+        complete = [r.effector for r in regular.match(away)]
+        self.assertEqual(
+            [r.effector for r in guarded.match(away)],
+            [a for a in complete if a != "climb"],
+        )
+        self.assertEqual([r.effector for r in guarded.match(home)], complete)
+
 
 if __name__ == "__main__":
     unittest.main()
