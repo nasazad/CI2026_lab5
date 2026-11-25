@@ -125,15 +125,17 @@ class IndexedLCS(LearningCS):
         return match
 
     def reset_inputs(self, sensors):
-        if isinstance(self.memory, RelativeInputs):
-            self.memory.prime(sensors)
+        prime = getattr(self.memory, "prime", None)
+        if prime is not None:
+            prime(sensors)
         self.memory.reset()
 
     def episode(self, cave):
-        if isinstance(self.memory, RelativeInputs):
+        prime = getattr(self.memory, "prime", None)
+        if prime is not None:
             # Prime from the public reset observation. The upstream episode
             # resets the deterministic simulator again before its first action.
-            self.memory.prime(cave.reset())
+            prime(cave.reset())
         return super().episode(cave)
 
     def greedy_episode(self, cave, limit, *, trace=False):

@@ -135,8 +135,11 @@ def run_fixed_policy(rules, layout, *, dead_reckoning=False, limit=TEST_ACTION_L
     return Rollout(outcome, score, steps, unmatched)
 
 
-def run_notebook_policy(notebook, values, layout, *, limit=TEST_ACTION_LIMIT):
-    adapter = NotebookCaveAdapter(*layout)
+def run_notebook_policy(
+    notebook, values, layout, *, limit=TEST_ACTION_LIMIT, adapter=None
+):
+    if adapter is None:
+        adapter = NotebookCaveAdapter(*layout)
 
     # Preserve the notebook's policy and interaction loop. Replace only its
     # Cave constructor for this evaluation, without mutating the notebook.
