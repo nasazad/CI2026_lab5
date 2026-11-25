@@ -1,0 +1,92 @@
+{
+  "fixed_lcs_source_revision": "b0117d6eaa1b24580b930c29a6027a78d697ad99",
+  "baseline_notebook_revision": "6b19ce0e2d4279f2157217386e4730947a332ef9",
+  "baseline_notebook_sha256": "8deed33226b39153cb0fd7dffe0fdcd4a6dc7ec233f26db58d54a61ace82a794",
+  "python": "3.14.3",
+  "fixed_training": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "episodes_per_seed": 1500,
+    "compaction": false,
+    "lab_map_checks": {
+      "0": {
+        "score": 988,
+        "actions": 12,
+        "rules": 684
+      },
+      "1": {
+        "score": 988,
+        "actions": 12,
+        "rules": 762
+      },
+      "2": {
+        "score": 988,
+        "actions": 12,
+        "rules": 744
+      },
+      "3": {
+        "score": 988,
+        "actions": 12,
+        "rules": 684
+      },
+      "4": {
+        "score": 988,
+        "actions": 12,
+        "rules": 702
+      },
+      "5": {
+        "score": 988,
+        "actions": 12,
+        "rules": 744
+      },
+      "6": {
+        "score": 988,
+        "actions": 12,
+        "rules": 762
+      },
+      "7": {
+        "score": 988,
+        "actions": 12,
+        "rules": 708
+      },
+      "8": {
+        "score": 988,
+        "actions": 12,
+        "rules": 708
+      },
+      "9": {
+        "score": 988,
+        "actions": 12,
+        "rules": 744
+      }
+    }
+  },
+  "baseline_training": {
+    "layout_seed": 5,
+    "action_seed": 19,
+    "episodes": 1600,
+    "distinct_layouts": 1587,
+    "epsilon": 0.4
+  },
+  "evaluation": {
+    "layout_seed": 50,
+    "layouts": 500,
+    "action_limit": 120,
+    "exclude": [
+      "lab map",
+      "baseline training layouts"
+    ],
+    "exploration": false,
+    "learning": false
+  }
+}

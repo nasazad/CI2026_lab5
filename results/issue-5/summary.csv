@@ -1,0 +1,13 @@
+policy,seed,caves,mean_score,gold,death,retreat,timeout,no_matching_action
+randomized_baseline,19,500,306,168,9,323,0,0
+fixed_handwritten,,500,-651.568,48,361,0,91,0
+fixed_lcs,0,500,-441.854,5,225,0,0,270
+fixed_lcs,1,500,-441.854,5,225,0,0,270
+fixed_lcs,2,500,-441.854,5,225,0,0,270
+fixed_lcs,3,500,-441.854,5,225,0,0,270
+fixed_lcs,4,500,-441.854,5,225,0,0,270
+fixed_lcs,5,500,-441.854,5,225,0,0,270
+fixed_lcs,6,500,-441.854,5,225,0,0,270
+fixed_lcs,7,500,-441.854,5,225,0,0,270
+fixed_lcs,8,500,-441.854,5,225,0,0,270
+fixed_lcs,9,500,-441.854,5,225,0,0,270
