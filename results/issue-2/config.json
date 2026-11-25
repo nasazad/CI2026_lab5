@@ -1,0 +1,43 @@
+{
+  "lcs_source_revision": "b0117d6eaa1b24580b930c29a6027a78d697ad99",
+  "notebook_revision": "6b19ce0e2d4279f2157217386e4730947a332ef9",
+  "python": "3.14.3",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "training_layout_seed_base": 7000,
+  "training_action_limit": 100,
+  "test_action_limit": 120,
+  "validation_seed": 101,
+  "test_seed": 2026,
+  "validation_caves": 300,
+  "fresh_test_caves": 500,
+  "required_checkpoints": [
+    1600,
+    5000,
+    10000
+  ],
+  "possible_extensions": [
+    25000,
+    50000
+  ],
+  "extension_rule": "At least +2 pp mean validation gold and positive mean score gain, both positive in a majority of seeds for either LCS.",
+  "extension_decisions": [
+    {
+      "target": 25000,
+      "from": 10000,
+      "run": false,
+      "qualifying_policies": []
+    }
+  ],
+  "final_training_episodes": 10000,
+  "timeout_trigger": 0.1,
+  "horizon_checked_on_validation": [
+    "relative_lcs"
+  ],
+  "ga_enabled": false
+}

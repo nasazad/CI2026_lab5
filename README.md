@@ -22,3 +22,29 @@ LCS is evaluated before optional GA compaction.
 
 See [`results/issue-5`](results/issue-5) for the configuration, exact cave
 layouts, per-policy and per-cave outcomes, representative traces, and chart.
+
+## Issue 2: randomized training
+
+```sh
+python -B -m unittest -v test_transfer test_randomized
+python -B benchmark_randomized.py
+```
+
+Both LCS variants use the original covering, strength updates, and action set.
+The coordinate control uses `DeadReckoning`. The relative variant replaces its
+coordinates and heading in classifier messages with the inferred safety ahead,
+the relative direction of a known route home, and whether it carries gold.
+Both still receive the same raw percepts. The notebook baseline is retrained on
+each shared training stream.
+
+The experiment reserves validation, fresh test, and Issue #5 layouts before
+sampling training streams. Training is capped at 100 actions; evaluation at
+120. By default it checks five seeds at 1,600, 5,000 and 10,000 episodes.
+Validation gains determine whether to extend to 25,000 or 50,000 episodes.
+If validation timeouts reach 10%, a separate sensitivity check compares 120
+and 240 actions on validation only.
+
+The [`results/issue-2`](results/issue-2) data include per-seed learning
+curves, average-per-cave outcomes, the exact layouts, and representative
+traces. For offline use, pass `--notebook` to the benchmark and set
+`WUMPUS_BASELINE_NOTEBOOK` for the tests to your copy of the pinned notebook.
