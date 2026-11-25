@@ -1,0 +1,263 @@
+{
+  "python": "3.14.3",
+  "split": "progress",
+  "validation_seed": 447173,
+  "test_seed": 338959,
+  "training_layout_seed_base": 7000,
+  "seeds": [
+    0,
+    1
+  ],
+  "checkpoints": [
+    2500,
+    5000,
+    10000
+  ],
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "validation",
+  "profiles": {
+    "replay_wide": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": false,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Expose farther raw observations to distinguish return situations.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "boot": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Distinguish a time limit from a genuine terminal state.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "loop_only": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": false,
+        "loop_memory": true,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Learn a different action after observable stalling; no action filter.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "boot_loop": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": true,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Combine passive progress memory and correct treatment of the time limit.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "boot_n1": {
+      "settings": {
+        "n": 1,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "One-step credit control without count-based exploration.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "boot_n4": {
+      "settings": {
+        "n": 4,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Four-step credit control without count-based exploration.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "count_n1": {
+      "settings": {
+        "n": 1,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Compare count exploration with one-step credit.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "count_n4": {
+      "settings": {
+        "n": 4,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Compare count exploration with four-step credit.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "count_n12": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Compare count exploration with twelve-step credit.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "boot_potential": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 45,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false
+      },
+      "reason": "Add annealed training-only potential for observed progress.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "boot_balance": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": true
+      },
+      "reason": "Retain rare longer successes by stratifying self-replay with the distance actually traveled to the pickup location.",
+      "curriculum": true,
+      "kind": "shared"
+    }
+  }
+}

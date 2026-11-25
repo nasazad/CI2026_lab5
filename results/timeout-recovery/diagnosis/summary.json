@@ -1,0 +1,90 @@
+{
+  "timeouts": 1793,
+  "kinds": {
+    "turn_in_place": 64,
+    "moving_cycle": 1069,
+    "spent_arrow": 8,
+    "stationary_mixed": 630,
+    "wall_bump": 20,
+    "climb_away": 2
+  },
+  "periods": {
+    "4": 245,
+    "18": 74,
+    "1": 30,
+    "9": 164,
+    "16": 41,
+    "11": 57,
+    "13": 96,
+    "3": 58,
+    "10": 104,
+    "26": 6,
+    "17": 23,
+    "20": 20,
+    "15": 75,
+    "7": 77,
+    "28": 1,
+    "8": 144,
+    "5": 96,
+    "2": 226,
+    "14": 61,
+    "25": 7,
+    "21": 2,
+    "22": 8,
+    "12": 107,
+    "19": 8,
+    "29": 2,
+    "24": 2,
+    "6": 56,
+    "30": 1,
+    "23": 2
+  },
+  "common_cycles": [
+    [
+      "fwd shoot turn_r climb turn_r climb fwd turn_l turn_l",
+      47
+    ],
+    [
+      "turn_r turn_r turn_r turn_r",
+      42
+    ],
+    [
+      "turn_r turn_r fwd fwd fwd turn_l fwd turn_r fwd turn_l fwd turn_r turn_r fwd fwd turn_r fwd fwd",
+      42
+    ],
+    [
+      "turn_r shoot turn_l shoot climb",
+      42
+    ],
+    [
+      "fwd fwd turn_l climb turn_l fwd fwd turn_r turn_r",
+      42
+    ],
+    [
+      "fwd grab",
+      41
+    ],
+    [
+      "fwd turn_r fwd turn_r fwd turn_l fwd turn_l",
+      40
+    ],
+    [
+      "turn_r grab turn_l shoot",
+      32
+    ],
+    [
+      "turn_l fwd grab turn_r turn_r fwd turn_r climb fwd turn_l turn_l shoot",
+      26
+    ],
+    [
+      "grab fwd",
+      25
+    ]
+  ],
+  "before_pickup": 1770,
+  "after_pickup": 23,
+  "saw_glitter_without_pickup": 0,
+  "cap_240_outcomes": {
+    "timeout": 1793
+  }
+}

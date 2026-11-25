@@ -1,0 +1,91 @@
+{
+  "original": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 758,
+      "gold → gold": 6122,
+      "retreat → retreat": 9585,
+      "timeout → death": 8,
+      "timeout → gold": 61,
+      "timeout → retreat": 3156,
+      "timeout → timeout": 310
+    },
+    "score_delta_components": {
+      "gold": 3.05,
+      "deaths": -0.4,
+      "steps": 11.5512,
+      "arrow": -0.238
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": 0.00305,
+        "lo": 0.0014,
+        "hi": 0.00515
+      },
+      "death_rate": {
+        "delta": 0.0004,
+        "lo": 5e-05,
+        "hi": 0.00095
+      },
+      "timeout_rate": {
+        "delta": -0.16125,
+        "lo": -0.18570124999999998,
+        "hi": -0.13809875
+      },
+      "mean_score": {
+        "delta": 13.9632,
+        "lo": 11.340875,
+        "hi": 16.80678625
+      }
+    }
+  },
+  "notebook": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 8,
+      "death → gold": 5,
+      "death → retreat": 359,
+      "death → timeout": 28,
+      "gold → death": 48,
+      "gold → gold": 4769,
+      "gold → retreat": 1320,
+      "gold → timeout": 123,
+      "retreat → death": 710,
+      "retreat → gold": 1409,
+      "retreat → retreat": 11062,
+      "retreat → timeout": 159
+    },
+    "score_delta_components": {
+      "gold": -3.85,
+      "deaths": -18.3,
+      "steps": -8.41175,
+      "arrow": -3.0835
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": -0.00385,
+        "lo": -0.0254,
+        "hi": 0.017301249999999997
+      },
+      "death_rate": {
+        "delta": 0.0183,
+        "lo": -0.0013525,
+        "hi": 0.03635000000000001
+      },
+      "timeout_rate": {
+        "delta": 0.0155,
+        "lo": 0.00939875,
+        "hi": 0.0233
+      },
+      "mean_score": {
+        "delta": -33.64525,
+        "lo": -52.41778875,
+        "hi": -13.747931249999999
+      }
+    }
+  }
+}

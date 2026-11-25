@@ -1,0 +1,142 @@
+{
+  "python": "3.14.3",
+  "split": "penalty",
+  "validation_seed": 29947,
+  "test_seed": 247393,
+  "training_layout_seed_base": 7000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    5000
+  ],
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "test",
+  "profiles": {
+    "shared_n12": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Propagate a successful exit to earlier actions over a longer horizon.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early25": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 25,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Make retreat without leaving the entrance less attractive in training.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early100": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 100,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Measure whether a stronger early-retreat penalty only causes stalling.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early250": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 250,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Check the middle of the dose-response for premature retreat.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early500": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 500,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Check whether a half-death penalty promotes useful exploration.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early1000": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 1000,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Train with premature retreat and death both worth -1001 after the action cost.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "replay_wide": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true
+      },
+      "reason": "Expose farther raw observations to distinguish return situations.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "replay_wide_early1000": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 1000,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true
+      },
+      "reason": "Check the death-sized penalty on the strongest confirmed learner as a separate paired ablation.",
+      "curriculum": true,
+      "kind": "shared"
+    }
+  }
+}

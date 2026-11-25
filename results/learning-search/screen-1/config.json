@@ -1,0 +1,138 @@
+{
+  "validation_seed": 74207,
+  "test_seed": 180173,
+  "seeds": [
+    0,
+    1
+  ],
+  "checkpoints": [
+    800,
+    1600,
+    5000
+  ],
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "validation",
+  "profiles": {
+    "shared_td": {
+      "settings": {
+        "n": 1,
+        "gamma": 0.9,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Allow partial matches without lengthening credit.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "shared_n12": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Propagate a successful exit to earlier actions over a longer horizon.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early25": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 25,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Make retreat without leaving the entrance less attractive in training.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early100": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 100,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Measure whether a stronger early-retreat penalty only causes stalling.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "novel20": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 20,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Reward reaching a new square, not waiting or repeated motion.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "early25_novel20": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 25,
+        "novel_reward": 20,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Test whether both exploration signals help beyond the individual changes.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "shared_curriculum": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Control for self-replay: same easy start, no extra replay.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "self_replay": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": false
+      },
+      "reason": "Revisit actual successful episodes to preserve rare useful experience.",
+      "curriculum": true,
+      "kind": "shared"
+    }
+  }
+}

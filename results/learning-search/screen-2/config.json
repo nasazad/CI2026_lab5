@@ -1,0 +1,126 @@
+{
+  "validation_seed": 74207,
+  "test_seed": 180173,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    1600,
+    5000,
+    10000
+  ],
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "validation",
+  "profiles": {
+    "self_replay": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": false
+      },
+      "reason": "Revisit actual successful episodes to preserve rare useful experience.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "early100": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 100,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false
+      },
+      "reason": "Measure whether a stronger early-retreat penalty only causes stalling.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "replay_uniform": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": false
+      },
+      "reason": "Check whether self-replay can discover useful policies without an easy start.",
+      "curriculum": false,
+      "kind": "shared"
+    },
+    "replay4": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 4,
+        "wider_memory": false
+      },
+      "reason": "Give rare actual successes more repeated credit than with one replay.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "replay_early100": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 100,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": false
+      },
+      "reason": "Test whether self-replay and an early penalty are complementary.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "replay_wide": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true
+      },
+      "reason": "Expose farther raw observations to distinguish return situations.",
+      "curriculum": true,
+      "kind": "shared"
+    },
+    "replay_long": {
+      "settings": {
+        "n": 32,
+        "gamma": 0.995,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": false
+      },
+      "reason": "Check whether much longer credit helps the longer successful trips.",
+      "curriculum": true,
+      "kind": "shared"
+    }
+  }
+}

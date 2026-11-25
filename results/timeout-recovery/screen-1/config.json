@@ -1,0 +1,81 @@
+{
+  "notebook": "Wumpus_World.ipynb",
+  "notebook_revision": "6b19ce0e2d4279f2157217386e4730947a332ef9",
+  "notebook_sha256": "8deed33226b39153cb0fd7dffe0fdcd4a6dc7ec233f26db58d54a61ace82a794",
+  "output": "results/timeout-recovery/screen-1",
+  "profiles": [
+    "plain",
+    "history",
+    "cautious",
+    "early"
+  ],
+  "readouts": [
+    "greedy",
+    "soft15",
+    "soft35"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "workers": 3,
+  "episodes": 9000,
+  "base_episodes": 16000,
+  "notebook_control": true,
+  "test": false,
+  "validation_seed": 617383,
+  "test_seed": 804589,
+  "evaluation_cap": 120,
+  "recipes": {
+    "plain": {
+      "episodes": 12000,
+      "history": false,
+      "alpha": 0.1,
+      "gamma": 0.98,
+      "base_strength": 0.4,
+      "death_cost": 0.0,
+      "timeout_cost": 0.0,
+      "temperature": 0.0,
+      "early": 0
+    },
+    "history": {
+      "episodes": 12000,
+      "history": true,
+      "alpha": 0.1,
+      "gamma": 0.98,
+      "base_strength": 0.4,
+      "death_cost": 0.0,
+      "timeout_cost": 0.0,
+      "temperature": 0.0,
+      "early": 0
+    },
+    "cautious": {
+      "episodes": 12000,
+      "history": true,
+      "alpha": 0.1,
+      "gamma": 0.98,
+      "base_strength": 0.4,
+      "death_cost": 800,
+      "timeout_cost": 125,
+      "temperature": 0.0,
+      "early": 0
+    },
+    "early": {
+      "episodes": 12000,
+      "history": true,
+      "alpha": 0.1,
+      "gamma": 0.98,
+      "base_strength": 0.4,
+      "death_cost": 800,
+      "timeout_cost": 125,
+      "temperature": 0.0,
+      "early": 12
+    }
+  },
+  "readout_temperatures": {
+    "greedy": 0.0,
+    "soft15": 0.015,
+    "soft35": 0.035
+  }
+}

@@ -1,0 +1,2738 @@
+{
+  "raw_retreats_notebook_succeeds": {
+    "cave_id": 5,
+    "seed": 0,
+    "layout": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "policies": {
+      "relative_hints_lcs": {
+        "outcome": "timeout",
+        "score": -120,
+        "actions": 120,
+        "distinct_cells": 2,
+        "picked_gold": 0,
+        "immediate_retreat": 0,
+        "stalled_timeout": 1,
+        "steps": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_uncertain",
+              "breeze",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          }
+        ],
+        "unmatched_messages": [],
+        "entrance_messages": [
+          "ahead_safe",
+          "at_start",
+          "home_here",
+          "no_gold"
+        ],
+        "entrance_best_bid_by_action": {
+          "fwd": 236.73,
+          "turn_l": 13.328,
+          "turn_r": 9.207,
+          "grab": 13.559,
+          "shoot": 89.996,
+          "climb": -1.0
+        }
+      },
+      "raw_memory_lcs": {
+        "outcome": "retreat",
+        "score": -1,
+        "actions": 1,
+        "distinct_cells": 1,
+        "picked_gold": 0,
+        "immediate_retreat": 1,
+        "stalled_timeout": 0,
+        "steps": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "at_start",
+              "last_none",
+              "no_gold",
+              "remembered_back:unknown",
+              "remembered_front:unknown",
+              "remembered_left:unknown",
+              "remembered_right:unknown"
+            ],
+            "condition": [
+              "at_start",
+              "last_none",
+              "no_gold",
+              "remembered_back:unknown",
+              "remembered_front:unknown",
+              "remembered_left:unknown",
+              "remembered_right:unknown"
+            ],
+            "action": "climb",
+            "reward": -1
+          }
+        ],
+        "unmatched_messages": [],
+        "entrance_messages": [
+          "at_start",
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "entrance_best_bid_by_action": {
+          "fwd": -76.154,
+          "turn_l": -1.9,
+          "turn_r": -1.9,
+          "grab": -1.9,
+          "shoot": -11.575,
+          "climb": -1.0
+        }
+      },
+      "raw_curriculum_lcs": {
+        "outcome": "retreat",
+        "score": -1,
+        "actions": 1,
+        "distinct_cells": 1,
+        "picked_gold": 0,
+        "immediate_retreat": 1,
+        "stalled_timeout": 0,
+        "steps": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "at_start",
+              "last_none",
+              "no_gold",
+              "remembered_back:unknown",
+              "remembered_front:unknown",
+              "remembered_left:unknown",
+              "remembered_right:unknown"
+            ],
+            "condition": [
+              "at_start",
+              "last_none",
+              "no_gold",
+              "remembered_back:unknown",
+              "remembered_front:unknown",
+              "remembered_left:unknown",
+              "remembered_right:unknown"
+            ],
+            "action": "climb",
+            "reward": -1
+          }
+        ],
+        "unmatched_messages": [],
+        "entrance_messages": [
+          "at_start",
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "entrance_best_bid_by_action": {
+          "fwd": -629.944,
+          "turn_l": -1.9,
+          "turn_r": -1.9,
+          "grab": -1.9,
+          "shoot": -11.877,
+          "climb": -1.0
+        }
+      },
+      "notebook_baseline": {
+        "outcome": "gold",
+        "score": 985,
+        "actions": 15,
+        "distinct_cells": 4,
+        "picked_gold": 1,
+        "immediate_retreat": 0,
+        "stalled_timeout": 0,
+        "steps": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "percepts": [
+              "at_start"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "percepts": [
+              "breeze"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "percepts": [
+              "breeze"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "percepts": [
+              "breeze"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              1
+            ],
+            "percepts": [
+              "at_start"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              1
+            ],
+            "percepts": [
+              "at_start"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              2
+            ],
+            "percepts": [],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              2
+            ],
+            "percepts": [],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              2
+            ],
+            "percepts": [
+              "glitter",
+              "stench"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              2
+            ],
+            "percepts": [
+              "stench"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              2
+            ],
+            "percepts": [
+              "stench"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              2
+            ],
+            "percepts": [
+              "stench"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              2
+            ],
+            "percepts": [],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              2
+            ],
+            "percepts": [],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              1
+            ],
+            "percepts": [
+              "at_start"
+            ],
+            "action": "climb",
+            "reward": 999
+          }
+        ],
+        "unmatched_messages": []
+      }
+    }
+  }
+}

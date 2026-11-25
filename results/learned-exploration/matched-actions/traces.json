@@ -1,0 +1,5080 @@
+{
+  "low_clean:0": {
+    "cave_id": 350,
+    "layout": [
+      [
+        4,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "outcome": "gold",
+    "score": 945,
+    "actions": 45,
+    "picked_gold": 1,
+    "distinct_cells": 12,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 6,
+    "trace": [
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 663.7175,
+          "turn_l": 403.7428,
+          "turn_r": 647.3513,
+          "grab": 560.9192,
+          "shoot": 514.5579,
+          "climb": -0.9944
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": -980.9047,
+          "turn_l": 262.2889,
+          "turn_r": 239.0608,
+          "grab": 83.0426,
+          "shoot": 176.0056,
+          "climb": 313.5772
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -942.7147,
+          "turn_l": 308.1172,
+          "turn_r": 150.4555,
+          "grab": -32.4327,
+          "shoot": -51.8683,
+          "climb": 49.4804
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": -331.0147,
+          "turn_l": 199.339,
+          "turn_r": 19.6244,
+          "grab": 10.2257,
+          "shoot": 362.7371,
+          "climb": 101.1206
+        },
+        "reward": -11
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "scream"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 42.6299,
+          "turn_l": 165.3033,
+          "turn_r": -63.5132,
+          "grab": 87.0106,
+          "shoot": -14.0269,
+          "climb": 496.7202
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -94.4048,
+          "turn_l": 578.2282,
+          "turn_r": 304.2797,
+          "grab": 189.6059,
+          "shoot": -63.7986,
+          "climb": -12.547
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 504.7422,
+          "turn_l": 77.34,
+          "turn_r": 127.0474,
+          "grab": 266.3679,
+          "shoot": 113.4105,
+          "climb": 292.9383
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 544.9105,
+          "turn_l": 339.0076,
+          "turn_r": 455.8461,
+          "grab": 266.5852,
+          "shoot": 397.7415,
+          "climb": -0.9985
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 188.2413,
+          "turn_l": 144.7939,
+          "turn_r": 149.3389,
+          "grab": 433.9743,
+          "shoot": 594.2415,
+          "climb": -1.0178
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 349.3588,
+          "turn_l": 191.3012,
+          "turn_r": 599.882,
+          "grab": 158.1425,
+          "shoot": 183.6674,
+          "climb": -1.0018
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 592.8803,
+          "turn_l": 58.1211,
+          "turn_r": 249.0217,
+          "grab": 392.9148,
+          "shoot": 358.2268,
+          "climb": -1.0007
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 629.7119,
+          "turn_l": 392.7998,
+          "turn_r": 384.4933,
+          "grab": 541.7805,
+          "shoot": 450.7852,
+          "climb": 386.1926
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 646.1194,
+          "turn_l": 484.6808,
+          "turn_r": 483.3903,
+          "grab": 603.4533,
+          "shoot": 512.5671,
+          "climb": 482.2443
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 373.2072,
+          "turn_l": 595.5493,
+          "turn_r": 687.6498,
+          "grab": 508.4976,
+          "shoot": 416.5929,
+          "climb": 345.8702
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 751.5418,
+          "turn_l": 339.2957,
+          "turn_r": 383.2843,
+          "grab": 671.0279,
+          "shoot": 453.6048,
+          "climb": 304.4201
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 658.9277,
+          "turn_l": 584.1549,
+          "turn_r": 686.9034,
+          "grab": 572.6251,
+          "shoot": 504.2923,
+          "climb": 467.5077
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 779.3579,
+          "turn_l": 417.9402,
+          "turn_r": 498.9501,
+          "grab": 609.2818,
+          "shoot": 511.9809,
+          "climb": 282.7165
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 741.5605,
+          "turn_l": 602.3703,
+          "turn_r": 677.1967,
+          "grab": 452.9172,
+          "shoot": 454.7169,
+          "climb": 253.1362
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:breeze",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 443.8754,
+          "turn_l": 819.8711,
+          "turn_r": 854.8127,
+          "grab": 345.371,
+          "shoot": 279.4297,
+          "climb": 346.8574
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:breeze",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 724.6525,
+          "turn_l": 278.6484,
+          "turn_r": 454.3196,
+          "grab": 459.9174,
+          "shoot": 314.3676,
+          "climb": 343.6848
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:none"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 437.2902,
+          "turn_l": 365.9773,
+          "turn_r": 613.9123,
+          "grab": 446.8429,
+          "shoot": 301.3473,
+          "climb": 299.3537
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 474.1312,
+          "turn_l": 397.0551,
+          "turn_r": 551.7449,
+          "grab": 381.0939,
+          "shoot": 386.8061,
+          "climb": 170.3035
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:at_start"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 604.7379,
+          "turn_l": 286.649,
+          "turn_r": 435.5089,
+          "grab": 503.565,
+          "shoot": 423.1387,
+          "climb": 323.8186
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:breeze"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 731.5995,
+          "turn_l": 549.7704,
+          "turn_r": 487.1388,
+          "grab": 733.2341,
+          "shoot": 692.084,
+          "climb": 557.3382
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:breeze"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 847.1708,
+          "turn_l": 503.3653,
+          "turn_r": 468.7562,
+          "grab": 485.6418,
+          "shoot": 628.7149,
+          "climb": 460.9666
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 202.3945,
+          "turn_l": 657.7142,
+          "turn_r": 573.4188,
+          "grab": 339.6341,
+          "shoot": 319.7922,
+          "climb": 332.7423
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 529.9328,
+          "turn_l": 369.7724,
+          "turn_r": 244.487,
+          "grab": 355.7189,
+          "shoot": 450.344,
+          "climb": 419.9243
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 742.8443,
+          "turn_l": 319.5775,
+          "turn_r": 478.857,
+          "grab": 418.1119,
+          "shoot": 433.0587,
+          "climb": 426.3182
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 497.1213,
+          "turn_l": 400.183,
+          "turn_r": 569.4207,
+          "grab": 558.4811,
+          "shoot": 474.9394,
+          "climb": 422.391
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 782.0997,
+          "turn_l": 351.7217,
+          "turn_r": 333.3856,
+          "grab": 580.8079,
+          "shoot": 476.0738,
+          "climb": 318.2266
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 760.8878,
+          "turn_l": 838.212,
+          "turn_r": 814.9431,
+          "grab": 823.1586,
+          "shoot": 813.0924,
+          "climb": 821.1239
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 730.042,
+          "turn_l": 848.1861,
+          "turn_r": 777.7676,
+          "grab": 834.5712,
+          "shoot": 848.9391,
+          "climb": 831.1291
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 735.8254,
+          "turn_l": 827.3933,
+          "turn_r": 770.9396,
+          "grab": 839.077,
+          "shoot": 810.3781,
+          "climb": 821.8133
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_grab",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 785.0035,
+          "turn_l": 804.6325,
+          "turn_r": 774.4983,
+          "grab": 733.1362,
+          "shoot": 824.0468,
+          "climb": 766.544
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_shoot",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 779.4827,
+          "turn_l": 796.9571,
+          "turn_r": 755.534,
+          "grab": 747.6244,
+          "shoot": 734.8462,
+          "climb": 741.9921
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 848.6056,
+          "turn_l": 779.0101,
+          "turn_r": 733.1852,
+          "grab": 794.7537,
+          "shoot": 804.933,
+          "climb": 834.6794
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 871.3193,
+          "turn_l": 831.1434,
+          "turn_r": 798.2213,
+          "grab": 824.593,
+          "shoot": 872.5152,
+          "climb": 845.326
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_shoot",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 866.1577,
+          "turn_l": 808.0277,
+          "turn_r": 778.5289,
+          "grab": 772.4594,
+          "shoot": 768.4591,
+          "climb": 797.1502
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 890.7655,
+          "turn_l": 838.2261,
+          "turn_r": 830.7738,
+          "grab": 856.9197,
+          "shoot": 849.6847,
+          "climb": 851.7366
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 837.0123,
+          "turn_l": 896.7583,
+          "turn_r": 810.0232,
+          "grab": 832.6445,
+          "shoot": 814.635,
+          "climb": 851.3634
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 946.3966,
+          "turn_l": 864.2194,
+          "turn_r": 746.6706,
+          "grab": 833.6557,
+          "shoot": 867.0295,
+          "climb": 852.7246
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 948.2547,
+          "turn_l": 905.0703,
+          "turn_r": 894.6226,
+          "grab": 926.768,
+          "shoot": 958.5779,
+          "climb": 936.6832
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_shoot",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 943.0931,
+          "turn_l": 881.9547,
+          "turn_r": 874.9302,
+          "grab": 874.6345,
+          "shoot": 854.5219,
+          "climb": 888.5075
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:at_start",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 973.0783,
+          "turn_l": 918.9362,
+          "turn_r": 906.3323,
+          "grab": 926.6225,
+          "shoot": 948.6475,
+          "climb": 954.211
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:breeze",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 982.1162,
+          "turn_l": 982.0527,
+          "turn_r": 973.9281,
+          "grab": 980.8001,
+          "shoot": 981.4179,
+          "climb": 999.5019
+        },
+        "reward": 999
+      }
+    ]
+  },
+  "low_clean:1": {
+    "cave_id": 350,
+    "layout": [
+      [
+        4,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "outcome": "gold",
+    "score": 939,
+    "actions": 51,
+    "picked_gold": 1,
+    "distinct_cells": 11,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 6,
+    "trace": [
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 556.8759,
+          "turn_l": 464.5163,
+          "turn_r": 463.4348,
+          "grab": 504.7294,
+          "shoot": 557.2204,
+          "climb": -0.9952
+        },
+        "reward": -11
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 583.2781,
+          "turn_l": 332.1422,
+          "turn_r": 376.77,
+          "grab": 304.2823,
+          "shoot": 374.1181,
+          "climb": -1.0014
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -840.6536,
+          "turn_l": 423.2097,
+          "turn_r": 16.7805,
+          "grab": 42.1957,
+          "shoot": 359.7478,
+          "climb": 74.0365
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -329.0986,
+          "turn_l": 504.8092,
+          "turn_r": -45.5865,
+          "grab": -39.3907,
+          "shoot": -21.0888,
+          "climb": 101.1262
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 457.3736,
+          "turn_l": 161.4289,
+          "turn_r": -45.2577,
+          "grab": -70.728,
+          "shoot": -21.1733,
+          "climb": 69.1718
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze+stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 372.4875,
+          "turn_l": 342.7282,
+          "turn_r": 254.5854,
+          "grab": 408.0708,
+          "shoot": 368.2731,
+          "climb": -1.0086
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:breeze+stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 275.4991,
+          "turn_l": 271.8045,
+          "turn_r": 370.7625,
+          "grab": 166.8426,
+          "shoot": 239.474,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze+stench"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 286.2636,
+          "turn_l": 103.6297,
+          "turn_r": 144.9578,
+          "grab": 245.2787,
+          "shoot": 392.2845,
+          "climb": -1.008
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze+stench"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 386.3078,
+          "turn_l": 154.5191,
+          "turn_r": 159.7467,
+          "grab": 143.4093,
+          "shoot": 155.1405,
+          "climb": -1.0113
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 530.8349,
+          "turn_l": 319.3626,
+          "turn_r": 132.98,
+          "grab": 344.3664,
+          "shoot": 575.0039,
+          "climb": 112.6762
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 707.0776,
+          "turn_l": 323.3984,
+          "turn_r": 68.0036,
+          "grab": 299.1011,
+          "shoot": 146.3271,
+          "climb": 114.5582
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 491.7782,
+          "turn_l": 469.0183,
+          "turn_r": 261.3757,
+          "grab": 521.8804,
+          "shoot": 528.0962,
+          "climb": 564.8634
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 577.0302,
+          "turn_l": 469.4912,
+          "turn_r": 241.1526,
+          "grab": 412.8453,
+          "shoot": 400.0108,
+          "climb": 352.1536
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 235.9775,
+          "turn_l": 528.6184,
+          "turn_r": 486.3453,
+          "grab": 372.5976,
+          "shoot": 520.3486,
+          "climb": 412.2323
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 413.175,
+          "turn_l": 384.7635,
+          "turn_r": 304.932,
+          "grab": 433.9085,
+          "shoot": 389.418,
+          "climb": 471.5926
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 386.6843,
+          "turn_l": 390.0703,
+          "turn_r": 268.0157,
+          "grab": 417.9769,
+          "shoot": 369.7781,
+          "climb": 266.2189
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 385.277,
+          "turn_l": 388.7182,
+          "turn_r": 286.328,
+          "grab": 261.9629,
+          "shoot": 345.6034,
+          "climb": 335.185
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 352.3538,
+          "turn_l": 479.8243,
+          "turn_r": 303.9877,
+          "grab": 291.4503,
+          "shoot": 273.8151,
+          "climb": 397.1389
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 508.0546,
+          "turn_l": 323.4685,
+          "turn_r": 274.6124,
+          "grab": 464.9408,
+          "shoot": 459.0573,
+          "climb": 405.419
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 523.1358,
+          "turn_l": 492.1234,
+          "turn_r": 440.3633,
+          "grab": 507.4063,
+          "shoot": 545.7699,
+          "climb": 449.1129
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 586.5771,
+          "turn_l": 493.6051,
+          "turn_r": 439.1697,
+          "grab": 382.5724,
+          "shoot": 286.1494,
+          "climb": 326.5103
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 583.3793,
+          "turn_l": 652.2795,
+          "turn_r": 518.0511,
+          "grab": 547.4032,
+          "shoot": 637.004,
+          "climb": 535.503
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 556.8843,
+          "turn_l": 470.764,
+          "turn_r": 482.3358,
+          "grab": 561.47,
+          "shoot": 483.1475,
+          "climb": 636.3728
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 530.3936,
+          "turn_l": 476.0708,
+          "turn_r": 445.4195,
+          "grab": 545.5384,
+          "shoot": 463.5076,
+          "climb": 430.999
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 528.9863,
+          "turn_l": 474.7187,
+          "turn_r": 463.7319,
+          "grab": 389.5244,
+          "shoot": 439.333,
+          "climb": 499.9652
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 318.6502,
+          "turn_l": 593.9321,
+          "turn_r": 424.7336,
+          "grab": 267.32,
+          "shoot": 321.2537,
+          "climb": 339.3112
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 502.5511,
+          "turn_l": 673.3662,
+          "turn_r": 393.6558,
+          "grab": 416.4464,
+          "shoot": 469.6442,
+          "climb": 423.898
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 620.1374,
+          "turn_l": 465.2265,
+          "turn_r": 376.5103,
+          "grab": 544.5176,
+          "shoot": 546.4968,
+          "climb": 503.2893
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 586.5104,
+          "turn_l": 565.2249,
+          "turn_r": 387.324,
+          "grab": 649.0033,
+          "shoot": 682.0268,
+          "climb": 472.4363
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 649.9517,
+          "turn_l": 566.7065,
+          "turn_r": 386.1304,
+          "grab": 524.1694,
+          "shoot": 422.4063,
+          "climb": 349.8337
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -436.4601,
+          "turn_l": 814.1086,
+          "turn_r": 8.4802,
+          "grab": 89.233,
+          "shoot": 231.0351,
+          "climb": 241.1253
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -225.1396,
+          "turn_l": 609.9598,
+          "turn_r": 17.7218,
+          "grab": -27.3594,
+          "shoot": 1.765,
+          "climb": 278.3039
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 768.1019,
+          "turn_l": 52.7627,
+          "turn_r": -46.8239,
+          "grab": 133.7987,
+          "shoot": 84.1847,
+          "climb": 85.8928
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze+stench",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 311.2999,
+          "turn_l": 597.4134,
+          "turn_r": 494.2651,
+          "grab": 391.5582,
+          "shoot": 491.4188,
+          "climb": 451.0184
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:breeze+stench",
+          "remembered_right:none"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 422.7928,
+          "turn_l": 455.2847,
+          "turn_r": 193.9114,
+          "grab": 421.6736,
+          "shoot": 486.7691,
+          "climb": 519.1299
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:breeze+stench",
+          "remembered_right:none"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 414.8227,
+          "turn_l": 494.9707,
+          "turn_r": 252.0093,
+          "grab": 419.6295,
+          "shoot": 467.4895,
+          "climb": 390.1397
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:breeze+stench",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 316.7768,
+          "turn_l": 408.8119,
+          "turn_r": 354.8489,
+          "grab": 356.6774,
+          "shoot": 262.8405,
+          "climb": 215.7993
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:breeze+stench"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 674.5407,
+          "turn_l": 98.0093,
+          "turn_r": 75.8073,
+          "grab": 354.1996,
+          "shoot": 253.7665,
+          "climb": 483.2675
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 2.8639,
+          "turn_l": 452.1044,
+          "turn_r": 17.4804,
+          "grab": 241.8867,
+          "shoot": 235.45,
+          "climb": 213.0401
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 366.8552,
+          "turn_l": 188.7416,
+          "turn_r": -175.8708,
+          "grab": 216.7775,
+          "shoot": 191.375,
+          "climb": 177.1304
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 675.6899,
+          "turn_l": 851.7531,
+          "turn_r": 746.2687,
+          "grab": 880.3962,
+          "shoot": 796.7166,
+          "climb": 824.6913
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_grab",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 829.8635,
+          "turn_l": 830.5208,
+          "turn_r": 821.1886,
+          "grab": 727.5995,
+          "shoot": 829.8007,
+          "climb": 821.1117
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:breeze",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 851.8307,
+          "turn_l": 827.5869,
+          "turn_r": 803.0723,
+          "grab": 846.5999,
+          "shoot": 842.3299,
+          "climb": 844.886
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 856.8393,
+          "turn_l": 820.577,
+          "turn_r": 851.501,
+          "grab": 862.7771,
+          "shoot": 847.4131,
+          "climb": 884.8677
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_climb",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 856.5028,
+          "turn_l": 797.4833,
+          "turn_r": 827.8418,
+          "grab": 801.3219,
+          "shoot": 803.2569,
+          "climb": 794.9097
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 891.1881,
+          "turn_l": 868.8432,
+          "turn_r": 840.7349,
+          "grab": 878.6242,
+          "shoot": 827.6256,
+          "climb": 863.878
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 819.9545,
+          "turn_l": 905.0384,
+          "turn_r": 845.9402,
+          "grab": 894.5265,
+          "shoot": 869.2005,
+          "climb": 879.7328
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 894.0911,
+          "turn_l": 862.3585,
+          "turn_r": 804.9787,
+          "grab": 871.8012,
+          "shoot": 869.0404,
+          "climb": 866.7818
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:stench",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 956.8217,
+          "turn_l": 884.0032,
+          "turn_r": 894.2651,
+          "grab": 932.5708,
+          "shoot": 930.1861,
+          "climb": 915.8009
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 971.9693,
+          "turn_l": 728.9365,
+          "turn_r": 903.8735,
+          "grab": 934.5186,
+          "shoot": 951.5626,
+          "climb": 818.267
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:breeze+stench",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 934.9254,
+          "turn_l": 835.661,
+          "turn_r": 906.5656,
+          "grab": 889.7825,
+          "shoot": 873.4605,
+          "climb": 999.3659
+        },
+        "reward": 999
+      }
+    ]
+  },
+  "low_clean:2": {
+    "cave_id": 350,
+    "layout": [
+      [
+        4,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "outcome": "gold",
+    "score": 964,
+    "actions": 26,
+    "picked_gold": 1,
+    "distinct_cells": 8,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 6,
+    "trace": [
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 498.5845,
+          "turn_l": 488.2064,
+          "turn_r": 507.0194,
+          "grab": 513.5176,
+          "shoot": 489.6764,
+          "climb": -0.9975
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 541.4681,
+          "turn_l": 269.233,
+          "turn_r": 361.8317,
+          "grab": 345.2348,
+          "shoot": 471.3953,
+          "climb": -1.0005
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -1121.5196,
+          "turn_l": 262.4669,
+          "turn_r": 107.8791,
+          "grab": 16.1162,
+          "shoot": 236.9077,
+          "climb": -40.4004
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -631.6879,
+          "turn_l": 263.693,
+          "turn_r": 10.9576,
+          "grab": -140.3754,
+          "shoot": 3.9676,
+          "climb": 75.7072
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 321.9634,
+          "turn_l": 45.6041,
+          "turn_r": 5.5457,
+          "grab": -16.7627,
+          "shoot": -1.0241,
+          "climb": 32.5904
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze+stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 29.4303,
+          "turn_l": 277.4731,
+          "turn_r": 435.0034,
+          "grab": 119.1018,
+          "shoot": 271.1255,
+          "climb": -1.0093
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze+stench"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 380.2713,
+          "turn_l": 3.6576,
+          "turn_r": -24.2105,
+          "grab": 240.8643,
+          "shoot": 344.8103,
+          "climb": -1.0085
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": -2.5832,
+          "turn_l": 221.6931,
+          "turn_r": 173.5629,
+          "grab": 243.5899,
+          "shoot": 400.7249,
+          "climb": 54.4975
+        },
+        "reward": -11
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 338.0791,
+          "turn_l": 120.017,
+          "turn_r": 202.0048,
+          "grab": 238.019,
+          "shoot": 66.1479,
+          "climb": -39.1363
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 520.5985,
+          "turn_l": 337.1091,
+          "turn_r": 300.1389,
+          "grab": 410.0972,
+          "shoot": 493.9171,
+          "climb": 500.1581
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 325.243,
+          "turn_l": 412.2987,
+          "turn_r": 577.175,
+          "grab": 409.9109,
+          "shoot": 430.9096,
+          "climb": 326.6101
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 578.3571,
+          "turn_l": 334.8144,
+          "turn_r": 380.0195,
+          "grab": 406.4889,
+          "shoot": 520.132,
+          "climb": 520.1422
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 613.5695,
+          "turn_l": 409.5663,
+          "turn_r": 519.3345,
+          "grab": 578.195,
+          "shoot": 560.5636,
+          "climb": 470.3988
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 672.1878,
+          "turn_l": 481.0577,
+          "turn_r": 634.9901,
+          "grab": 654.8905,
+          "shoot": 640.0524,
+          "climb": 502.2715
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 816.9375,
+          "turn_l": 824.3435,
+          "turn_r": 816.04,
+          "grab": 837.2517,
+          "shoot": 816.1013,
+          "climb": 831.7107
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_grab",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 813.5252,
+          "turn_l": 844.6158,
+          "turn_r": 833.5552,
+          "grab": 749.6867,
+          "shoot": 830.8349,
+          "climb": 828.8237
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 844.5178,
+          "turn_l": 845.2426,
+          "turn_r": 778.8812,
+          "grab": 826.5837,
+          "shoot": 842.8059,
+          "climb": 825.4217
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 863.5834,
+          "turn_l": 841.0685,
+          "turn_r": 809.4234,
+          "grab": 867.9226,
+          "shoot": 851.7616,
+          "climb": 881.3853
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_climb",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 854.0793,
+          "turn_l": 840.5141,
+          "turn_r": 819.6552,
+          "grab": 797.4568,
+          "shoot": 784.8624,
+          "climb": 789.0435
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 886.8403,
+          "turn_l": 866.8137,
+          "turn_r": 824.4672,
+          "grab": 880.8219,
+          "shoot": 878.7216,
+          "climb": 868.0575
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 902.96,
+          "turn_l": 864.5028,
+          "turn_r": 813.8677,
+          "grab": 876.7723,
+          "shoot": 881.1257,
+          "climb": 875.1397
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 838.705,
+          "turn_l": 928.7953,
+          "turn_r": 840.1624,
+          "grab": 838.6746,
+          "shoot": 882.9388,
+          "climb": 872.3413
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 936.2234,
+          "turn_l": 904.3374,
+          "turn_r": 819.0384,
+          "grab": 871.4114,
+          "shoot": 907.0651,
+          "climb": 889.1203
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:stench",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 962.8071,
+          "turn_l": 890.5732,
+          "turn_r": 870.5881,
+          "grab": 903.7322,
+          "shoot": 912.5626,
+          "climb": 883.0929
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 958.3184,
+          "turn_l": 869.6853,
+          "turn_r": 761.9059,
+          "grab": 905.168,
+          "shoot": 873.0864,
+          "climb": 867.4122
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:breeze+stench",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 865.2797,
+          "turn_l": 906.6268,
+          "turn_r": 857.9857,
+          "grab": 854.5663,
+          "shoot": 842.9899,
+          "climb": 1000.2747
+        },
+        "reward": 999
+      }
+    ]
+  },
+  "low_clean:3": {
+    "cave_id": 350,
+    "layout": [
+      [
+        4,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "outcome": "gold",
+    "score": 961,
+    "actions": 29,
+    "picked_gold": 1,
+    "distinct_cells": 8,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 6,
+    "trace": [
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 461.8002,
+          "turn_l": 475.4467,
+          "turn_r": 425.371,
+          "grab": 503.2743,
+          "shoot": 484.7185,
+          "climb": -0.9965
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 517.3489,
+          "turn_l": 284.2,
+          "turn_r": 344.5432,
+          "grab": 154.1623,
+          "shoot": 487.0896,
+          "climb": -0.998
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -917.3278,
+          "turn_l": 318.4968,
+          "turn_r": 67.1447,
+          "grab": 52.0381,
+          "shoot": -98.4642,
+          "climb": -100.0467
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -354.8018,
+          "turn_l": 203.0804,
+          "turn_r": -0.0764,
+          "grab": 59.922,
+          "shoot": 85.6412,
+          "climb": -47.4759
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 240.1131,
+          "turn_l": 9.9624,
+          "turn_r": -106.4763,
+          "grab": -51.2219,
+          "shoot": -9.5988,
+          "climb": -22.2514
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze+stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 74.3217,
+          "turn_l": 136.6265,
+          "turn_r": 176.4925,
+          "grab": 111.8879,
+          "shoot": 330.0488,
+          "climb": -1.0158
+        },
+        "reward": -11
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:breeze+stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": -29.6931,
+          "turn_l": 119.6657,
+          "turn_r": 252.5854,
+          "grab": -31.8309,
+          "shoot": 77.3898,
+          "climb": -1.0171
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze+stench"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 95.6185,
+          "turn_l": 8.525,
+          "turn_r": 83.2235,
+          "grab": 177.2088,
+          "shoot": 233.1179,
+          "climb": -1.0139
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze+stench"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 155.6287,
+          "turn_l": 103.9891,
+          "turn_r": 58.3732,
+          "grab": 57.6684,
+          "shoot": 139.4489,
+          "climb": -1.0135
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 109.3521,
+          "turn_l": 117.4078,
+          "turn_r": -97.5499,
+          "grab": 56.0822,
+          "shoot": 384.0733,
+          "climb": 177.8885
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 308.2368,
+          "turn_l": 128.3758,
+          "turn_r": -63.5429,
+          "grab": -15.0198,
+          "shoot": 94.561,
+          "climb": 93.5384
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 513.129,
+          "turn_l": 370.7876,
+          "turn_r": 117.3871,
+          "grab": 425.6256,
+          "shoot": 469.8635,
+          "climb": 342.7296
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 275.8167,
+          "turn_l": 338.5073,
+          "turn_r": 330.5008,
+          "grab": 320.3969,
+          "shoot": 448.5331,
+          "climb": 287.6847
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 290.3756,
+          "turn_l": 182.3137,
+          "turn_r": 388.3105,
+          "grab": 201.4219,
+          "shoot": 232.1365,
+          "climb": 184.4335
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 478.9291,
+          "turn_l": 281.3804,
+          "turn_r": 106.2097,
+          "grab": 343.3757,
+          "shoot": 365.1558,
+          "climb": 252.5807
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 547.9773,
+          "turn_l": 412.9833,
+          "turn_r": 370.9422,
+          "grab": 388.8231,
+          "shoot": 538.8544,
+          "climb": 435.0138
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 700.2206,
+          "turn_l": 557.6541,
+          "turn_r": 445.9185,
+          "grab": 512.6687,
+          "shoot": 591.8431,
+          "climb": 552.19
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 778.685,
+          "turn_l": 837.1468,
+          "turn_r": 785.6674,
+          "grab": 837.2512,
+          "shoot": 828.1028,
+          "climb": 750.3395
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_grab",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 805.7363,
+          "turn_l": 806.9162,
+          "turn_r": 832.2187,
+          "grab": 746.3369,
+          "shoot": 773.3062,
+          "climb": 789.4254
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_r",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 794.7551,
+          "turn_l": 747.6494,
+          "turn_r": 826.5069,
+          "grab": 727.3522,
+          "shoot": 765.3379,
+          "climb": 775.1407
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_r",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 846.8416,
+          "turn_l": 717.9802,
+          "turn_r": 799.7866,
+          "grab": 798.594,
+          "shoot": 815.4786,
+          "climb": 775.9112
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 864.7027,
+          "turn_l": 796.6732,
+          "turn_r": 802.6298,
+          "grab": 866.6929,
+          "shoot": 835.5261,
+          "climb": 846.9045
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_grab",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 860.573,
+          "turn_l": 773.1433,
+          "turn_r": 820.7457,
+          "grab": 788.5186,
+          "shoot": 794.8359,
+          "climb": 828.7089
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 883.7918,
+          "turn_l": 771.0019,
+          "turn_r": 810.3702,
+          "grab": 847.9088,
+          "shoot": 850.5085,
+          "climb": 877.0307
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 844.3339,
+          "turn_l": 895.4147,
+          "turn_r": 846.531,
+          "grab": 873.2374,
+          "shoot": 861.4997,
+          "climb": 877.4409
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_l",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 933.5814,
+          "turn_l": 782.6618,
+          "turn_r": 797.1444,
+          "grab": 825.3492,
+          "shoot": 832.5451,
+          "climb": 815.4902
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:stench",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 955.2003,
+          "turn_l": 866.2692,
+          "turn_r": 892.3163,
+          "grab": 899.6016,
+          "shoot": 943.1046,
+          "climb": 892.9874
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 972.1069,
+          "turn_l": 718.4551,
+          "turn_r": 730.2542,
+          "grab": 888.9137,
+          "shoot": 851.0564,
+          "climb": 899.7121
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:stench",
+          "remembered_front:unknown",
+          "remembered_left:breeze+stench",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 886.3099,
+          "turn_l": 922.0129,
+          "turn_r": 923.6741,
+          "grab": 868.7779,
+          "shoot": 920.6051,
+          "climb": 999.3113
+        },
+        "reward": 999
+      }
+    ]
+  },
+  "low_clean:4": {
+    "cave_id": 1241,
+    "layout": [
+      [
+        4,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    ],
+    "outcome": "gold",
+    "score": 953,
+    "actions": 37,
+    "picked_gold": 1,
+    "distinct_cells": 8,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 6,
+    "trace": [
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_none",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 587.464,
+          "turn_l": 621.5141,
+          "turn_r": 465.6916,
+          "grab": 578.6742,
+          "shoot": 571.8696,
+          "climb": -0.9967
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 614.5547,
+          "turn_l": 436.9213,
+          "turn_r": 296.4152,
+          "grab": 367.0342,
+          "shoot": 319.1995,
+          "climb": -1.0001
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 148.5644,
+          "turn_l": 363.8238,
+          "turn_r": 309.9715,
+          "grab": 370.752,
+          "shoot": 420.4218,
+          "climb": 488.8488
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 174.8886,
+          "turn_l": 466.5577,
+          "turn_r": 361.7126,
+          "grab": 229.7975,
+          "shoot": 264.7578,
+          "climb": 206.3908
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:at_start",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": -162.4102,
+          "turn_l": 396.0212,
+          "turn_r": 317.4592,
+          "grab": 325.8308,
+          "shoot": 277.2844,
+          "climb": 344.9937
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 342.5363,
+          "turn_l": 261.9917,
+          "turn_r": 254.145,
+          "grab": 372.1432,
+          "shoot": 371.5519,
+          "climb": 466.9423
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 356.4466,
+          "turn_l": 265.1689,
+          "turn_r": 263.8923,
+          "grab": 363.6106,
+          "shoot": 409.1218,
+          "climb": 227.4294
+        },
+        "reward": -11
+      },
+      {
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 450.8278,
+          "turn_l": 261.0598,
+          "turn_r": 320.0872,
+          "grab": 289.822,
+          "shoot": 230.613,
+          "climb": 241.2375
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 379.4614,
+          "turn_l": 438.0839,
+          "turn_r": 381.4669,
+          "grab": 501.7618,
+          "shoot": 431.7162,
+          "climb": -0.9991
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 188.2595,
+          "turn_l": 470.2781,
+          "turn_r": 480.75,
+          "grab": 182.3292,
+          "shoot": 293.2706,
+          "climb": -1.0015
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_r",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 420.3091,
+          "turn_l": 423.5202,
+          "turn_r": 360.4777,
+          "grab": 505.6712,
+          "shoot": 502.1928,
+          "climb": -0.9992
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 534.2281,
+          "turn_l": 415.9064,
+          "turn_r": 396.8033,
+          "grab": 180.8942,
+          "shoot": 398.45,
+          "climb": -1.0019
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 200.2278,
+          "turn_l": 555.6269,
+          "turn_r": 149.7962,
+          "grab": -19.753,
+          "shoot": 183.9687,
+          "climb": -0.9945
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 101.6819,
+          "turn_l": 567.1376,
+          "turn_r": 234.5488,
+          "grab": 265.7498,
+          "shoot": 318.7629,
+          "climb": -1.0004
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:breeze",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 472.9027,
+          "turn_l": 375.5268,
+          "turn_r": 304.3347,
+          "grab": 591.7106,
+          "shoot": 330.7598,
+          "climb": -1.0023
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "last_grab",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:breeze",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 494.7982,
+          "turn_l": 409.2383,
+          "turn_r": 356.8096,
+          "grab": 381.0965,
+          "shoot": 210.9248,
+          "climb": -1.0061
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 270.1828,
+          "turn_l": 139.2133,
+          "turn_r": 161.009,
+          "grab": 237.7997,
+          "shoot": 331.9816,
+          "climb": 230.8677
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:at_start",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 397.4486,
+          "turn_l": 187.4068,
+          "turn_r": 161.6928,
+          "grab": 166.7958,
+          "shoot": 58.3056,
+          "climb": 10.8131
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 530.5074,
+          "turn_l": 162.313,
+          "turn_r": 166.0946,
+          "grab": 489.2585,
+          "shoot": 412.7269,
+          "climb": 418.3341
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_l",
+        "action_values": {
+          "fwd": 83.6643,
+          "turn_l": 516.2589,
+          "turn_r": 407.3758,
+          "grab": 296.235,
+          "shoot": 443.1421,
+          "climb": 455.2422
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "last_turn_l",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 382.5274,
+          "turn_l": 252.3215,
+          "turn_r": 215.7641,
+          "grab": 356.8326,
+          "shoot": 413.073,
+          "climb": 554.3888
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:none",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 510.0095,
+          "turn_l": 293.8461,
+          "turn_r": 207.676,
+          "grab": 245.7796,
+          "shoot": 260.3416,
+          "climb": 321.0186
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 537.5776,
+          "turn_l": 487.2964,
+          "turn_r": 354.6281,
+          "grab": 480.7193,
+          "shoot": 574.0388,
+          "climb": 633.5387
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "last_climb",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 616.8678,
+          "turn_l": 458.5318,
+          "turn_r": 304.2734,
+          "grab": 415.5761,
+          "shoot": 455.3792,
+          "climb": 439.8366
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "shoot",
+        "action_values": {
+          "fwd": 424.0577,
+          "turn_l": 517.2616,
+          "turn_r": 476.322,
+          "grab": 496.3481,
+          "shoot": 599.3621,
+          "climb": 541.8017
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "last_shoot",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 504.1156,
+          "turn_l": 476.0913,
+          "turn_r": 413.0818,
+          "grab": 352.2594,
+          "shoot": 378.3955,
+          "climb": 451.0566
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "glitter",
+          "stench"
+        ],
+        "memory": [
+          "last_fwd",
+          "no_gold",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "grab",
+        "action_values": {
+          "fwd": 472.8397,
+          "turn_l": 849.1453,
+          "turn_r": 857.9972,
+          "grab": 869.8363,
+          "shoot": 738.3687,
+          "climb": 790.8093
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "has_gold",
+          "last_grab",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 723.8279,
+          "turn_l": 796.4683,
+          "turn_r": 894.4678,
+          "grab": 804.6494,
+          "shoot": 756.8666,
+          "climb": 838.2581
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "has_gold",
+          "last_turn_r",
+          "remembered_back:unknown",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 655.6429,
+          "turn_l": 789.548,
+          "turn_r": 896.2805,
+          "grab": 735.5142,
+          "shoot": 836.8181,
+          "climb": 674.9779
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "memory": [
+          "has_gold",
+          "last_turn_r",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 891.2345,
+          "turn_l": 800.0761,
+          "turn_r": 871.5897,
+          "grab": 828.2563,
+          "shoot": 841.6369,
+          "climb": 885.4575
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:stench",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 865.4783,
+          "turn_l": 836.474,
+          "turn_r": 806.9869,
+          "grab": 848.4525,
+          "shoot": 841.3814,
+          "climb": 843.1592
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 900.118,
+          "turn_l": 850.5178,
+          "turn_r": 822.273,
+          "grab": 863.5704,
+          "shoot": 821.6461,
+          "climb": 870.393
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "turn_r",
+        "action_values": {
+          "fwd": 838.7492,
+          "turn_l": 815.5532,
+          "turn_r": 916.6514,
+          "grab": 807.5712,
+          "shoot": 862.0766,
+          "climb": 881.9823
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_turn_r",
+          "remembered_back:unknown",
+          "remembered_front:none",
+          "remembered_left:unknown",
+          "remembered_right:none"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 943.7058,
+          "turn_l": 817.345,
+          "turn_r": 849.1993,
+          "grab": 861.7982,
+          "shoot": 855.2098,
+          "climb": 889.1659
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:breeze",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 957.6061,
+          "turn_l": 918.0721,
+          "turn_r": 851.7145,
+          "grab": 911.5823,
+          "shoot": 888.172,
+          "climb": 905.8607
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:none",
+          "remembered_front:at_start",
+          "remembered_left:unknown",
+          "remembered_right:unknown"
+        ],
+        "action": "fwd",
+        "action_values": {
+          "fwd": 974.5887,
+          "turn_l": 864.8515,
+          "turn_r": 908.5883,
+          "grab": 962.8678,
+          "shoot": 924.4812,
+          "climb": 916.3195
+        },
+        "reward": -1
+      },
+      {
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "memory": [
+          "has_gold",
+          "last_fwd",
+          "remembered_back:breeze",
+          "remembered_front:unknown",
+          "remembered_left:unknown",
+          "remembered_right:breeze"
+        ],
+        "action": "climb",
+        "action_values": {
+          "fwd": 980.6216,
+          "turn_l": 948.0735,
+          "turn_r": 970.4017,
+          "grab": 972.322,
+          "shoot": 952.1107,
+          "climb": 999.7048
+        },
+        "reward": 999
+      }
+    ]
+  }
+}

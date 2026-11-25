@@ -1,0 +1,91 @@
+{
+  "original": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 687,
+      "gold → gold": 6176,
+      "retreat → retreat": 9038,
+      "timeout → death": 8,
+      "timeout → gold": 38,
+      "timeout → retreat": 3857,
+      "timeout → timeout": 196
+    },
+    "score_delta_components": {
+      "gold": 1.9,
+      "deaths": -0.4,
+      "steps": 14.81815,
+      "arrow": -0.1745
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": 0.0019,
+        "lo": 0.0006,
+        "hi": 0.0035000000000000005
+      },
+      "death_rate": {
+        "delta": 0.0004,
+        "lo": 0.0,
+        "hi": 0.0010500000000000002
+      },
+      "timeout_rate": {
+        "delta": -0.19515,
+        "lo": -0.22740249999999995,
+        "hi": -0.16694625
+      },
+      "mean_score": {
+        "delta": 16.14365,
+        "lo": 13.025061250000002,
+        "hi": 19.61749125
+      }
+    }
+  },
+  "notebook": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 8,
+      "death → gold": 4,
+      "death → retreat": 369,
+      "death → timeout": 19,
+      "gold → death": 66,
+      "gold → gold": 4856,
+      "gold → retreat": 1269,
+      "gold → timeout": 69,
+      "retreat → death": 621,
+      "retreat → gold": 1354,
+      "retreat → retreat": 11257,
+      "retreat → timeout": 108
+    },
+    "score_delta_components": {
+      "gold": -2.3,
+      "deaths": -14.75,
+      "steps": -7.72315,
+      "arrow": -3.5915
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": -0.0023,
+        "lo": -0.020251250000000002,
+        "hi": 0.014301249999999998
+      },
+      "death_rate": {
+        "delta": 0.01475,
+        "lo": -0.00205125,
+        "hi": 0.03115
+      },
+      "timeout_rate": {
+        "delta": 0.0098,
+        "lo": 0.00535,
+        "hi": 0.0155
+      },
+      "mean_score": {
+        "delta": -28.36465,
+        "lo": -46.71914375,
+        "hi": -10.10992125
+      }
+    }
+  }
+}

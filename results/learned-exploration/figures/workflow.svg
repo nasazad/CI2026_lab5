@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+<title id="title">How a learned classifier chooses one move</title>
+<desc id="desc">The LCS learns which command to use; it never calculates a route.</desc>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="980" height="420" rx="12" fill="#f5f8f8" stroke="none"/>
+<text x="30" y="45" font-size="26" font-weight="700" fill="#17333d" text-anchor="start">How a learned classifier chooses one move</text>
+<text x="30" y="71" font-size="15" font-weight="400" fill="#496570" text-anchor="start">The LCS learns which command to use; it never calculates a route.</text>
+<text x="30" y="108" font-size="13" font-weight="700" fill="#345b85" text-anchor="start">TRAINING</text>
+<rect x="30" y="121" width="212" height="87" rx="12" fill="#e8eff8" stroke="none"/>
+<text x="44" y="149" font-size="16" font-weight="700" fill="#345b85" text-anchor="start">Try actions</text>
+<text x="44" y="174" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Explore with all six</text>
+<text x="44" y="194" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">primitive commands.</text>
+<path d="M245,165 L259,165" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M259,165 L252.0,169.0" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M259,165 L252.0,161.0" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<rect x="263" y="121" width="212" height="87" rx="12" fill="#e8eff8" stroke="none"/>
+<text x="277" y="149" font-size="16" font-weight="700" fill="#345b85" text-anchor="start">Assign credit</text>
+<text x="277" y="174" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Update earlier actions</text>
+<text x="277" y="194" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">from observed rewards.</text>
+<path d="M478,165 L492,165" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M492,165 L485.0,169.0" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M492,165 L485.0,161.0" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<rect x="496" y="121" width="212" height="87" rx="12" fill="#e8eff8" stroke="none"/>
+<text x="510" y="149" font-size="16" font-weight="700" fill="#345b85" text-anchor="start">Replay successes</text>
+<text x="510" y="174" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Skip repeated loops</text>
+<text x="510" y="194" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">from actual good runs.</text>
+<path d="M711,165 L725,165" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M725,165 L718.0,169.0" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M725,165 L718.0,161.0" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<rect x="729" y="121" width="212" height="87" rx="12" fill="#e8eff8" stroke="none"/>
+<text x="743" y="149" font-size="16" font-weight="700" fill="#345b85" text-anchor="start">Merge three tables</text>
+<text x="743" y="174" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Average the learned</text>
+<text x="743" y="194" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">strengths once.</text>
+<text x="30" y="239" font-size="13" font-weight="700" fill="#086754" text-anchor="start">FROZEN POLICY  /  EVERY MOVE</text>
+<rect x="30" y="252" width="286" height="108" rx="12" fill="#e1f2ec" stroke="none"/>
+<text x="44" y="280" font-size="16" font-weight="700" fill="#086754" text-anchor="start">Read and remember</text>
+<text x="44" y="305" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Current percepts, last action,</text>
+<text x="44" y="325" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">and raw observations relative</text>
+<text x="44" y="345" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">to the agent.</text>
+<path d="M320,300 L339,300" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M339,300 L332.0,304.0" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M339,300 L332.0,296.0" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<rect x="343" y="252" width="286" height="108" rx="12" fill="#e1f2ec" stroke="none"/>
+<text x="357" y="280" font-size="16" font-weight="700" fill="#086754" text-anchor="start">Score the commands</text>
+<text x="357" y="305" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Find matching conditions.</text>
+<text x="357" y="325" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Add their learned strengths</text>
+<text x="357" y="345" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">separately for each command.</text>
+<path d="M633,300 L652,300" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M652,300 L645.0,304.0" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M652,300 L645.0,296.0" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<rect x="656" y="252" width="286" height="108" rx="12" fill="#e1f2ec" stroke="none"/>
+<text x="670" y="280" font-size="16" font-weight="700" fill="#086754" text-anchor="start">Execute one command</text>
+<text x="670" y="305" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Take the highest score:</text>
+<text x="670" y="325" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">forward, turn left / right,</text>
+<text x="670" y="345" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">grab, shoot, or climb.</text>
+<rect x="30" y="376" width="912" height="27" rx="6" fill="#ffffff" stroke="none"/>
+<text x="41" y="394" font-size="14" font-weight="400" fill="#17333d" text-anchor="start">Illustration: two matching conditions contribute +35 and +12 to forward, for a combined score of +47.</text>
+</g></svg>

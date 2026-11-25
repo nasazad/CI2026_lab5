@@ -1,0 +1,360 @@
+{
+  "death": {
+    "cave_id": 11,
+    "gold": [
+      2,
+      1
+    ],
+    "wumpus": [
+      3,
+      1
+    ],
+    "pits": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "fixed_lcs": {
+      "outcome": "death",
+      "score": -1003,
+      "trace": [
+        {
+          "square": [
+            1,
+            1
+          ],
+          "heading": "east",
+          "messages": [
+            "at_start",
+            "facing_east",
+            "no_gold",
+            "x1",
+            "y1"
+          ],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "heading": "east",
+          "messages": [
+            "breeze",
+            "facing_east",
+            "glitter",
+            "no_gold",
+            "stench",
+            "x2",
+            "y1"
+          ],
+          "action": "turn_l",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "heading": "north",
+          "messages": [
+            "breeze",
+            "facing_north",
+            "glitter",
+            "no_gold",
+            "stench",
+            "x2",
+            "y1"
+          ],
+          "action": "fwd",
+          "reward": -1001
+        }
+      ],
+      "unmatched_messages": []
+    },
+    "randomized_baseline": {
+      "outcome": "gold",
+      "score": 994,
+      "trace": [
+        {
+          "square": [
+            1,
+            1
+          ],
+          "percepts": [
+            "at_start"
+          ],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "percepts": [
+            "breeze",
+            "glitter",
+            "stench"
+          ],
+          "action": "grab",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "percepts": [
+            "breeze",
+            "stench"
+          ],
+          "action": "turn_l",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "percepts": [
+            "breeze",
+            "stench"
+          ],
+          "action": "turn_l",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "percepts": [
+            "breeze",
+            "stench"
+          ],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            1,
+            1
+          ],
+          "percepts": [
+            "at_start"
+          ],
+          "action": "climb",
+          "reward": 999
+        }
+      ],
+      "unmatched_messages": []
+    }
+  },
+  "no_matching_action": {
+    "cave_id": 4,
+    "gold": [
+      3,
+      2
+    ],
+    "wumpus": [
+      1,
+      3
+    ],
+    "pits": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "fixed_lcs": {
+      "outcome": "no_matching_action",
+      "score": -1,
+      "trace": [
+        {
+          "square": [
+            1,
+            1
+          ],
+          "heading": "east",
+          "messages": [
+            "at_start",
+            "facing_east",
+            "no_gold",
+            "x1",
+            "y1"
+          ],
+          "action": "fwd",
+          "reward": -1
+        }
+      ],
+      "unmatched_messages": [
+        "facing_east",
+        "no_gold",
+        "x2",
+        "y1"
+      ]
+    },
+    "randomized_baseline": {
+      "outcome": "gold",
+      "score": 986,
+      "trace": [
+        {
+          "square": [
+            1,
+            1
+          ],
+          "percepts": [
+            "at_start"
+          ],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "percepts": [],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            3,
+            1
+          ],
+          "percepts": [],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            4,
+            1
+          ],
+          "percepts": [],
+          "action": "turn_l",
+          "reward": -1
+        },
+        {
+          "square": [
+            4,
+            1
+          ],
+          "percepts": [],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            4,
+            2
+          ],
+          "percepts": [
+            "breeze"
+          ],
+          "action": "turn_l",
+          "reward": -1
+        },
+        {
+          "square": [
+            4,
+            2
+          ],
+          "percepts": [
+            "breeze"
+          ],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            3,
+            2
+          ],
+          "percepts": [
+            "glitter"
+          ],
+          "action": "grab",
+          "reward": -1
+        },
+        {
+          "square": [
+            3,
+            2
+          ],
+          "percepts": [],
+          "action": "turn_l",
+          "reward": -1
+        },
+        {
+          "square": [
+            3,
+            2
+          ],
+          "percepts": [],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            3,
+            1
+          ],
+          "percepts": [],
+          "action": "turn_r",
+          "reward": -1
+        },
+        {
+          "square": [
+            3,
+            1
+          ],
+          "percepts": [],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            2,
+            1
+          ],
+          "percepts": [],
+          "action": "fwd",
+          "reward": -1
+        },
+        {
+          "square": [
+            1,
+            1
+          ],
+          "percepts": [
+            "at_start"
+          ],
+          "action": "climb",
+          "reward": 999
+        }
+      ],
+      "unmatched_messages": []
+    }
+  }
+}

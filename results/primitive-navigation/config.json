@@ -1,0 +1,48 @@
+{
+  "lcs_source_revision": "b0117d6eaa1b24580b930c29a6027a78d697ad99",
+  "notebook_revision": "6b19ce0e2d4279f2157217386e4730947a332ef9",
+  "python": "3.14.3",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "training_layout_seed_base": 7000,
+  "validation_seed": 1481,
+  "test_seed": 36001,
+  "validation_caves": 300,
+  "test_caves": 500,
+  "training_cap": 100,
+  "test_cap": 120,
+  "checkpoints": [
+    400,
+    1600,
+    5000,
+    10000
+  ],
+  "extension": [
+    {
+      "from": 10000,
+      "to": 25000,
+      "qualified": [],
+      "ran": false
+    }
+  ],
+  "final_budget": 10000,
+  "curriculum": {
+    "seed_base": 37400,
+    "adjacent_gold_episodes": 400,
+    "short_path_end": 1600,
+    "then": "same uniform layouts as controls"
+  },
+  "extension_rule": "Gold rate +2 pp and positive score change in aggregate, both gains in a majority of seeds.",
+  "stalled_timeout": "No new square reached in the last 30 actions of a timeout.",
+  "ga": false,
+  "lcs_hyperparameters": {
+    "beta": 0.5,
+    "gamma": 0.9,
+    "epsilon": 0.2
+  }
+}

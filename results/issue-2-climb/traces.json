@@ -1,0 +1,6810 @@
+{
+  "guard_still_times_out": {
+    "seed": 0,
+    "cave_id": 1,
+    "layout": [
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    ],
+    "policies": {
+      "relative_lcs": {
+        "outcome": "timeout",
+        "score": -120,
+        "trace": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          }
+        ],
+        "unmatched_messages": []
+      },
+      "relative_climb_guard": {
+        "outcome": "timeout",
+        "score": -120,
+        "trace": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          }
+        ],
+        "unmatched_messages": []
+      }
+    }
+  },
+  "guard_recovers_gold": {
+    "seed": 0,
+    "cave_id": 13,
+    "layout": [
+      [
+        2,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "policies": {
+      "relative_lcs": {
+        "outcome": "timeout",
+        "score": -120,
+        "trace": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "glitter",
+              "home_right",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_wall",
+              "home_right",
+              "no_gold"
+            ],
+            "action": "turn_r",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_ahead",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_ahead",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          }
+        ],
+        "unmatched_messages": []
+      },
+      "relative_climb_guard": {
+        "outcome": "gold",
+        "score": 994,
+        "trace": [
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "at_start",
+              "home_here",
+              "no_gold"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_behind",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "home_behind",
+              "no_gold"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "glitter",
+              "home_left",
+              "no_gold"
+            ],
+            "condition": [
+              "ahead_safe",
+              "glitter",
+              "home_left",
+              "no_gold"
+            ],
+            "action": "grab",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "has_gold",
+              "home_left"
+            ],
+            "condition": [
+              "ahead_safe",
+              "has_gold",
+              "home_left"
+            ],
+            "action": "turn_l",
+            "reward": -1
+          },
+          {
+            "square": [
+              2,
+              1
+            ],
+            "messages": [
+              "ahead_safe",
+              "has_gold",
+              "home_ahead"
+            ],
+            "condition": [
+              "ahead_safe",
+              "has_gold",
+              "home_ahead"
+            ],
+            "action": "fwd",
+            "reward": -1
+          },
+          {
+            "square": [
+              1,
+              1
+            ],
+            "messages": [
+              "ahead_wall",
+              "at_start",
+              "has_gold",
+              "home_here"
+            ],
+            "condition": [
+              "ahead_wall",
+              "at_start",
+              "has_gold",
+              "home_here"
+            ],
+            "action": "climb",
+            "reward": 999
+          }
+        ],
+        "unmatched_messages": []
+      }
+    }
+  }
+}
