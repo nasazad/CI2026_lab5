@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 335" role="img" aria-labelledby="title desc">
+<title id="title">Outcomes on the same 500 unseen caves</title>
+<desc id="desc">Stacked bars show gold exits, deaths, retreats, timeouts, and stops without a matching rule. The table in the report gives exact counts.</desc>
+<rect width="920" height="335" rx="14" fill="#f8fafc"/>
+<g font-family="system-ui, sans-serif" fill="#182737">
+<text x="24" y="36" font-size="24" font-weight="700">Fixed-map transfer to unseen caves</text>
+<text x="24" y="59" font-size="14">Same 500 caves per policy · shared simulator, 120-action cap · fixed LCS averaged over 10 seeds</text>
+<rect x="24" y="77" width="14" height="14" rx="2" fill="#207461"/>
+<text x="45" y="89" font-size="13">Gold</text>
+<rect x="135" y="77" width="14" height="14" rx="2" fill="#ae3d3a"/>
+<text x="156" y="89" font-size="13">Death</text>
+<rect x="254" y="77" width="14" height="14" rx="2" fill="#466e9e"/>
+<text x="275" y="89" font-size="13">Retreat</text>
+<rect x="369" y="77" width="14" height="14" rx="2" fill="#916100"/>
+<text x="390" y="89" font-size="13">Timeout</text>
+<rect x="496" y="77" width="14" height="14" rx="2" fill="#586471"/>
+<text x="517" y="89" font-size="13">No matching rule</text>
+<text x="864" y="100" text-anchor="middle" font-size="12">Mean score</text>
+<text x="24" y="140" font-size="15">Handwritten (fixed cave)</text>
+<rect x="236.00" y="116" width="56.83" height="36" fill="#207461"/>
+<text x="264.42" y="139" fill="white" font-size="13" font-weight="650" text-anchor="middle">9.6%</text>
+<rect x="292.83" y="116" width="427.42" height="36" fill="#ae3d3a"/>
+<text x="506.54" y="139" fill="white" font-size="13" font-weight="650" text-anchor="middle">72.2%</text>
+<rect x="720.26" y="116" width="107.74" height="36" fill="#916100"/>
+<text x="774.13" y="139" fill="white" font-size="13" font-weight="650" text-anchor="middle">18.2%</text>
+<text x="864" y="140" text-anchor="middle" font-size="15">-651.6</text>
+<text x="24" y="201" font-size="15">Learned LCS (fixed cave)</text>
+<rect x="236.00" y="177" width="5.92" height="36" fill="#207461"/>
+<rect x="241.92" y="177" width="266.40" height="36" fill="#ae3d3a"/>
+<text x="375.12" y="200" fill="white" font-size="13" font-weight="650" text-anchor="middle">45.0%</text>
+<rect x="508.32" y="177" width="319.68" height="36" fill="#586471"/>
+<text x="668.16" y="200" fill="white" font-size="13" font-weight="650" text-anchor="middle">54.0%</text>
+<text x="864" y="201" text-anchor="middle" font-size="15">-441.9</text>
+<text x="24" y="262" font-size="15">Randomized-cave baseline</text>
+<rect x="236.00" y="238" width="198.91" height="36" fill="#207461"/>
+<text x="335.46" y="261" fill="white" font-size="13" font-weight="650" text-anchor="middle">33.6%</text>
+<rect x="434.91" y="238" width="10.66" height="36" fill="#ae3d3a"/>
+<rect x="445.57" y="238" width="382.43" height="36" fill="#466e9e"/>
+<text x="636.78" y="261" fill="white" font-size="13" font-weight="650" text-anchor="middle">64.6%</text>
+<text x="864" y="262" text-anchor="middle" font-size="15">306.0</text>
+<text x="236" y="306" text-anchor="middle" font-size="12">0%</text>
+<text x="384" y="306" text-anchor="middle" font-size="12">25%</text>
+<text x="532" y="306" text-anchor="middle" font-size="12">50%</text>
+<text x="680" y="306" text-anchor="middle" font-size="12">75%</text>
+<text x="828" y="306" text-anchor="middle" font-size="12">100%</text>
+</g></svg>
