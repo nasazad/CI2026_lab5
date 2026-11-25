@@ -23,7 +23,7 @@ LCS is evaluated before optional GA compaction.
 See [`results/issue-5`](results/issue-5) for the configuration, exact cave
 layouts, per-policy and per-cave outcomes, representative traces, and chart.
 
-## Issue 2: randomized training
+## [Issue #7](https://github.com/nasazad/CI2026_lab5/issues/7): randomized training
 
 ```sh
 python -B -m unittest -v test_transfer test_randomized
