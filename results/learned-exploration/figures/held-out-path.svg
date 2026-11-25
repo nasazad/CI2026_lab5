@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500" role="img" aria-labelledby="title desc">
+<title id="title">A learned round trip on an unseen cave</title>
+<desc id="desc">Test cave 350, seed 0 · gold at (4,4) · 24 commands · +966 points</desc>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="980" height="500" rx="12" fill="#f5f8f8" stroke="none"/>
+<text x="30" y="45" font-size="26" font-weight="700" fill="#17333d" text-anchor="start">A learned round trip on an unseen cave</text>
+<text x="30" y="71" font-size="15" font-weight="400" fill="#496570" text-anchor="start">Test cave 350, seed 0 · gold at (4,4) · 24 commands · +966 points</text>
+<rect x="30" y="91" width="440" height="335" rx="12" fill="#ffffff" stroke="none"/>
+<text x="44" y="119" font-size="16" font-weight="700" fill="#17333d" text-anchor="start">1  Explore and grab</text>
+<rect x="116.5" y="314.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="173.5" y="314.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="230.5" y="314.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="257.5" y="347.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">P</text>
+<rect x="287.5" y="314.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="314.5" y="347.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">P</text>
+<text x="103" y="346.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">1</text>
+<rect x="116.5" y="257.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="173.5" y="257.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="200.5" y="290.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">W</text>
+<rect x="230.5" y="257.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="287.5" y="257.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="314.5" y="290.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">P</text>
+<text x="103" y="289.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">2</text>
+<rect x="116.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="173.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="230.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="287.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<text x="103" y="232.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">3</text>
+<rect x="116.5" y="143.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="173.5" y="143.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="230.5" y="143.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="287.5" y="143.5" width="54" height="54" rx="4" fill="#faeed4" stroke="#cddadd"/>
+<text x="103" y="175.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">4</text>
+<text x="143.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">1</text>
+<text x="200.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">2</text>
+<text x="257.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">3</text>
+<text x="314.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">4</text>
+<path d="M156.5,349.5 L187.5,349.5" fill="none" stroke="#a26816" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="4 3"/>
+<path d="M187.5,349.5 L180.5,353.5" fill="none" stroke="#a26816" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M187.5,349.5 L180.5,345.5" fill="none" stroke="#a26816" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M187.5,333.5 L156.5,333.5" fill="none" stroke="#a26816" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="4 3"/>
+<path d="M156.5,333.5 L163.5,329.5" fill="none" stroke="#a26816" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M156.5,333.5 L163.5,337.5" fill="none" stroke="#a26816" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,328.5 L143.5,297.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,297.5 L147.5,304.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,297.5 L139.5,304.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,271.5 L143.5,240.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,240.5 L147.5,247.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,240.5 L139.5,247.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,214.5 L143.5,183.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,183.5 L147.5,190.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M143.5,183.5 L139.5,190.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M156.5,170.5 L187.5,170.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M187.5,170.5 L180.5,174.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M187.5,170.5 L180.5,166.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M213.5,170.5 L244.5,170.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M244.5,170.5 L237.5,174.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M244.5,170.5 L237.5,166.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M270.5,170.5 L301.5,170.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M301.5,170.5 L294.5,174.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M301.5,170.5 L294.5,166.5" fill="none" stroke="#086754" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<circle cx="143.5" cy="341.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="143.5" cy="284.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="143.5" cy="227.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="143.5" cy="170.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="200.5" cy="341.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="200.5" cy="170.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="257.5" cy="170.5" r="4" fill="#086754" stroke="#ffffff"/>
+<circle cx="314.5" cy="170.5" r="4" fill="#086754" stroke="#ffffff"/>
+<text x="143.5" y="361.5" font-size="12" font-weight="700" fill="#17333d" text-anchor="middle">Start</text>
+<text x="314.5" y="163.5" font-size="12" font-weight="700" fill="#a26816" text-anchor="middle">Gold</text>
+<text x="46" y="408" font-size="13" font-weight="400" fill="#496570" text-anchor="start">The dashed arrows show an initial backtrack.</text>
+<rect x="507" y="91" width="440" height="335" rx="12" fill="#ffffff" stroke="none"/>
+<text x="521" y="119" font-size="16" font-weight="700" fill="#17333d" text-anchor="start">2  Return and climb</text>
+<rect x="593.5" y="314.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="650.5" y="314.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="707.5" y="314.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="734.5" y="347.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">P</text>
+<rect x="764.5" y="314.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="791.5" y="347.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">P</text>
+<text x="580" y="346.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">1</text>
+<rect x="593.5" y="257.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="650.5" y="257.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="677.5" y="290.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">W</text>
+<rect x="707.5" y="257.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="764.5" y="257.5" width="54" height="54" rx="4" fill="#f8e8e4" stroke="#cddadd"/>
+<text x="791.5" y="290.5" font-size="16" font-weight="700" fill="#913f3a" text-anchor="middle">P</text>
+<text x="580" y="289.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">2</text>
+<rect x="593.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="650.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="707.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="764.5" y="200.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<text x="580" y="232.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">3</text>
+<rect x="593.5" y="143.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="650.5" y="143.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="707.5" y="143.5" width="54" height="54" rx="4" fill="#f5f8f8" stroke="#cddadd"/>
+<rect x="764.5" y="143.5" width="54" height="54" rx="4" fill="#faeed4" stroke="#cddadd"/>
+<text x="580" y="175.5" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">4</text>
+<text x="620.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">1</text>
+<text x="677.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">2</text>
+<text x="734.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">3</text>
+<text x="791.5" y="388" font-size="12" font-weight="400" fill="#496570" text-anchor="middle">4</text>
+<path d="M778.5,170.5 L747.5,170.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M747.5,170.5 L754.5,166.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M747.5,170.5 L754.5,174.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M721.5,170.5 L690.5,170.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M690.5,170.5 L697.5,166.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M690.5,170.5 L697.5,174.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M664.5,170.5 L633.5,170.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M633.5,170.5 L640.5,166.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M633.5,170.5 L640.5,174.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,183.5 L620.5,214.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,214.5 L616.5,207.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,214.5 L624.5,207.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,240.5 L620.5,271.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,271.5 L616.5,264.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,271.5 L624.5,264.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,297.5 L620.5,328.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,328.5 L616.5,321.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<path d="M620.5,328.5 L624.5,321.5" fill="none" stroke="#345b85" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="none"/>
+<circle cx="620.5" cy="341.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<circle cx="620.5" cy="284.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<circle cx="620.5" cy="227.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<circle cx="620.5" cy="170.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<circle cx="677.5" cy="170.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<circle cx="734.5" cy="170.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<circle cx="791.5" cy="170.5" r="4" fill="#345b85" stroke="#ffffff"/>
+<text x="620.5" y="361.5" font-size="12" font-weight="700" fill="#17333d" text-anchor="middle">Start</text>
+<text x="791.5" y="163.5" font-size="12" font-weight="700" fill="#a26816" text-anchor="middle">Gold</text>
+<text x="523" y="408" font-size="13" font-weight="400" fill="#496570" text-anchor="start">The return follows the top and left edges.</text>
+<text x="30" y="454" font-size="14" font-weight="400" fill="#496570" text-anchor="start">P = pit · W = Wumpus. Hazards are shown for the reader only; the LCS did not see the map.</text>
+<text x="30" y="477" font-size="13" font-weight="400" fill="#496570" text-anchor="start">Arrows show square changes only; the score also includes turns, grabbing, firing one arrow, and climbing.</text>
+</g></svg>

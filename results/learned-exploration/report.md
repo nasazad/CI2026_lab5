@@ -4,6 +4,8 @@
 
 The selected LCS averages the strengths of matching condition–action rules from three independently trained models. At inference this is **one frozen rule table**, choosing one of the original six commands. It does not invoke a path planner, receive computed safety or home directions, mask actions, or read the hidden cave. The individual models learn from raw observations and their own actions; no expert path was supplied.
 
+![Workflow for training three rule tables and using one merged table to choose a command](figures/workflow.png)
+
 ## Held-out comparison
 
 Every row uses the same 2,000 distinct held-out layouts, with five paired training seeds. Outcomes use the original reward and a fixed 120-action cap. Non-adjacent means at least two Manhattan steps from the entrance (1,724 layouts).
@@ -16,6 +18,8 @@ Every row uses the same 2,000 distinct held-out layouts, with five paired traini
 | Three averaged LCSs, ordinary success replay | 32.66% | 25.58% | +254.72 | 3.51% | 21.60% |
 | **Three averaged LCSs, clean self-imitation** | **34.76%** | **27.81%** | **+284.49** | **2.97%** | **17.93%** |
 | Notebook with planner | 35.45% | 29.41% | +327.90 | 1.55% | 0.00% |
+
+![Bar chart comparing gold returns and mean score on the same 2,000 unseen layouts](figures/held-out-results.png)
 
 The paired 95% bootstrap interval for the LCS-minus-notebook gold difference (**−0.69 percentage points**) is **[−2.50, +1.25] pp**. The estimate is close; this is not a formal equivalence result. The score gap is clear: **−43.41**, 95% interval **[−61.83, −25.23]**. The bootstrap pairs policies on every seed and cave and resamples those two axes independently.
 
@@ -35,5 +39,7 @@ Once it picked up the gold, the selected policy returned it on **3,476 of 3,499 
 For one concrete held-out example, seed 0 reached the gold at `(4,4)` on
 cave 350 and returned in **24 actions for +966**. Each of the five seeds
 has a recorded successful held-out trace with gold at `(4,4)`.
+
+![Actual outbound and return paths of the learned agent on held-out cave 350](figures/held-out-path.png)
 
 [Per-cave outcomes](final/test-episodes.csv) · [Paired confidence intervals](final/paired-bootstrap.json) · [Held-out trajectories](final/traces.json) · [Exact-action control](matched-actions/validation.csv)

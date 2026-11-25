@@ -140,6 +140,7 @@ python -B -m unittest -v test_transfer test_randomized test_navigation test_shar
 python -B benchmark_rule_search.py --split progress --profiles replay_wide notebook low_clean low_ensemble3 clean_ensemble3 --checkpoints 16000 --budget replay_wide=5000 --budget low_clean=10000 --test --output results/learned-exploration/final
 python -B benchmark_rule_search.py --split progress --profiles low_clean --checkpoints 70000 --match-training-actions results/learned-exploration/final/validation.csv --test --output results/learned-exploration/matched-actions
 python -B paired_wumpus.py results/learned-exploration/final/test-episodes.csv clean_ensemble3 notebook
+python -B render_exploration_figures.py
 ```
 
 See the [results summary](results/learned-exploration/report.md) for the

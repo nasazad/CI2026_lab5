@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="365" viewBox="0 0 980 365" role="img" aria-labelledby="title desc">
+<title id="title">Close in gold returns; a gap in total score</title>
+<desc id="desc">2,000 unseen layouts × five seeds · original rewards · 120-action cap</desc>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="980" height="365" rx="12" fill="#f5f8f8" stroke="none"/>
+<text x="30" y="45" font-size="26" font-weight="700" fill="#17333d" text-anchor="start">Close in gold returns; a gap in total score</text>
+<text x="30" y="71" font-size="15" font-weight="400" fill="#496570" text-anchor="start">2,000 unseen layouts × five seeds · original rewards · 120-action cap</text>
+<text x="323" y="110" font-size="17" font-weight="700" fill="#17333d" text-anchor="start">Gold returned</text>
+<path d="M323.0,126 L323.0,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="323.0" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">0%</text>
+<path d="M385.5,126 L385.5,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="385.5" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">10%</text>
+<path d="M448.0,126 L448.0,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="448.0" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">20%</text>
+<path d="M510.5,126 L510.5,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="510.5" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">30%</text>
+<path d="M573.0,126 L573.0,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="573.0" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">40%</text>
+<text x="647" y="110" font-size="17" font-weight="700" fill="#17333d" text-anchor="start">Mean score</text>
+<path d="M647.0,126 L647.0,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="647.0" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">0</text>
+<path d="M681.8571428571429,126 L681.8571428571429,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="681.86" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">50</text>
+<path d="M716.7142857142857,126 L716.7142857142857,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="716.71" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">100</text>
+<path d="M751.5714285714286,126 L751.5714285714286,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="751.57" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">150</text>
+<path d="M786.4285714285714,126 L786.4285714285714,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="786.43" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">200</text>
+<path d="M821.2857142857142,126 L821.2857142857142,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="821.29" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">250</text>
+<path d="M856.1428571428571,126 L856.1428571428571,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="856.14" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">300</text>
+<path d="M891.0,126 L891.0,290" fill="none" stroke="#cddadd" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="891.0" y="302" font-size="11" font-weight="400" fill="#496570" text-anchor="middle">350</text>
+<text x="33" y="150" font-size="15" font-weight="400" fill="#17333d" text-anchor="start">Previous primitive LCS</text>
+<rect x="323" y="133" width="100.94" height="23" rx="4" fill="#8498a0" stroke="none"/>
+<text x="431.94" y="149" font-size="14" font-weight="700" fill="#17333d" text-anchor="start">16.15%</text>
+<rect x="647" y="133" width="59.57" height="23" rx="4" fill="#8498a0" stroke="none"/>
+<text x="714.57" y="149" font-size="14" font-weight="700" fill="#17333d" text-anchor="start">+85.45</text>
+<text x="33" y="192" font-size="15" font-weight="400" fill="#17333d" text-anchor="start">Single LCS, matched training actions</text>
+<rect x="323" y="175" width="201.81" height="23" rx="4" fill="#60788b" stroke="none"/>
+<text x="532.81" y="191" font-size="14" font-weight="700" fill="#17333d" text-anchor="start">32.29%</text>
+<rect x="647" y="175" width="166.91" height="23" rx="4" fill="#60788b" stroke="none"/>
+<text x="821.91" y="191" font-size="14" font-weight="700" fill="#17333d" text-anchor="start">+239.42</text>
+<text x="33" y="234" font-size="15" font-weight="700" fill="#17333d" text-anchor="start">Averaged learned LCS</text>
+<rect x="323" y="217" width="217.25" height="23" rx="4" fill="#086754" stroke="none"/>
+<text x="548.25" y="233" font-size="14" font-weight="700" fill="#086754" text-anchor="start">34.76%</text>
+<rect x="647" y="217" width="198.33" height="23" rx="4" fill="#086754" stroke="none"/>
+<text x="853.33" y="233" font-size="14" font-weight="700" fill="#086754" text-anchor="start">+284.49</text>
+<text x="33" y="276" font-size="15" font-weight="700" fill="#17333d" text-anchor="start">Notebook with planner</text>
+<rect x="323" y="259" width="221.56" height="23" rx="4" fill="#345b85" stroke="none"/>
+<text x="552.56" y="275" font-size="14" font-weight="700" fill="#345b85" text-anchor="start">35.45%</text>
+<rect x="647" y="259" width="228.6" height="23" rx="4" fill="#345b85" stroke="none"/>
+<text x="883.6" y="275" font-size="14" font-weight="700" fill="#345b85" text-anchor="start">+327.90</text>
+<path d="M30,308 L949,308" fill="none" stroke="#cddadd" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="none"/>
+<text x="30" y="332" font-size="14" font-weight="400" fill="#496570" text-anchor="start">The averaged LCS still timed out in 17.93% of runs; the planner never timed out on this test.</text>
+</g></svg>
