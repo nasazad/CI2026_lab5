@@ -1,0 +1,141 @@
+{
+  "original": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 687,
+      "gold → gold": 6176,
+      "retreat → retreat": 9038,
+      "timeout → death": 57,
+      "timeout → gold": 273,
+      "timeout → retreat": 3393,
+      "timeout → timeout": 376
+    },
+    "score_delta_components": {
+      "gold": 13.65,
+      "deaths": -2.85,
+      "steps": 13.8047,
+      "arrow": -0.181
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": 0.01365,
+        "lo": 0.0085,
+        "hi": 0.0196
+      },
+      "death_rate": {
+        "delta": 0.00285,
+        "lo": 0.00144875,
+        "hi": 0.004700000000000001
+      },
+      "timeout_rate": {
+        "delta": -0.18615,
+        "lo": -0.21935624999999997,
+        "hi": -0.15784625
+      },
+      "mean_score": {
+        "delta": 24.4237,
+        "lo": 19.04066375,
+        "hi": 31.15771375
+      }
+    }
+  },
+  "cautious_adaptive": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 688,
+      "death → gold": 5,
+      "death → retreat": 1,
+      "death → timeout": 1,
+      "gold → death": 1,
+      "gold → gold": 6209,
+      "gold → timeout": 4,
+      "retreat → death": 50,
+      "retreat → gold": 213,
+      "retreat → retreat": 12405,
+      "retreat → timeout": 227,
+      "timeout → death": 5,
+      "timeout → gold": 22,
+      "timeout → retreat": 25,
+      "timeout → timeout": 144
+    },
+    "score_delta_components": {
+      "gold": 11.75,
+      "deaths": -2.45,
+      "steps": -1.01345,
+      "arrow": -0.0065
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": 0.01175,
+        "lo": 0.007350000000000001,
+        "hi": 0.017
+      },
+      "death_rate": {
+        "delta": 0.00245,
+        "lo": 0.0010500000000000002,
+        "hi": 0.00425
+      },
+      "timeout_rate": {
+        "delta": 0.009,
+        "lo": 0.0045,
+        "hi": 0.014599999999999998
+      },
+      "mean_score": {
+        "delta": 8.28005,
+        "lo": 4.2677724999999995,
+        "hi": 13.07255125
+      }
+    }
+  },
+  "notebook": {
+    "reference_to_candidate_outcomes": {
+      "death → death": 14,
+      "death → gold": 12,
+      "death → retreat": 326,
+      "death → timeout": 48,
+      "gold → death": 81,
+      "gold → gold": 4976,
+      "gold → retreat": 1043,
+      "gold → timeout": 160,
+      "retreat → death": 649,
+      "retreat → gold": 1461,
+      "retreat → retreat": 11062,
+      "retreat → timeout": 168
+    },
+    "score_delta_components": {
+      "gold": 9.45,
+      "deaths": -17.2,
+      "steps": -8.7366,
+      "arrow": -3.598
+    },
+    "paired_intervals": {
+      "n_seeds": 10,
+      "n_caves": 2000,
+      "replicates": 2000,
+      "gold_rate": {
+        "delta": 0.00945,
+        "lo": -0.009900000000000003,
+        "hi": 0.02705125
+      },
+      "death_rate": {
+        "delta": 0.0172,
+        "lo": 0.00019875,
+        "hi": 0.0338
+      },
+      "timeout_rate": {
+        "delta": 0.0188,
+        "lo": 0.01295,
+        "hi": 0.025601250000000002
+      },
+      "mean_score": {
+        "delta": -20.0846,
+        "lo": -37.868860000000005,
+        "hi": -2.2629762500000004
+      }
+    }
+  }
+}

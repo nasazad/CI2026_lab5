@@ -146,3 +146,28 @@ python -B render_exploration_figures.py
 See the [results summary](results/learned-exploration/report.md) for the
 held-out comparison, action-matched control, paired confidence intervals,
 and a trace showing return from a previously unseen cave.
+
+## Follow-up: diagnose and recover from exact cycles
+
+The [timeout study](results/timeout-recovery/experiment-log.md) certifies
+which published timeouts are deterministic cycles, then compares recovery
+rules and candidate LCS improvements on a new split. The [report](results/timeout-recovery/report.md)
+summarizes the frozen held-out results. Recovery uses the original six
+commands and rewards; the baseline acts unchanged until an exact repeat
+of the agent's own recorded state.
+
+```sh
+python -B timeout_diagnostics.py --output results/timeout-recovery/diagnosis
+python -B benchmark_timeout_recovery.py --profiles cautious risk --readouts adaptive \
+  --report cautious_adaptive router_30 --seeds 0 1 2 3 4 5 6 7 8 9 \
+  --episodes 18000 --router-episodes 16000 --notebook-control --test \
+  --output results/timeout-recovery/final-corrected
+python -B benchmark_timeout_recovery.py --base-profile smooth --profiles cautious \
+  --readouts adaptive --report cautious_adaptive --seeds 0 1 2 3 4 5 6 7 8 9 --episodes 18000 \
+  --notebook-control --test --output results/timeout-recovery/final-smooth
+python -B analyze_timeout_recovery.py results/timeout-recovery/final-corrected/episodes.csv \
+  cautious_adaptive original notebook
+```
+
+Omit `--test` for validation. Both runners accept `--notebook /path/to/Wumpus_World.ipynb`
+to use the pinned notebook offline.

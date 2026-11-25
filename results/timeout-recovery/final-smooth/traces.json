@@ -1,0 +1,9514 @@
+{
+  "cautious_adaptive:0": {
+    "cave_id": 1428,
+    "outcome": "gold",
+    "score": 913,
+    "actions": 77,
+    "picked_gold": 1,
+    "distinct_cells": 10,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 3,
+    "activated_at": 52,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -57.03,
+          "turn_l": -195.47,
+          "turn_r": 9.36,
+          "grab": -86.04,
+          "shoot": 453.0,
+          "climb": -1.05
+        },
+        "reward": -11
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "scream"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 343.54,
+          "turn_l": 481.44,
+          "turn_r": 385.85,
+          "grab": 410.08,
+          "shoot": 435.96,
+          "climb": -0.97
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 563.54,
+          "turn_l": 365.78,
+          "turn_r": 333.97,
+          "grab": 426.27,
+          "shoot": 435.66,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -48.55,
+          "turn_l": 339.3,
+          "turn_r": 353.27,
+          "grab": 298.07,
+          "shoot": 296.18,
+          "climb": 241.53
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -49.99,
+          "turn_l": 122.28,
+          "turn_r": 307.6,
+          "grab": 223.34,
+          "shoot": 226.01,
+          "climb": 231.63
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 337.0,
+          "turn_l": 145.65,
+          "turn_r": 141.97,
+          "grab": 268.16,
+          "shoot": 259.42,
+          "climb": 317.79
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 403.91,
+          "turn_l": 382.71,
+          "turn_r": 362.64,
+          "grab": 365.63,
+          "shoot": 210.11,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 83.33,
+          "turn_l": 339.01,
+          "turn_r": 393.97,
+          "grab": 233.06,
+          "shoot": 204.98,
+          "climb": -1.04
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 445.59,
+          "turn_l": 152.0,
+          "turn_r": 206.05,
+          "grab": 312.89,
+          "shoot": 221.48,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 76.7,
+          "turn_l": 122.51,
+          "turn_r": 302.67,
+          "grab": 6.92,
+          "shoot": 113.2,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 176.49,
+          "turn_l": 199.01,
+          "turn_r": 279.67,
+          "grab": 177.87,
+          "shoot": 171.71,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 326.74,
+          "turn_l": 211.95,
+          "turn_r": 179.63,
+          "grab": 229.55,
+          "shoot": 135.56,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 495.42,
+          "turn_l": 543.47,
+          "turn_r": 388.15,
+          "grab": 487.31,
+          "shoot": 423.87,
+          "climb": 476.59
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 520.0,
+          "turn_l": 254.97,
+          "turn_r": 254.79,
+          "grab": 356.23,
+          "shoot": 313.36,
+          "climb": 402.32
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 597.09,
+          "turn_l": 336.06,
+          "turn_r": 411.44,
+          "grab": 392.82,
+          "shoot": 356.96,
+          "climb": 436.71
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 13.06,
+          "turn_l": 272.93,
+          "turn_r": 333.64,
+          "grab": 270.33,
+          "shoot": 203.91,
+          "climb": 306.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 77.03,
+          "turn_l": 141.79,
+          "turn_r": 324.14,
+          "grab": 236.76,
+          "shoot": 217.45,
+          "climb": 229.33
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 308.8,
+          "turn_l": 116.98,
+          "turn_r": 59.32,
+          "grab": 248.07,
+          "shoot": 118.56,
+          "climb": 255.36
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 276.8,
+          "turn_l": 368.31,
+          "turn_r": 349.68,
+          "grab": 163.74,
+          "shoot": 344.92,
+          "climb": 319.81
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 454.08,
+          "turn_l": 155.75,
+          "turn_r": 85.94,
+          "grab": 166.52,
+          "shoot": 126.8,
+          "climb": 251.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 455.98,
+          "turn_l": 521.39,
+          "turn_r": 337.78,
+          "grab": 397.39,
+          "shoot": 389.64,
+          "climb": 408.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 608.44,
+          "turn_l": 251.65,
+          "turn_r": 238.06,
+          "grab": 425.22,
+          "shoot": 294.04,
+          "climb": 402.5
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -299.26,
+          "turn_l": 196.43,
+          "turn_r": 52.12,
+          "grab": 45.1,
+          "shoot": -85.55,
+          "climb": -28.19
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -127.89,
+          "turn_l": 186.67,
+          "turn_r": -51.57,
+          "grab": 63.12,
+          "shoot": 17.13,
+          "climb": 22.94
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 165.18,
+          "turn_l": -155.21,
+          "turn_r": -64.85,
+          "grab": 42.51,
+          "shoot": -35.9,
+          "climb": 55.38
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 272.39,
+          "turn_l": 241.97,
+          "turn_r": 345.95,
+          "grab": 206.63,
+          "shoot": 212.01,
+          "climb": 329.23
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 415.46,
+          "turn_l": 66.83,
+          "turn_r": 105.06,
+          "grab": 166.61,
+          "shoot": 149.65,
+          "climb": 110.84
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 127.81,
+          "turn_l": 173.25,
+          "turn_r": 291.9,
+          "grab": 194.31,
+          "shoot": 183.89,
+          "climb": 269.88
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 180.43,
+          "turn_l": 78.43,
+          "turn_r": 211.79,
+          "grab": 64.85,
+          "shoot": 47.92,
+          "climb": 152.55
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 341.2,
+          "turn_l": 58.88,
+          "turn_r": 139.05,
+          "grab": 91.03,
+          "shoot": 75.45,
+          "climb": 196.38
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 330.13,
+          "turn_l": 197.49,
+          "turn_r": 105.4,
+          "grab": 126.59,
+          "shoot": 149.18,
+          "climb": 222.2
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -43.96,
+          "turn_l": 8.07,
+          "turn_r": 217.31,
+          "grab": 173.35,
+          "shoot": 75.88,
+          "climb": 222.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -13.57,
+          "turn_l": 27.69,
+          "turn_r": 175.5,
+          "grab": 19.24,
+          "shoot": -22.69,
+          "climb": -26.47
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 63.01,
+          "turn_l": 17.98,
+          "turn_r": 127.99,
+          "grab": 145.34,
+          "shoot": 187.12,
+          "climb": 179.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 75.45,
+          "turn_l": 4.46,
+          "turn_r": 125.51,
+          "grab": -23.14,
+          "shoot": -16.61,
+          "climb": 41.28
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 240.38,
+          "turn_l": 100.76,
+          "turn_r": -106.6,
+          "grab": 140.29,
+          "shoot": 60.21,
+          "climb": 213.83
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 160.04,
+          "turn_l": 170.34,
+          "turn_r": 116.0,
+          "grab": 87.74,
+          "shoot": 153.71,
+          "climb": 197.8
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 158.18,
+          "turn_l": 161.21,
+          "turn_r": 91.98,
+          "grab": -29.98,
+          "shoot": 96.67,
+          "climb": -24.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 102.88,
+          "turn_l": -77.14,
+          "turn_r": 69.15,
+          "grab": 41.63,
+          "shoot": -42.15,
+          "climb": 125.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 106.24,
+          "turn_l": -24.37,
+          "turn_r": 209.77,
+          "grab": 13.71,
+          "shoot": -45.58,
+          "climb": 30.66
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 175.78,
+          "turn_l": 63.46,
+          "turn_r": 55.02,
+          "grab": 50.75,
+          "shoot": 127.75,
+          "climb": 80.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 40.58,
+          "turn_l": 124.85,
+          "turn_r": 253.68,
+          "grab": 142.27,
+          "shoot": 135.67,
+          "climb": 218.02
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 112.76,
+          "turn_l": 20.94,
+          "turn_r": 173.2,
+          "grab": 41.47,
+          "shoot": 14.63,
+          "climb": 119.73
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 266.48,
+          "turn_l": 38.27,
+          "turn_r": 107.07,
+          "grab": 46.19,
+          "shoot": 53.09,
+          "climb": 159.62
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -66.07,
+          "turn_l": 108.59,
+          "turn_r": 72.32,
+          "grab": -96.39,
+          "shoot": -8.0,
+          "climb": 89.51
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 102.57,
+          "turn_l": -10.35,
+          "turn_r": -157.13,
+          "grab": 72.15,
+          "shoot": -29.28,
+          "climb": 23.87
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -272.03,
+          "turn_l": 47.06,
+          "turn_r": -207.0,
+          "grab": -87.47,
+          "shoot": -234.87,
+          "climb": -145.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -106.67,
+          "turn_l": -76.18,
+          "turn_r": -269.44,
+          "grab": -85.73,
+          "shoot": -125.04,
+          "climb": -116.33
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -133.98,
+          "turn_l": -363.8,
+          "turn_r": -173.29,
+          "grab": -108.31,
+          "shoot": -237.48,
+          "climb": -114.88
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -109.22,
+          "turn_l": -327.78,
+          "turn_r": -96.11,
+          "grab": -225.17,
+          "shoot": -246.3,
+          "climb": -148.4
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -135.91,
+          "turn_l": -70.38,
+          "turn_r": -237.07,
+          "grab": -91.72,
+          "shoot": -111.28,
+          "climb": -97.18
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -79.99,
+          "turn_l": -249.2,
+          "turn_r": -171.46,
+          "grab": -359.19,
+          "shoot": -272.04,
+          "climb": -206.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -76.22,
+          "turn_l": -119.67,
+          "turn_r": -278.14,
+          "grab": -129.65,
+          "shoot": 16.34,
+          "climb": -144.1
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -6.81,
+          "turn_l": -133.06,
+          "turn_r": -245.71,
+          "grab": -136.16,
+          "shoot": -35.57,
+          "climb": -142.2
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -75.39,
+          "turn_l": 41.32,
+          "turn_r": -118.85,
+          "grab": -66.54,
+          "shoot": -33.19,
+          "climb": -107.71
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 8.29,
+          "turn_l": -78.83,
+          "turn_r": -93.63,
+          "grab": -39.46,
+          "shoot": -82.03,
+          "climb": -121.93
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 266.64,
+          "turn_l": 311.95,
+          "turn_r": 154.77,
+          "grab": 276.09,
+          "shoot": 511.42,
+          "climb": 305.13
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 315.35,
+          "turn_r": 132.26,
+          "grab": 322.41,
+          "shoot": 514.58,
+          "climb": 297.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 313.94,
+          "turn_r": 121.21,
+          "grab": 326.74,
+          "shoot": 506.51,
+          "climb": 298.98
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 313.94,
+          "turn_r": 121.21,
+          "grab": 326.74,
+          "shoot": 507.05,
+          "climb": 300.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 317.93,
+          "turn_r": 115.7,
+          "grab": 318.45,
+          "shoot": 503.07,
+          "climb": 304.75
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 319.95,
+          "turn_r": 121.33,
+          "grab": 316.55,
+          "shoot": 505.0,
+          "climb": 300.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 319.95,
+          "turn_r": 121.33,
+          "grab": 316.55,
+          "shoot": 505.0,
+          "climb": 300.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 251.48,
+          "turn_l": 305.53,
+          "turn_r": 123.15,
+          "grab": 303.95,
+          "shoot": 503.84,
+          "climb": 288.61
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 321.94,
+          "turn_r": 121.33,
+          "grab": 316.55,
+          "shoot": 502.27,
+          "climb": 300.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 251.48,
+          "turn_l": 301.15,
+          "turn_r": 100.91,
+          "grab": 310.8,
+          "shoot": 497.16,
+          "climb": 288.61
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 318.79,
+          "turn_r": 109.03,
+          "grab": 318.66,
+          "shoot": 513.48,
+          "climb": 297.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 316.8,
+          "turn_r": 109.03,
+          "grab": 318.66,
+          "shoot": 513.48,
+          "climb": 297.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 319.84,
+          "turn_r": 113.69,
+          "grab": 318.66,
+          "shoot": 522.48,
+          "climb": 297.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 250.05,
+          "turn_l": 319.84,
+          "turn_r": 113.69,
+          "grab": 318.66,
+          "shoot": 522.48,
+          "climb": 297.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 543.13,
+          "turn_l": 163.55,
+          "turn_r": 419.97,
+          "grab": 114.61,
+          "shoot": 180.18,
+          "climb": 269.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 285.31,
+          "turn_l": 210.32,
+          "turn_r": 417.42,
+          "grab": 106.53,
+          "shoot": 150.74,
+          "climb": 141.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 480.15,
+          "turn_l": 194.67,
+          "turn_r": 512.86,
+          "grab": 134.72,
+          "shoot": 205.81,
+          "climb": 280.34
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 631.56,
+          "turn_l": 192.35,
+          "turn_r": 355.63,
+          "grab": 235.84,
+          "shoot": 119.45,
+          "climb": 249.38
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 875.48,
+          "turn_l": 243.64,
+          "turn_r": 553.73,
+          "grab": 298.16,
+          "shoot": 272.36,
+          "climb": 332.83
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 884.61,
+          "turn_l": 263.92,
+          "turn_r": 546.46,
+          "grab": 294.99,
+          "shoot": 269.16,
+          "climb": 340.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 440.82,
+          "turn_l": 411.88,
+          "turn_r": 378.87,
+          "grab": 410.86,
+          "shoot": 415.69,
+          "climb": 818.83
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "shoot",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "climb",
+      "turn_r",
+      "shoot",
+      "turn_r",
+      "fwd",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l",
+      "grab",
+      "turn_r",
+      "turn_l"
+    ]
+  },
+  "cautious_adaptive:1": {
+    "cave_id": 1484,
+    "outcome": "gold",
+    "score": 960,
+    "actions": 30,
+    "picked_gold": 1,
+    "distinct_cells": 8,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 1,
+    "activated_at": 20,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 634.75,
+          "turn_l": 402.31,
+          "turn_r": 437.74,
+          "grab": 575.95,
+          "shoot": 506.6,
+          "climb": -0.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 91.2,
+          "turn_l": 159.33,
+          "turn_r": 141.19,
+          "grab": 145.22,
+          "shoot": 435.62,
+          "climb": 185.4
+        },
+        "reward": -11
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "scream"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 501.61,
+          "turn_l": 406.92,
+          "turn_r": 324.63,
+          "grab": 483.51,
+          "shoot": 477.76,
+          "climb": 299.26
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 140.57,
+          "turn_l": 457.33,
+          "turn_r": 531.29,
+          "grab": 328.31,
+          "shoot": 261.41,
+          "climb": 277.76
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 111.03,
+          "turn_l": 163.03,
+          "turn_r": 563.03,
+          "grab": 310.78,
+          "shoot": 248.7,
+          "climb": 232.79
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 580.99,
+          "turn_l": 159.73,
+          "turn_r": 283.53,
+          "grab": 380.7,
+          "shoot": 295.09,
+          "climb": 340.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 507.78,
+          "turn_l": 425.71,
+          "turn_r": 560.0,
+          "grab": 412.55,
+          "shoot": 403.22,
+          "climb": 460.74
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 608.09,
+          "turn_l": 197.7,
+          "turn_r": 215.65,
+          "grab": 452.9,
+          "shoot": 384.3,
+          "climb": 271.21
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 621.22,
+          "turn_l": 505.74,
+          "turn_r": 596.28,
+          "grab": 494.38,
+          "shoot": 432.1,
+          "climb": 486.38
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 286.94,
+          "turn_l": 473.52,
+          "turn_r": 465.93,
+          "grab": 331.7,
+          "shoot": 257.37,
+          "climb": 356.65
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 335.38,
+          "turn_l": 427.77,
+          "turn_r": 336.31,
+          "grab": 440.63,
+          "shoot": 334.08,
+          "climb": 208.59
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 236.26,
+          "turn_l": 402.96,
+          "turn_r": 347.76,
+          "grab": 228.18,
+          "shoot": 255.43,
+          "climb": 145.03
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 561.26,
+          "turn_l": 185.73,
+          "turn_r": 159.28,
+          "grab": 416.76,
+          "shoot": 328.51,
+          "climb": 359.09
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 414.42,
+          "turn_l": 598.34,
+          "turn_r": 512.48,
+          "grab": 358.64,
+          "shoot": 361.96,
+          "climb": 492.78
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 629.08,
+          "turn_l": 299.76,
+          "turn_r": 85.1,
+          "grab": 442.68,
+          "shoot": 313.27,
+          "climb": 212.56
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 471.77,
+          "turn_l": 370.02,
+          "turn_r": 209.49,
+          "grab": 322.3,
+          "shoot": 343.11,
+          "climb": 271.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 411.82,
+          "turn_l": 299.49,
+          "turn_r": 292.78,
+          "grab": 234.35,
+          "shoot": 126.36,
+          "climb": 290.28
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 10.98,
+          "turn_l": 70.96,
+          "turn_r": 19.68,
+          "grab": 46.36,
+          "shoot": 79.44,
+          "climb": -72.1
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 347.44,
+          "turn_l": 212.69,
+          "turn_r": 266.73,
+          "grab": 56.94,
+          "shoot": -121.5,
+          "climb": 118.78
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -717.26,
+          "turn_l": -183.89,
+          "turn_r": 201.32,
+          "grab": -179.63,
+          "shoot": -370.18,
+          "climb": -293.19
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -924.65,
+          "turn_l": -316.49,
+          "turn_r": 231.56,
+          "grab": -484.72,
+          "shoot": -1.34,
+          "climb": -50.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 23.11,
+          "turn_l": -279.23,
+          "turn_r": -109.04,
+          "grab": 238.91,
+          "shoot": -83.46,
+          "climb": 95.76
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 149.85,
+          "turn_l": -276.36,
+          "turn_r": -77.53,
+          "grab": 77.07,
+          "shoot": -155.22,
+          "climb": 136.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 78.41,
+          "turn_l": -32.12,
+          "turn_r": 4.32,
+          "grab": -81.36,
+          "shoot": 36.22,
+          "climb": -81.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 88.23,
+          "turn_l": -89.74,
+          "turn_r": -49.14,
+          "grab": -84.47,
+          "shoot": -55.49,
+          "climb": -8.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 273.68,
+          "turn_l": 352.15,
+          "turn_r": 258.75,
+          "grab": 676.83,
+          "shoot": 265.48,
+          "climb": 245.35
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 685.62,
+          "turn_l": 231.81,
+          "turn_r": 173.65,
+          "grab": 158.24,
+          "shoot": 43.14,
+          "climb": 204.32
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 203.58,
+          "turn_l": 640.81,
+          "turn_r": 104.41,
+          "grab": 135.03,
+          "shoot": 69.8,
+          "climb": 213.97
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 736.86,
+          "turn_l": 174.16,
+          "turn_r": 196.58,
+          "grab": 207.27,
+          "shoot": 77.43,
+          "climb": 148.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 487.02,
+          "turn_l": 415.66,
+          "turn_r": 408.17,
+          "grab": 501.07,
+          "shoot": 506.64,
+          "climb": 993.84
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "fwd",
+      "shoot",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot",
+      "fwd",
+      "shoot"
+    ]
+  },
+  "cautious_adaptive:2": {
+    "cave_id": 1486,
+    "outcome": "gold",
+    "score": 959,
+    "actions": 31,
+    "picked_gold": 1,
+    "distinct_cells": 4,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 2,
+    "activated_at": 10,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 23.09,
+          "turn_l": 159.46,
+          "turn_r": 3.65,
+          "grab": 268.71,
+          "shoot": 547.68,
+          "climb": -1.04
+        },
+        "reward": -11
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 499.46,
+          "turn_l": -111.26,
+          "turn_r": -16.86,
+          "grab": 83.51,
+          "shoot": 155.95,
+          "climb": -1.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 373.93,
+          "turn_l": 244.96,
+          "turn_r": 264.3,
+          "grab": 378.55,
+          "shoot": 330.21,
+          "climb": 342.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 439.45,
+          "turn_l": 225.84,
+          "turn_r": 152.0,
+          "grab": 168.88,
+          "shoot": 171.42,
+          "climb": 214.09
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 57.76,
+          "turn_l": 222.18,
+          "turn_r": 262.89,
+          "grab": 279.1,
+          "shoot": 227.58,
+          "climb": 282.95
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -26.6,
+          "turn_l": 210.06,
+          "turn_r": 211.7,
+          "grab": 139.72,
+          "shoot": 57.63,
+          "climb": 12.67
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 44.67,
+          "turn_l": 195.83,
+          "turn_r": 226.74,
+          "grab": 169.31,
+          "shoot": 190.55,
+          "climb": 257.51
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -16.18,
+          "turn_l": 230.98,
+          "turn_r": 201.68,
+          "grab": 118.39,
+          "shoot": 70.73,
+          "climb": 94.15
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 27.81,
+          "turn_l": 109.86,
+          "turn_r": 127.56,
+          "grab": 106.98,
+          "shoot": 66.35,
+          "climb": 139.92
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -774.94,
+          "turn_l": -45.14,
+          "turn_r": -333.75,
+          "grab": -525.01,
+          "shoot": -524.87,
+          "climb": -563.24
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -820.54,
+          "turn_l": 20.34,
+          "turn_r": -223.52,
+          "grab": -269.35,
+          "shoot": -284.52,
+          "climb": -381.97
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -20.5,
+          "turn_l": -13.64,
+          "turn_r": -252.73,
+          "grab": -159.5,
+          "shoot": -19.19,
+          "climb": -106.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -520.86,
+          "turn_l": -270.2,
+          "turn_r": 26.58,
+          "grab": -337.8,
+          "shoot": -322.46,
+          "climb": -439.35
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -1.08,
+          "turn_l": -118.5,
+          "turn_r": -389.26,
+          "grab": -220.21,
+          "shoot": -126.51,
+          "climb": -159.43
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -26.87,
+          "turn_l": -38.65,
+          "turn_r": 5.43,
+          "grab": -73.63,
+          "shoot": -50.05,
+          "climb": -26.34
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -174.56,
+          "turn_l": -11.58,
+          "turn_r": -61.93,
+          "grab": -144.68,
+          "shoot": -382.56,
+          "climb": -75.26
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 1.93,
+          "turn_l": -60.88,
+          "turn_r": -30.06,
+          "grab": -29.38,
+          "shoot": -67.23,
+          "climb": -32.45
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -16.53,
+          "turn_l": -34.77,
+          "turn_r": 32.93,
+          "grab": -35.91,
+          "shoot": -90.02,
+          "climb": -41.36
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -164.63,
+          "turn_l": -26.85,
+          "turn_r": -65.25,
+          "grab": -157.18,
+          "shoot": -378.81,
+          "climb": -69.31
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 7.64,
+          "turn_l": -80.86,
+          "turn_r": -32.31,
+          "grab": -40.21,
+          "shoot": -61.45,
+          "climb": -27.96
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -9.8,
+          "turn_l": -32.28,
+          "turn_r": 11.59,
+          "grab": -63.52,
+          "shoot": -49.24,
+          "climb": -30.81
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -161.92,
+          "turn_l": -28.2,
+          "turn_r": -60.79,
+          "grab": -158.76,
+          "shoot": -374.65,
+          "climb": -73.12
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "glitter",
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -45.57,
+          "turn_l": 161.55,
+          "turn_r": 329.76,
+          "grab": 217.27,
+          "shoot": 196.16,
+          "climb": 191.55
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "glitter",
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -1.77,
+          "turn_l": 106.86,
+          "turn_r": 294.41,
+          "grab": 239.83,
+          "shoot": 219.06,
+          "climb": 183.16
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "glitter",
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -6.96,
+          "turn_l": 103.79,
+          "turn_r": 231.11,
+          "grab": 282.13,
+          "shoot": 151.92,
+          "climb": 139.19
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 229.11,
+          "turn_l": 17.86,
+          "turn_r": 38.36,
+          "grab": -87.86,
+          "shoot": 92.47,
+          "climb": -47.93
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -35.05,
+          "turn_l": 8.39,
+          "turn_r": 18.63,
+          "grab": -42.34,
+          "shoot": -72.76,
+          "climb": -78.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 16.31,
+          "turn_l": -20.1,
+          "turn_r": -101.98,
+          "grab": -73.4,
+          "shoot": -90.75,
+          "climb": -170.19
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -2.29,
+          "turn_l": 80.38,
+          "turn_r": -111.88,
+          "grab": -39.07,
+          "shoot": -68.85,
+          "climb": -122.77
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 125.56,
+          "turn_l": -28.79,
+          "turn_r": -91.21,
+          "grab": -7.95,
+          "shoot": 22.34,
+          "climb": -138.98
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 351.76,
+          "turn_l": 365.57,
+          "turn_r": 383.99,
+          "grab": 351.26,
+          "shoot": 357.21,
+          "climb": 464.8
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "shoot",
+      "fwd",
+      "grab",
+      "fwd",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l",
+      "climb",
+      "turn_r",
+      "climb",
+      "turn_l"
+    ]
+  },
+  "cautious_adaptive:3": {
+    "cave_id": 1518,
+    "outcome": "gold",
+    "score": 964,
+    "actions": 36,
+    "picked_gold": 1,
+    "distinct_cells": 7,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 4,
+    "activated_at": 21,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 658.25,
+          "turn_l": 566.31,
+          "turn_r": 499.86,
+          "grab": 602.42,
+          "shoot": 564.96,
+          "climb": -0.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 150.05,
+          "turn_l": 423.27,
+          "turn_r": 486.62,
+          "grab": 312.12,
+          "shoot": 199.04,
+          "climb": 276.56
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 88.8,
+          "turn_l": 210.56,
+          "turn_r": 500.28,
+          "grab": 156.3,
+          "shoot": 210.77,
+          "climb": 173.25
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 491.44,
+          "turn_l": 173.97,
+          "turn_r": 281.7,
+          "grab": 222.67,
+          "shoot": 119.07,
+          "climb": 249.23
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 352.67,
+          "turn_l": 403.89,
+          "turn_r": 489.09,
+          "grab": 415.9,
+          "shoot": 374.78,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 562.28,
+          "turn_l": 190.02,
+          "turn_r": 184.4,
+          "grab": 295.39,
+          "shoot": 374.07,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 645.84,
+          "turn_l": 424.87,
+          "turn_r": 501.83,
+          "grab": 507.2,
+          "shoot": 499.02,
+          "climb": 494.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 727.5,
+          "turn_l": 515.79,
+          "turn_r": 519.56,
+          "grab": 569.46,
+          "shoot": 594.81,
+          "climb": 567.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 475.2,
+          "turn_l": 614.34,
+          "turn_r": 613.77,
+          "grab": 449.58,
+          "shoot": 463.3,
+          "climb": 482.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 648.54,
+          "turn_l": 423.02,
+          "turn_r": 254.06,
+          "grab": 588.11,
+          "shoot": 488.18,
+          "climb": 473.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 321.39,
+          "turn_l": 579.7,
+          "turn_r": 329.7,
+          "grab": 263.04,
+          "shoot": 263.18,
+          "climb": 237.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 590.65,
+          "turn_l": 570.25,
+          "turn_r": 320.79,
+          "grab": 449.0,
+          "shoot": 430.42,
+          "climb": 374.3
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 635.21,
+          "turn_l": 551.86,
+          "turn_r": 502.14,
+          "grab": 381.9,
+          "shoot": 490.66,
+          "climb": 386.73
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 607.54,
+          "turn_l": 573.77,
+          "turn_r": 535.32,
+          "grab": 419.31,
+          "shoot": 480.13,
+          "climb": 352.92
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 196.29,
+          "turn_l": 255.34,
+          "turn_r": 235.64,
+          "grab": 146.15,
+          "shoot": 93.81,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 162.82,
+          "turn_l": 168.24,
+          "turn_r": -1.27,
+          "grab": 190.58,
+          "shoot": 75.44,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 133.99,
+          "turn_l": 218.42,
+          "turn_r": 53.96,
+          "grab": 71.06,
+          "shoot": 45.8,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 273.24,
+          "turn_l": 8.82,
+          "turn_r": -53.57,
+          "grab": 78.98,
+          "shoot": 54.95,
+          "climb": -0.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 517.98,
+          "turn_l": 494.27,
+          "turn_r": 507.26,
+          "grab": 356.54,
+          "shoot": 423.23,
+          "climb": 339.76
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 633.11,
+          "turn_l": 509.86,
+          "turn_r": 589.51,
+          "grab": 396.74,
+          "shoot": 509.8,
+          "climb": 436.4
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -80.2,
+          "turn_l": -33.95,
+          "turn_r": -24.92,
+          "grab": -19.64,
+          "shoot": -31.71,
+          "climb": -5.27
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -20.36,
+          "turn_l": -9.19,
+          "turn_r": 5.77,
+          "grab": -20.05,
+          "shoot": -11.93,
+          "climb": -9.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -7.65,
+          "turn_l": 8.23,
+          "turn_r": -79.03,
+          "grab": 2.86,
+          "shoot": -2.62,
+          "climb": -4.45
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 324.93,
+          "turn_l": 208.51,
+          "turn_r": 214.49,
+          "grab": 473.09,
+          "shoot": 235.18,
+          "climb": 213.31
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 670.43,
+          "turn_l": 262.99,
+          "turn_r": 218.34,
+          "grab": 89.39,
+          "shoot": 23.64,
+          "climb": 289.62
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 264.6,
+          "turn_l": 185.75,
+          "turn_r": 369.78,
+          "grab": 225.86,
+          "shoot": 263.06,
+          "climb": 282.6
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 305.04,
+          "turn_l": 210.57,
+          "turn_r": 379.65,
+          "grab": 207.95,
+          "shoot": 268.03,
+          "climb": 247.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 361.57,
+          "turn_l": 225.13,
+          "turn_r": 297.58,
+          "grab": 261.45,
+          "shoot": 280.77,
+          "climb": 304.03
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 745.56,
+          "turn_l": 347.3,
+          "turn_r": 138.6,
+          "grab": 317.63,
+          "shoot": 120.06,
+          "climb": 356.4
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 881.33,
+          "turn_l": 579.95,
+          "turn_r": 282.38,
+          "grab": 161.76,
+          "shoot": 292.08,
+          "climb": 325.43
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 377.7,
+          "turn_l": 834.91,
+          "turn_r": 274.2,
+          "grab": 212.99,
+          "shoot": 239.53,
+          "climb": 286.09
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 943.58,
+          "turn_l": 482.04,
+          "turn_r": 238.11,
+          "grab": 330.37,
+          "shoot": 278.95,
+          "climb": 356.05
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 997.49,
+          "turn_l": 401.4,
+          "turn_r": 224.42,
+          "grab": 345.92,
+          "shoot": 163.86,
+          "climb": 396.61
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 1010.73,
+          "turn_l": 417.45,
+          "turn_r": 221.87,
+          "grab": 370.84,
+          "shoot": 254.42,
+          "climb": 359.21
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 988.59,
+          "turn_l": 401.94,
+          "turn_r": 400.53,
+          "grab": 465.08,
+          "shoot": 461.87,
+          "climb": 648.24
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 411.81,
+          "turn_l": 431.25,
+          "turn_r": 375.49,
+          "grab": 422.53,
+          "shoot": 415.56,
+          "climb": 1002.28
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "grab",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd"
+    ]
+  },
+  "cautious_adaptive:5": {
+    "cave_id": 1207,
+    "outcome": "gold",
+    "score": 922,
+    "actions": 68,
+    "picked_gold": 1,
+    "distinct_cells": 12,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 4,
+    "activated_at": 60,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 507.7,
+          "turn_l": 484.88,
+          "turn_r": 417.49,
+          "grab": 488.8,
+          "shoot": 502.75,
+          "climb": -0.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 94.3,
+          "turn_l": 257.69,
+          "turn_r": 301.02,
+          "grab": 244.09,
+          "shoot": 146.12,
+          "climb": 246.86
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 32.55,
+          "turn_l": -28.9,
+          "turn_r": 341.41,
+          "grab": 250.15,
+          "shoot": 143.77,
+          "climb": 130.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 357.47,
+          "turn_l": 73.73,
+          "turn_r": 105.44,
+          "grab": 224.8,
+          "shoot": 109.86,
+          "climb": 208.74
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 287.94,
+          "turn_l": 355.1,
+          "turn_r": 273.87,
+          "grab": 308.1,
+          "shoot": 409.23,
+          "climb": -1.0
+        },
+        "reward": -11
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 107.81,
+          "turn_l": 308.82,
+          "turn_r": 294.82,
+          "grab": 153.21,
+          "shoot": 158.78,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 392.53,
+          "turn_l": 190.41,
+          "turn_r": 117.25,
+          "grab": 221.39,
+          "shoot": 154.26,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 141.6,
+          "turn_l": 318.01,
+          "turn_r": 138.12,
+          "grab": 68.14,
+          "shoot": 115.11,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 200.76,
+          "turn_l": 339.41,
+          "turn_r": 124.94,
+          "grab": 125.86,
+          "shoot": 175.04,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 386.95,
+          "turn_l": 83.3,
+          "turn_r": 127.85,
+          "grab": 146.49,
+          "shoot": 199.58,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 134.53,
+          "turn_l": 170.43,
+          "turn_r": 25.27,
+          "grab": 117.55,
+          "shoot": 0.16,
+          "climb": 86.6
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 124.34,
+          "turn_l": 6.69,
+          "turn_r": -66.77,
+          "grab": 5.72,
+          "shoot": -52.13,
+          "climb": 20.45
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -10.77,
+          "turn_l": 46.44,
+          "turn_r": 33.66,
+          "grab": -49.98,
+          "shoot": -80.47,
+          "climb": -92.48
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 13.78,
+          "turn_l": -128.61,
+          "turn_r": -83.46,
+          "grab": 39.02,
+          "shoot": -84.1,
+          "climb": -22.63
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 104.32,
+          "turn_l": -161.81,
+          "turn_r": -1.2,
+          "grab": -103.12,
+          "shoot": -146.43,
+          "climb": -136.32
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -40.01,
+          "turn_l": 167.09,
+          "turn_r": -136.9,
+          "grab": -112.19,
+          "shoot": -35.41,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 147.71,
+          "turn_l": -61.44,
+          "turn_r": -156.23,
+          "grab": -148.96,
+          "shoot": -124.65,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 157.69,
+          "turn_l": 22.13,
+          "turn_r": 106.01,
+          "grab": 161.02,
+          "shoot": 3.54,
+          "climb": 138.61
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 263.76,
+          "turn_l": -18.88,
+          "turn_r": 31.09,
+          "grab": -86.89,
+          "shoot": -127.02,
+          "climb": -67.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 450.35,
+          "turn_l": 251.67,
+          "turn_r": 214.21,
+          "grab": 414.95,
+          "shoot": 429.48,
+          "climb": 327.32
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 361.81,
+          "turn_l": 575.96,
+          "turn_r": 449.56,
+          "grab": 489.52,
+          "shoot": 410.84,
+          "climb": 452.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 630.38,
+          "turn_l": 277.71,
+          "turn_r": 272.14,
+          "grab": 405.39,
+          "shoot": 338.21,
+          "climb": 281.15
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 574.48,
+          "turn_l": 597.63,
+          "turn_r": 379.27,
+          "grab": 519.33,
+          "shoot": 436.14,
+          "climb": 515.02
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 703.09,
+          "turn_l": 350.42,
+          "turn_r": 362.64,
+          "grab": 428.5,
+          "shoot": 342.37,
+          "climb": 369.67
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -268.49,
+          "turn_l": 143.05,
+          "turn_r": 270.01,
+          "grab": 115.44,
+          "shoot": 135.9,
+          "climb": 24.5
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -87.92,
+          "turn_l": 17.0,
+          "turn_r": 145.31,
+          "grab": 51.22,
+          "shoot": 89.09,
+          "climb": 87.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 271.15,
+          "turn_l": -11.28,
+          "turn_r": 80.0,
+          "grab": 44.06,
+          "shoot": 107.49,
+          "climb": 1.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 294.66,
+          "turn_l": 326.55,
+          "turn_r": 315.95,
+          "grab": 303.06,
+          "shoot": 322.81,
+          "climb": 249.53
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 500.48,
+          "turn_l": 275.49,
+          "turn_r": 24.3,
+          "grab": 242.84,
+          "shoot": 210.66,
+          "climb": 266.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 461.46,
+          "turn_l": 555.53,
+          "turn_r": 379.52,
+          "grab": 428.02,
+          "shoot": 431.46,
+          "climb": 432.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 659.69,
+          "turn_l": 308.21,
+          "turn_r": 234.57,
+          "grab": 421.95,
+          "shoot": 342.46,
+          "climb": 256.56
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -426.44,
+          "turn_l": 253.66,
+          "turn_r": 163.8,
+          "grab": 78.35,
+          "shoot": -41.64,
+          "climb": 33.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -56.15,
+          "turn_l": 182.04,
+          "turn_r": -116.67,
+          "grab": 34.48,
+          "shoot": 11.86,
+          "climb": 19.49
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 5.03,
+          "turn_l": -108.46,
+          "turn_r": -70.24,
+          "grab": 59.39,
+          "shoot": -107.64,
+          "climb": -88.43
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 60.52,
+          "turn_l": -109.39,
+          "turn_r": 13.21,
+          "grab": -53.4,
+          "shoot": -158.81,
+          "climb": -167.34
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 263.86,
+          "turn_l": 201.55,
+          "turn_r": 445.55,
+          "grab": 271.13,
+          "shoot": 264.44,
+          "climb": 182.44
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 435.18,
+          "turn_l": 37.62,
+          "turn_r": 115.04,
+          "grab": 158.36,
+          "shoot": 75.18,
+          "climb": 225.12
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 384.52,
+          "turn_l": 279.76,
+          "turn_r": 196.79,
+          "grab": 140.77,
+          "shoot": 106.92,
+          "climb": 193.51
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 450.06,
+          "turn_l": 304.36,
+          "turn_r": 259.14,
+          "grab": 286.01,
+          "shoot": 281.7,
+          "climb": 278.03
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 225.7,
+          "turn_l": 364.62,
+          "turn_r": 219.23,
+          "grab": 181.26,
+          "shoot": 171.3,
+          "climb": 206.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 351.1,
+          "turn_l": 368.73,
+          "turn_r": 162.81,
+          "grab": 213.86,
+          "shoot": 170.42,
+          "climb": 190.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 488.97,
+          "turn_l": 238.07,
+          "turn_r": 57.3,
+          "grab": 197.39,
+          "shoot": 188.84,
+          "climb": 124.85
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 378.21,
+          "turn_l": 357.69,
+          "turn_r": 63.03,
+          "grab": 99.66,
+          "shoot": 142.11,
+          "climb": 194.37
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 373.47,
+          "turn_l": 261.39,
+          "turn_r": 170.78,
+          "grab": 192.68,
+          "shoot": 292.54,
+          "climb": 230.59
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 303.84,
+          "turn_l": 523.36,
+          "turn_r": 343.8,
+          "grab": 360.01,
+          "shoot": 387.27,
+          "climb": 412.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 550.27,
+          "turn_l": 291.58,
+          "turn_r": 177.83,
+          "grab": 389.33,
+          "shoot": 275.06,
+          "climb": 200.7
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 434.95,
+          "turn_l": 254.44,
+          "turn_r": 121.26,
+          "grab": 276.48,
+          "shoot": 294.01,
+          "climb": 251.41
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze",
+          "glitter",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 119.02,
+          "turn_l": 594.24,
+          "turn_r": 607.12,
+          "grab": 762.75,
+          "shoot": 787.14,
+          "climb": 524.19
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze",
+          "glitter",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 143.14,
+          "turn_l": 582.16,
+          "turn_r": 608.9,
+          "grab": 776.89,
+          "shoot": 727.58,
+          "climb": 512.14
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 339.77,
+          "turn_l": 829.74,
+          "turn_r": 787.09,
+          "grab": 520.64,
+          "shoot": 615.62,
+          "climb": 654.03
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 563.47,
+          "turn_l": 854.49,
+          "turn_r": 674.13,
+          "grab": 759.89,
+          "shoot": 706.23,
+          "climb": 657.22
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 898.36,
+          "turn_l": 715.01,
+          "turn_r": 673.74,
+          "grab": 817.09,
+          "shoot": 790.92,
+          "climb": 804.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 857.87,
+          "turn_l": 756.51,
+          "turn_r": 803.6,
+          "grab": 732.79,
+          "shoot": 754.03,
+          "climb": 749.37
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 808.76,
+          "turn_l": 816.0,
+          "turn_r": 868.41,
+          "grab": 824.69,
+          "shoot": 811.2,
+          "climb": 821.15
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 851.96,
+          "turn_l": 765.52,
+          "turn_r": 853.67,
+          "grab": 831.44,
+          "shoot": 837.0,
+          "climb": 834.24
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 818.33,
+          "turn_l": 808.37,
+          "turn_r": 817.57,
+          "grab": 829.57,
+          "shoot": 800.29,
+          "climb": 819.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 822.08,
+          "turn_l": 824.4,
+          "turn_r": 829.47,
+          "grab": 765.59,
+          "shoot": 796.67,
+          "climb": 806.06
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 801.97,
+          "turn_l": 811.66,
+          "turn_r": 830.38,
+          "grab": 803.9,
+          "shoot": 771.03,
+          "climb": 801.67
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 799.24,
+          "turn_l": 792.89,
+          "turn_r": 860.2,
+          "grab": 802.22,
+          "shoot": 787.17,
+          "climb": 811.36
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 543.26,
+          "turn_l": 123.33,
+          "turn_r": 168.37,
+          "grab": 152.71,
+          "shoot": 144.07,
+          "climb": 233.33
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 991.01,
+          "turn_l": 244.81,
+          "turn_r": 309.26,
+          "grab": 241.83,
+          "shoot": 250.7,
+          "climb": 325.07
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 1043.43,
+          "turn_l": 256.72,
+          "turn_r": 317.28,
+          "grab": 256.34,
+          "shoot": 240.55,
+          "climb": 322.27
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 665.31,
+          "turn_l": 253.49,
+          "turn_r": 394.21,
+          "grab": 229.13,
+          "shoot": 174.24,
+          "climb": 350.37
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 369.2,
+          "turn_l": 331.55,
+          "turn_r": 531.28,
+          "grab": 299.04,
+          "shoot": 232.01,
+          "climb": 284.22
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 656.78,
+          "turn_l": 153.44,
+          "turn_r": 212.59,
+          "grab": 154.87,
+          "shoot": 161.92,
+          "climb": 265.37
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 1000.39,
+          "turn_l": 322.03,
+          "turn_r": 344.43,
+          "grab": 285.23,
+          "shoot": 281.35,
+          "climb": 301.09
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 933.7,
+          "turn_l": 641.87,
+          "turn_r": 338.99,
+          "grab": 474.6,
+          "shoot": 437.51,
+          "climb": 421.24
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 378.02,
+          "turn_l": 544.66,
+          "turn_r": 381.35,
+          "grab": 424.88,
+          "shoot": 548.35,
+          "climb": 984.05
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "shoot",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "grab",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "shoot",
+      "grab",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "grab",
+      "turn_r",
+      "turn_r",
+      "turn_r",
+      "turn_r"
+    ]
+  },
+  "cautious_adaptive:6": {
+    "cave_id": 1444,
+    "outcome": "gold",
+    "score": 933,
+    "actions": 57,
+    "picked_gold": 1,
+    "distinct_cells": 8,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 3,
+    "activated_at": 23,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 597.84,
+          "turn_l": 397.01,
+          "turn_r": 492.47,
+          "grab": 592.45,
+          "shoot": 551.22,
+          "climb": -0.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 706.99,
+          "turn_l": 567.53,
+          "turn_r": 613.49,
+          "grab": 605.95,
+          "shoot": 590.34,
+          "climb": 546.48
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 458.85,
+          "turn_l": 330.5,
+          "turn_r": 403.69,
+          "grab": 290.09,
+          "shoot": 523.03,
+          "climb": 237.5
+        },
+        "reward": -11
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "scream"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 564.49,
+          "turn_l": 497.77,
+          "turn_r": 455.34,
+          "grab": 331.71,
+          "shoot": 382.07,
+          "climb": 336.69
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 330.44,
+          "turn_l": 478.21,
+          "turn_r": 643.33,
+          "grab": 422.59,
+          "shoot": 445.68,
+          "climb": 389.27
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 207.74,
+          "turn_l": 293.04,
+          "turn_r": 642.26,
+          "grab": 291.09,
+          "shoot": 328.87,
+          "climb": 275.07
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 675.26,
+          "turn_l": 261.53,
+          "turn_r": 296.73,
+          "grab": 296.91,
+          "shoot": 408.26,
+          "climb": 346.54
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 552.86,
+          "turn_l": 451.31,
+          "turn_r": 488.81,
+          "grab": 470.03,
+          "shoot": 439.06,
+          "climb": 434.49
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 518.57,
+          "turn_l": 508.37,
+          "turn_r": 630.13,
+          "grab": 382.23,
+          "shoot": 396.59,
+          "climb": 442.23
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 683.58,
+          "turn_l": 256.28,
+          "turn_r": 342.96,
+          "grab": 442.92,
+          "shoot": 359.03,
+          "climb": 397.04
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 587.49,
+          "turn_l": 594.83,
+          "turn_r": 539.13,
+          "grab": 523.31,
+          "shoot": 500.45,
+          "climb": 529.69
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 721.09,
+          "turn_l": 434.62,
+          "turn_r": 407.13,
+          "grab": 552.28,
+          "shoot": 470.68,
+          "climb": 419.59
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -87.77,
+          "turn_l": 455.56,
+          "turn_r": 341.6,
+          "grab": 259.22,
+          "shoot": 381.81,
+          "climb": 187.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 193.82,
+          "turn_l": 466.82,
+          "turn_r": 115.81,
+          "grab": 187.32,
+          "shoot": 203.2,
+          "climb": 277.94
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 512.11,
+          "turn_l": 162.41,
+          "turn_r": 91.69,
+          "grab": 206.2,
+          "shoot": 265.32,
+          "climb": 264.3
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 456.21,
+          "turn_l": 451.82,
+          "turn_r": 409.38,
+          "grab": 359.56,
+          "shoot": 431.76,
+          "climb": 349.98
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -403.54,
+          "turn_l": 214.36,
+          "turn_r": 393.66,
+          "grab": 93.82,
+          "shoot": 193.73,
+          "climb": 105.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 270.45,
+          "turn_l": -12.01,
+          "turn_r": 155.68,
+          "grab": 58.92,
+          "shoot": 128.17,
+          "climb": -2.29
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 339.17,
+          "turn_l": 213.58,
+          "turn_r": 273.6,
+          "grab": 232.7,
+          "shoot": 262.1,
+          "climb": 164.33
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 62.26,
+          "turn_l": 203.01,
+          "turn_r": 182.58,
+          "grab": 78.63,
+          "shoot": 95.42,
+          "climb": 126.51
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 87.05,
+          "turn_l": 102.38,
+          "turn_r": 121.7,
+          "grab": 78.98,
+          "shoot": -118.22,
+          "climb": -14.49
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 308.12,
+          "turn_l": 77.69,
+          "turn_r": 210.74,
+          "grab": 166.85,
+          "shoot": 190.1,
+          "climb": 129.28
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -145.57,
+          "turn_l": -59.96,
+          "turn_r": -51.8,
+          "grab": -297.21,
+          "shoot": -103.31,
+          "climb": -57.78
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -39.11,
+          "turn_l": -92.41,
+          "turn_r": -181.02,
+          "grab": -76.32,
+          "shoot": -87.1,
+          "climb": -56.59
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -9.58,
+          "turn_l": -87.0,
+          "turn_r": -162.48,
+          "grab": -75.61,
+          "shoot": -79.47,
+          "climb": -110.96
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -40.75,
+          "turn_l": -77.42,
+          "turn_r": -27.84,
+          "grab": -65.07,
+          "shoot": -26.44,
+          "climb": -76.24
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -146.8,
+          "turn_l": 23.97,
+          "turn_r": -133.71,
+          "grab": -44.26,
+          "shoot": -98.07,
+          "climb": -80.15
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -33.3,
+          "turn_l": -102.9,
+          "turn_r": -51.04,
+          "grab": -66.17,
+          "shoot": -52.05,
+          "climb": -72.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -103.04,
+          "turn_l": 19.09,
+          "turn_r": -118.18,
+          "grab": -43.28,
+          "shoot": -106.61,
+          "climb": -99.4
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -124.94,
+          "turn_l": -148.96,
+          "turn_r": -125.47,
+          "grab": -63.77,
+          "shoot": -45.76,
+          "climb": -133.13
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -83.0,
+          "turn_l": -131.08,
+          "turn_r": -138.4,
+          "grab": -137.81,
+          "shoot": -42.46,
+          "climb": -122.49
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -100.77,
+          "turn_l": -163.73,
+          "turn_r": -128.7,
+          "grab": -70.82,
+          "shoot": -63.9,
+          "climb": -146.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -83.35,
+          "turn_l": -155.65,
+          "turn_r": -132.34,
+          "grab": -73.09,
+          "shoot": -110.16,
+          "climb": -130.12
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -60.83,
+          "turn_l": -127.23,
+          "turn_r": -125.7,
+          "grab": -138.79,
+          "shoot": -49.81,
+          "climb": -131.15
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 50.7,
+          "turn_l": 139.75,
+          "turn_r": 129.8,
+          "grab": 201.58,
+          "shoot": 420.69,
+          "climb": -66.14
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 29.98,
+          "turn_l": 144.86,
+          "turn_r": 145.66,
+          "grab": 205.88,
+          "shoot": 408.47,
+          "climb": -49.9
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 28.39,
+          "turn_l": 160.67,
+          "turn_r": 157.99,
+          "grab": 220.81,
+          "shoot": 416.75,
+          "climb": -51.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 28.39,
+          "turn_l": 161.68,
+          "turn_r": 156.35,
+          "grab": 221.22,
+          "shoot": 416.68,
+          "climb": -46.5
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 26.21,
+          "turn_l": 168.4,
+          "turn_r": 165.62,
+          "grab": 241.67,
+          "shoot": 446.74,
+          "climb": -48.81
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 24.75,
+          "turn_l": 161.2,
+          "turn_r": 168.91,
+          "grab": 261.12,
+          "shoot": 444.54,
+          "climb": -70.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 24.75,
+          "turn_l": 161.2,
+          "turn_r": 168.91,
+          "grab": 261.12,
+          "shoot": 444.54,
+          "climb": -70.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 24.75,
+          "turn_l": 161.2,
+          "turn_r": 168.91,
+          "grab": 261.12,
+          "shoot": 444.54,
+          "climb": -70.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 24.75,
+          "turn_l": 161.2,
+          "turn_r": 168.91,
+          "grab": 261.12,
+          "shoot": 444.54,
+          "climb": -70.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 25.44,
+          "turn_l": 152.18,
+          "turn_r": 170.54,
+          "grab": 264.98,
+          "shoot": 374.84,
+          "climb": -82.76
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 27.63,
+          "turn_l": 154.43,
+          "turn_r": 170.54,
+          "grab": 237.78,
+          "shoot": 373.66,
+          "climb": -75.45
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 27.63,
+          "turn_l": 154.43,
+          "turn_r": 170.54,
+          "grab": 237.78,
+          "shoot": 373.66,
+          "climb": -75.45
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 27.63,
+          "turn_l": 154.43,
+          "turn_r": 170.54,
+          "grab": 237.78,
+          "shoot": 373.66,
+          "climb": -75.45
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 110.26,
+          "turn_l": 196.82,
+          "turn_r": 116.76,
+          "grab": 226.59,
+          "shoot": 293.7,
+          "climb": 73.66
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -344.01,
+          "turn_l": -280.83,
+          "turn_r": -54.56,
+          "grab": -700.07,
+          "shoot": -734.48,
+          "climb": -117.62
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -172.03,
+          "turn_l": -434.08,
+          "turn_r": -5.34,
+          "grab": -566.55,
+          "shoot": -587.99,
+          "climb": -486.74
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -291.12,
+          "turn_l": -383.46,
+          "turn_r": -15.78,
+          "grab": -246.52,
+          "shoot": -374.41,
+          "climb": -264.62
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          3
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 168.51,
+          "turn_l": -498.09,
+          "turn_r": -129.26,
+          "grab": -202.85,
+          "shoot": -476.74,
+          "climb": -49.6
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 343.57,
+          "turn_l": 124.89,
+          "turn_r": 126.52,
+          "grab": 67.83,
+          "shoot": 125.33,
+          "climb": 64.4
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 319.48,
+          "turn_l": 244.53,
+          "turn_r": 264.02,
+          "grab": 227.82,
+          "shoot": 185.91,
+          "climb": 175.21
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 54.7,
+          "turn_l": 186.01,
+          "turn_r": 243.41,
+          "grab": 194.34,
+          "shoot": 88.82,
+          "climb": 91.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 670.31,
+          "turn_l": 170.39,
+          "turn_r": 201.31,
+          "grab": 261.57,
+          "shoot": 189.73,
+          "climb": 183.37
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 420.43,
+          "turn_l": 515.9,
+          "turn_r": 382.61,
+          "grab": 439.88,
+          "shoot": 506.51,
+          "climb": 890.99
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "fwd",
+      "fwd",
+      "shoot",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "turn_r"
+    ]
+  },
+  "cautious_adaptive:7": {
+    "cave_id": 528,
+    "outcome": "gold",
+    "score": 940,
+    "actions": 50,
+    "picked_gold": 1,
+    "distinct_cells": 9,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 4,
+    "activated_at": 27,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 168.6,
+          "turn_l": 78.28,
+          "turn_r": -29.26,
+          "grab": 137.0,
+          "shoot": 623.56,
+          "climb": -1.04
+        },
+        "reward": -11
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "scream"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 486.67,
+          "turn_l": 391.42,
+          "turn_r": 517.81,
+          "grab": 509.53,
+          "shoot": 434.45,
+          "climb": -0.98
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 548.99,
+          "turn_l": 432.12,
+          "turn_r": 310.71,
+          "grab": 391.52,
+          "shoot": 406.12,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 307.46,
+          "turn_l": 509.79,
+          "turn_r": 494.73,
+          "grab": 377.59,
+          "shoot": 364.73,
+          "climb": -1.06
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 567.56,
+          "turn_l": 356.33,
+          "turn_r": 312.47,
+          "grab": 354.55,
+          "shoot": 337.89,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 594.97,
+          "turn_l": 495.09,
+          "turn_r": 494.28,
+          "grab": 547.69,
+          "shoot": 479.97,
+          "climb": 507.43
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 713.19,
+          "turn_l": 568.79,
+          "turn_r": 524.81,
+          "grab": 566.84,
+          "shoot": 566.82,
+          "climb": 548.47
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 497.17,
+          "turn_l": 617.57,
+          "turn_r": 605.97,
+          "grab": 496.72,
+          "shoot": 481.23,
+          "climb": 476.06
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 691.64,
+          "turn_l": 502.67,
+          "turn_r": 361.81,
+          "grab": 494.13,
+          "shoot": 447.3,
+          "climb": 528.63
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 625.27,
+          "turn_l": 658.98,
+          "turn_r": 566.6,
+          "grab": 514.41,
+          "shoot": 503.26,
+          "climb": 515.76
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          4,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 756.28,
+          "turn_l": 526.12,
+          "turn_r": 373.33,
+          "grab": 477.09,
+          "shoot": 469.54,
+          "climb": 575.13
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 781.01,
+          "turn_l": 481.45,
+          "turn_r": 521.48,
+          "grab": 439.06,
+          "shoot": 482.75,
+          "climb": 508.42
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 853.26,
+          "turn_l": 565.09,
+          "turn_r": 595.15,
+          "grab": 479.05,
+          "shoot": 554.32,
+          "climb": 572.2
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 38.94,
+          "turn_l": 582.74,
+          "turn_r": 536.01,
+          "grab": 373.94,
+          "shoot": 430.26,
+          "climb": 354.79
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 338.15,
+          "turn_l": 421.35,
+          "turn_r": 225.34,
+          "grab": 333.48,
+          "shoot": 281.41,
+          "climb": 275.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 610.67,
+          "turn_l": 46.78,
+          "turn_r": 182.88,
+          "grab": 289.39,
+          "shoot": 279.46,
+          "climb": 373.96
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 572.33,
+          "turn_l": 568.28,
+          "turn_r": 608.62,
+          "grab": 388.64,
+          "shoot": 449.98,
+          "climb": 346.47
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 773.98,
+          "turn_l": 345.22,
+          "turn_r": 333.83,
+          "grab": 302.74,
+          "shoot": 338.52,
+          "climb": 360.46
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 535.83,
+          "turn_l": 407.25,
+          "turn_r": 414.04,
+          "grab": 317.17,
+          "shoot": 352.93,
+          "climb": 400.62
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 201.04,
+          "turn_l": 315.4,
+          "turn_r": 353.44,
+          "grab": 201.18,
+          "shoot": 173.51,
+          "climb": 187.36
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 486.53,
+          "turn_l": 281.94,
+          "turn_r": 389.87,
+          "grab": 218.33,
+          "shoot": 263.95,
+          "climb": 273.61
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 33.57,
+          "turn_l": 98.62,
+          "turn_r": 128.29,
+          "grab": 167.73,
+          "shoot": 56.2,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -72.94,
+          "turn_l": 83.6,
+          "turn_r": 153.25,
+          "grab": 11.26,
+          "shoot": -7.34,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 150.6,
+          "turn_l": -89.66,
+          "turn_r": 144.61,
+          "grab": -3.47,
+          "shoot": 13.78,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -363.86,
+          "turn_l": 218.92,
+          "turn_r": 566.76,
+          "grab": 249.59,
+          "shoot": 225.17,
+          "climb": 311.02
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 650.07,
+          "turn_l": 8.81,
+          "turn_r": 208.91,
+          "grab": 288.26,
+          "shoot": 262.48,
+          "climb": 318.09
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -6.37,
+          "turn_l": -46.03,
+          "turn_r": -87.19,
+          "grab": 3.96,
+          "shoot": 11.42,
+          "climb": -18.38
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 14.48,
+          "turn_l": -2.63,
+          "turn_r": -41.21,
+          "grab": -15.32,
+          "shoot": 7.3,
+          "climb": -48.56
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -6.6,
+          "turn_l": -55.91,
+          "turn_r": -49.6,
+          "grab": -24.16,
+          "shoot": -25.97,
+          "climb": -8.32
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 0.99,
+          "turn_l": -21.11,
+          "turn_r": -4.82,
+          "grab": -33.19,
+          "shoot": -37.11,
+          "climb": -39.75
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 20.72,
+          "turn_l": -53.44,
+          "turn_r": -67.91,
+          "grab": 17.3,
+          "shoot": -10.94,
+          "climb": -38.08
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -70.77,
+          "turn_l": -84.38,
+          "turn_r": -16.76,
+          "grab": -9.92,
+          "shoot": -6.51,
+          "climb": -14.88
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 7.07,
+          "turn_l": -136.54,
+          "turn_r": -1.76,
+          "grab": -13.22,
+          "shoot": 0.22,
+          "climb": -8.41
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -72.17,
+          "turn_l": -121.95,
+          "turn_r": -13.15,
+          "grab": -73.16,
+          "shoot": -45.82,
+          "climb": -30.29
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 27.07,
+          "turn_l": -135.14,
+          "turn_r": -28.22,
+          "grab": -1.04,
+          "shoot": -29.62,
+          "climb": -24.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -39.81,
+          "turn_l": -119.21,
+          "turn_r": -19.89,
+          "grab": -64.93,
+          "shoot": -33.95,
+          "climb": -37.61
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -30.74,
+          "turn_l": -130.57,
+          "turn_r": -23.81,
+          "grab": -37.44,
+          "shoot": -14.51,
+          "climb": -19.59
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -4.3,
+          "turn_l": -82.89,
+          "turn_r": 21.99,
+          "grab": -50.4,
+          "shoot": -44.07,
+          "climb": -15.72
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 152.72,
+          "turn_l": 112.17,
+          "turn_r": 142.37,
+          "grab": 120.91,
+          "shoot": 156.8,
+          "climb": 120.41
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 122.04,
+          "turn_l": 148.25,
+          "turn_r": 149.49,
+          "grab": 180.33,
+          "shoot": 186.16,
+          "climb": 203.33
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 127.65,
+          "turn_l": 154.89,
+          "turn_r": 159.93,
+          "grab": 175.96,
+          "shoot": 152.45,
+          "climb": 183.77
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 122.69,
+          "turn_l": 148.14,
+          "turn_r": 160.72,
+          "grab": 173.08,
+          "shoot": 178.27,
+          "climb": 186.52
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 141.37,
+          "turn_l": 172.52,
+          "turn_r": 173.54,
+          "grab": 181.25,
+          "shoot": 190.29,
+          "climb": 202.26
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -67.95,
+          "turn_l": -90.97,
+          "turn_r": -27.61,
+          "grab": -78.93,
+          "shoot": -55.54,
+          "climb": -115.48
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 78.48,
+          "turn_l": -168.78,
+          "turn_r": -213.93,
+          "grab": -70.57,
+          "shoot": -113.95,
+          "climb": -119.35
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          2
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 401.53,
+          "turn_l": 51.27,
+          "turn_r": 177.33,
+          "grab": 85.97,
+          "shoot": -77.08,
+          "climb": -6.75
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 146.95,
+          "turn_l": 67.33,
+          "turn_r": 249.33,
+          "grab": 46.27,
+          "shoot": -101.41,
+          "climb": -20.48
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 376.72,
+          "turn_l": 2.77,
+          "turn_r": 116.64,
+          "grab": 132.43,
+          "shoot": 60.1,
+          "climb": 4.14
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 497.02,
+          "turn_l": 112.49,
+          "turn_r": 181.94,
+          "grab": 130.91,
+          "shoot": 99.16,
+          "climb": 48.13
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 406.99,
+          "turn_l": 401.61,
+          "turn_r": 374.14,
+          "grab": 429.32,
+          "shoot": 429.07,
+          "climb": 842.68
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "shoot",
+      "turn_r",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "grab",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "turn_r"
+    ]
+  },
+  "cautious_adaptive:8": {
+    "cave_id": 534,
+    "outcome": "gold",
+    "score": 955,
+    "actions": 35,
+    "picked_gold": 1,
+    "distinct_cells": 5,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 3,
+    "activated_at": 19,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 594.29,
+          "turn_l": 419.77,
+          "turn_r": 505.75,
+          "grab": 512.87,
+          "shoot": 594.55,
+          "climb": -0.99
+        },
+        "reward": -11
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 650.17,
+          "turn_l": 327.7,
+          "turn_r": 388.97,
+          "grab": 358.99,
+          "shoot": 295.12,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -771.57,
+          "turn_l": 87.08,
+          "turn_r": 151.48,
+          "grab": -12.33,
+          "shoot": -25.53,
+          "climb": -45.12
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -332.56,
+          "turn_l": -52.06,
+          "turn_r": 196.53,
+          "grab": 56.02,
+          "shoot": -41.21,
+          "climb": -27.56
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "breeze",
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 240.76,
+          "turn_l": -6.14,
+          "turn_r": -46.54,
+          "grab": 36.06,
+          "shoot": 104.62,
+          "climb": 30.64
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 316.07,
+          "turn_l": 144.61,
+          "turn_r": 381.94,
+          "grab": 241.6,
+          "shoot": 157.16,
+          "climb": -1.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 471.67,
+          "turn_l": 24.54,
+          "turn_r": 100.19,
+          "grab": 206.89,
+          "shoot": 290.71,
+          "climb": -1.0
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 117.07,
+          "turn_l": 123.4,
+          "turn_r": 205.45,
+          "grab": 245.43,
+          "shoot": 313.97,
+          "climb": 173.79
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 242.93,
+          "turn_l": 83.14,
+          "turn_r": 131.83,
+          "grab": 116.91,
+          "shoot": -16.26,
+          "climb": 10.93
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 397.13,
+          "turn_l": 473.51,
+          "turn_r": 464.64,
+          "grab": 503.47,
+          "shoot": 462.13,
+          "climb": 428.84
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 446.55,
+          "turn_l": 457.09,
+          "turn_r": 377.33,
+          "grab": 308.92,
+          "shoot": 354.62,
+          "climb": 277.1
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 447.27,
+          "turn_l": 263.64,
+          "turn_r": 279.69,
+          "grab": 407.03,
+          "shoot": 372.39,
+          "climb": 282.13
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 230.02,
+          "turn_l": 394.09,
+          "turn_r": 302.97,
+          "grab": 305.53,
+          "shoot": 244.03,
+          "climb": 211.58
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 330.8,
+          "turn_l": 290.59,
+          "turn_r": 227.16,
+          "grab": 395.54,
+          "shoot": 308.01,
+          "climb": 291.58
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 354.59,
+          "turn_l": 304.99,
+          "turn_r": 309.61,
+          "grab": 278.12,
+          "shoot": 260.8,
+          "climb": 231.37
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 63.23,
+          "turn_l": 234.72,
+          "turn_r": 203.98,
+          "grab": 180.15,
+          "shoot": 112.59,
+          "climb": 113.29
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -97.5,
+          "turn_l": 175.54,
+          "turn_r": -21.27,
+          "grab": 49.68,
+          "shoot": 2.73,
+          "climb": 44.65
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 191.86,
+          "turn_l": 51.73,
+          "turn_r": -9.24,
+          "grab": 114.96,
+          "shoot": 132.78,
+          "climb": 50.07
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -76.06,
+          "turn_l": -21.89,
+          "turn_r": -68.57,
+          "grab": -19.95,
+          "shoot": -43.49,
+          "climb": -12.63
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -42.23,
+          "turn_l": 2.46,
+          "turn_r": -63.19,
+          "grab": 1.97,
+          "shoot": -42.71,
+          "climb": -8.87
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -52.71,
+          "turn_l": -6.9,
+          "turn_r": -72.13,
+          "grab": -10.11,
+          "shoot": -51.17,
+          "climb": -19.63
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -73.0,
+          "turn_l": -28.33,
+          "turn_r": 7.11,
+          "grab": -73.14,
+          "shoot": -15.69,
+          "climb": -37.71
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -54.46,
+          "turn_l": -7.52,
+          "turn_r": -60.25,
+          "grab": 10.14,
+          "shoot": -32.62,
+          "climb": -10.28
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -43.25,
+          "turn_l": -3.43,
+          "turn_r": -60.09,
+          "grab": -47.4,
+          "shoot": -37.37,
+          "climb": -7.06
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -73.6,
+          "turn_l": -39.03,
+          "turn_r": 1.79,
+          "grab": -74.75,
+          "shoot": -28.73,
+          "climb": -44.34
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -42.38,
+          "turn_l": 22.16,
+          "turn_r": 24.15,
+          "grab": -47.87,
+          "shoot": -27.47,
+          "climb": -38.3
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -80.93,
+          "turn_l": -27.9,
+          "turn_r": -65.09,
+          "grab": -1.47,
+          "shoot": -46.45,
+          "climb": -19.11
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -47.8,
+          "turn_l": 3.63,
+          "turn_r": -57.65,
+          "grab": -43.41,
+          "shoot": -35.6,
+          "climb": -5.87
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 183.83,
+          "turn_l": 184.45,
+          "turn_r": 162.91,
+          "grab": 240.12,
+          "shoot": 152.22,
+          "climb": 28.88
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 81.65,
+          "turn_l": 171.97,
+          "turn_r": -39.99,
+          "grab": -137.85,
+          "shoot": 20.89,
+          "climb": -123.31
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 104.17,
+          "turn_l": 139.71,
+          "turn_r": -31.5,
+          "grab": -17.3,
+          "shoot": 33.57,
+          "climb": -135.18
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 222.48,
+          "turn_l": 52.2,
+          "turn_r": -0.06,
+          "grab": 23.76,
+          "shoot": 55.77,
+          "climb": -49.4
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 270.1,
+          "turn_l": 115.23,
+          "turn_r": -5.68,
+          "grab": 4.21,
+          "shoot": 128.04,
+          "climb": -32.93
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 358.45,
+          "turn_l": 80.07,
+          "turn_r": 76.64,
+          "grab": 65.47,
+          "shoot": 31.07,
+          "climb": 70.92
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 354.72,
+          "turn_l": 429.44,
+          "turn_r": 382.87,
+          "grab": 365.7,
+          "shoot": 345.29,
+          "climb": 721.21
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "shoot",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "shoot",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_l",
+      "grab",
+      "fwd",
+      "turn_l",
+      "turn_l",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd"
+    ]
+  },
+  "cautious_adaptive:9": {
+    "cave_id": 1923,
+    "outcome": "gold",
+    "score": 954,
+    "actions": 36,
+    "picked_gold": 1,
+    "distinct_cells": 7,
+    "immediate_retreat": 0,
+    "stalled_timeout": 0,
+    "gold_distance": 4,
+    "activated_at": 19,
+    "exploratory_arm": 0,
+    "baseline_outcome": "timeout",
+    "layout_for_reader_only": [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "recovery_trace": [
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 516.34,
+          "turn_l": 414.42,
+          "turn_r": 343.38,
+          "grab": 430.12,
+          "shoot": 385.93,
+          "climb": -0.99
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 43.7,
+          "turn_l": 225.56,
+          "turn_r": 70.46,
+          "grab": 200.21,
+          "shoot": 270.88,
+          "climb": 165.48
+        },
+        "reward": -11
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 169.27,
+          "turn_l": 158.17,
+          "turn_r": 54.0,
+          "grab": 107.41,
+          "shoot": 2.31,
+          "climb": 77.12
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -188.67,
+          "turn_l": -9.76,
+          "turn_r": 292.55,
+          "grab": 79.54,
+          "shoot": 59.4,
+          "climb": 28.22
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": -143.46,
+          "turn_l": -47.69,
+          "turn_r": 311.25,
+          "grab": 36.23,
+          "shoot": 73.78,
+          "climb": 80.86
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          3,
+          1
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 255.12,
+          "turn_l": -69.04,
+          "turn_r": 21.94,
+          "grab": 81.57,
+          "shoot": 86.16,
+          "climb": 22.52
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          1
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 154.31,
+          "turn_l": 1.13,
+          "turn_r": 10.48,
+          "grab": 68.94,
+          "shoot": 139.86,
+          "climb": 106.85
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 343.85,
+          "turn_l": 170.02,
+          "turn_r": 242.11,
+          "grab": 192.0,
+          "shoot": 162.53,
+          "climb": -1.03
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start",
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 83.43,
+          "turn_l": 224.69,
+          "turn_r": 310.71,
+          "grab": 173.91,
+          "shoot": 58.38,
+          "climb": -1.02
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 379.69,
+          "turn_l": -2.63,
+          "turn_r": -80.04,
+          "grab": 56.08,
+          "shoot": 52.21,
+          "climb": -1.02
+        },
+        "reward": -1
+      },
+      {
+        "command": "shoot",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 61.73,
+          "turn_l": 119.98,
+          "turn_r": -119.99,
+          "grab": 176.32,
+          "shoot": 269.16,
+          "climb": 125.71
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 187.29,
+          "turn_l": 52.59,
+          "turn_r": -136.45,
+          "grab": 83.52,
+          "shoot": 0.6,
+          "climb": 37.34
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 496.43,
+          "turn_l": 385.12,
+          "turn_r": 285.0,
+          "grab": 363.34,
+          "shoot": 376.29,
+          "climb": 457.62
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 330.07,
+          "turn_l": 480.27,
+          "turn_r": 465.06,
+          "grab": 528.76,
+          "shoot": 472.67,
+          "climb": 463.21
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 383.56,
+          "turn_l": 410.72,
+          "turn_r": 405.94,
+          "grab": 313.74,
+          "shoot": 349.4,
+          "climb": 306.04
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 455.9,
+          "turn_l": 306.43,
+          "turn_r": 285.16,
+          "grab": 414.73,
+          "shoot": 396.75,
+          "climb": 384.28
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [
+          "bump"
+        ],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 238.09,
+          "turn_l": 283.96,
+          "turn_r": 364.29,
+          "grab": 247.8,
+          "shoot": 262.02,
+          "climb": 267.76
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": false,
+        "action_scores": {
+          "fwd": 355.67,
+          "turn_l": 325.85,
+          "turn_r": 384.02,
+          "grab": 392.57,
+          "shoot": 383.37,
+          "climb": 343.97
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -137.95,
+          "turn_l": -72.53,
+          "turn_r": -31.08,
+          "grab": -188.52,
+          "shoot": -103.82,
+          "climb": -25.81
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -106.92,
+          "turn_l": -4.61,
+          "turn_r": 18.27,
+          "grab": -157.15,
+          "shoot": -56.95,
+          "climb": -14.01
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -123.07,
+          "turn_l": -74.31,
+          "turn_r": -38.91,
+          "grab": -135.68,
+          "shoot": -47.77,
+          "climb": -98.02
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -154.99,
+          "turn_l": -77.13,
+          "turn_r": -58.21,
+          "grab": -191.55,
+          "shoot": -92.52,
+          "climb": -23.82
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -95.06,
+          "turn_l": -70.47,
+          "turn_r": -185.99,
+          "grab": -7.74,
+          "shoot": -137.6,
+          "climb": -100.51
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -96.95,
+          "turn_l": -58.0,
+          "turn_r": -139.48,
+          "grab": -43.83,
+          "shoot": -149.24,
+          "climb": -116.71
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -110.42,
+          "turn_l": -88.07,
+          "turn_r": -154.92,
+          "grab": -80.34,
+          "shoot": -162.88,
+          "climb": -134.73
+        },
+        "reward": -1
+      },
+      {
+        "command": "grab",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze",
+          "glitter"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": -83.79,
+          "turn_l": 390.35,
+          "turn_r": 352.39,
+          "grab": 676.2,
+          "shoot": 398.21,
+          "climb": 396.98
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 306.91,
+          "turn_l": 620.76,
+          "turn_r": 247.56,
+          "grab": 264.24,
+          "shoot": 290.99,
+          "climb": 339.89
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_l",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 415.44,
+          "turn_l": 591.68,
+          "turn_r": 272.72,
+          "grab": 360.47,
+          "shoot": 326.19,
+          "climb": 384.92
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          2,
+          4
+        ],
+        "percepts": [
+          "breeze"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 613.91,
+          "turn_l": 473.17,
+          "turn_r": 231.31,
+          "grab": 421.66,
+          "shoot": 343.51,
+          "climb": 372.12
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 477.32,
+          "turn_l": 333.98,
+          "turn_r": 619.01,
+          "grab": 314.99,
+          "shoot": 282.3,
+          "climb": 213.93
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 449.65,
+          "turn_l": 292.24,
+          "turn_r": 705.59,
+          "grab": 344.8,
+          "shoot": 306.71,
+          "climb": 185.87
+        },
+        "reward": -1
+      },
+      {
+        "command": "turn_r",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 477.3,
+          "turn_l": 293.18,
+          "turn_r": 698.24,
+          "grab": 313.78,
+          "shoot": 263.73,
+          "climb": 234.21
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          4
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 732.83,
+          "turn_l": 236.46,
+          "turn_r": 582.51,
+          "grab": 286.08,
+          "shoot": 298.76,
+          "climb": 185.35
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          3
+        ],
+        "percepts": [],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 870.83,
+          "turn_l": 350.86,
+          "turn_r": 624.49,
+          "grab": 428.48,
+          "shoot": 414.45,
+          "climb": 303.66
+        },
+        "reward": -1
+      },
+      {
+        "command": "fwd",
+        "square": [
+          1,
+          2
+        ],
+        "percepts": [
+          "stench"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 843.16,
+          "turn_l": 251.23,
+          "turn_r": 324.41,
+          "grab": 260.69,
+          "shoot": 251.21,
+          "climb": 361.39
+        },
+        "reward": -1
+      },
+      {
+        "command": "climb",
+        "square": [
+          1,
+          1
+        ],
+        "percepts": [
+          "at_start"
+        ],
+        "recovering": true,
+        "action_scores": {
+          "fwd": 409.08,
+          "turn_l": 467.84,
+          "turn_r": 474.55,
+          "grab": 400.26,
+          "shoot": 369.56,
+          "climb": 939.58
+        },
+        "reward": 999
+      }
+    ],
+    "baseline_commands": [
+      "fwd",
+      "shoot",
+      "fwd",
+      "turn_r",
+      "turn_r",
+      "fwd",
+      "fwd",
+      "fwd",
+      "turn_r",
+      "fwd",
+      "shoot",
+      "fwd",
+      "fwd",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd",
+      "turn_r",
+      "grab",
+      "turn_l",
+      "fwd"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "notebook": "Wumpus_World.ipynb",
+  "notebook_revision": "6b19ce0e2d4279f2157217386e4730947a332ef9",
+  "notebook_sha256": "8deed33226b39153cb0fd7dffe0fdcd4a6dc7ec233f26db58d54a61ace82a794",
+  "output": "results/timeout-recovery/screen-smooth",
+  "profiles": [
+    "cautious"
+  ],
+  "readouts": [
+    "adaptive"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "workers": 4,
+  "episodes": 18000,
+  "base_episodes": 16000,
+  "base_profile": "smooth",
+  "router_episodes": 0,
+  "exploratory_arm": "risk",
+  "report": null,
+  "notebook_control": true,
+  "test": false,
+  "validation_seed": 617383,
+  "test_seed": 804589,
+  "evaluation_cap": 120,
+  "recipes": {
+    "cautious": {
+      "episodes": 12000,
+      "history": true,
+      "alpha": 0.1,
+      "gamma": 0.98,
+      "base_strength": 0.4,
+      "death_cost": 800,
+      "timeout_cost": 125,
+      "temperature": 0.0,
+      "early": 0,
+      "reheat": 0.0,
+      "risk_weight": 0.0,
+      "extra_history": false,
+      "reopen": false,
+      "novelty": 0.0,
+      "replay": false
+    }
+  },
+  "base_settings": {
+    "n": 12,
+    "gamma": 0.98,
+    "alpha": 0.1,
+    "epsilon": 0.2,
+    "penalty": 0.0,
+    "novel_reward": 0.0,
+    "replay": 1,
+    "wider_memory": true,
+    "bootstrap_truncation": true,
+    "loop_memory": false,
+    "count_bonus": 0.25,
+    "potential_points": 0.0,
+    "anneal_start": 5000,
+    "anneal_end": 10000,
+    "balanced_replay": false,
+    "imitation": true,
+    "clean_replay": true,
+    "epsilon_final": 0.05,
+    "inventory_memory": false,
+    "target_mix": 0.1
+  },
+  "readout_temperatures": {
+    "adaptive": [
+      0.02,
+      0.018
+    ]
+  }
+}
