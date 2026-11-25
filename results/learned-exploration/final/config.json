@@ -1,0 +1,171 @@
+{
+  "python": "3.14.3",
+  "split": "progress",
+  "validation_seed": 447173,
+  "test_seed": 338959,
+  "training_layout_seed_base": 7000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    16000
+  ],
+  "profile_budgets": {
+    "replay_wide": [
+      5000
+    ],
+    "low_clean": [
+      10000
+    ]
+  },
+  "matched_training_actions": {},
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "test",
+  "profiles": {
+    "replay_wide": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": false,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false,
+        "imitation": false,
+        "clean_replay": false,
+        "epsilon_final": null
+      },
+      "reason": "Expose farther raw observations to distinguish return situations.",
+      "curriculum": true,
+      "kind": "shared",
+      "members": 1,
+      "level_rate": 0.0,
+      "prioritize_levels": true
+    },
+    "notebook": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 0,
+        "wider_memory": false,
+        "bootstrap_truncation": false,
+        "loop_memory": false,
+        "count_bonus": 0.0,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false,
+        "imitation": false,
+        "clean_replay": false,
+        "epsilon_final": null
+      },
+      "reason": "Planner baseline; reference only, not a learned primitive solution.",
+      "curriculum": false,
+      "kind": "notebook",
+      "members": 1,
+      "level_rate": 0.0,
+      "prioritize_levels": true
+    },
+    "low_clean": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false,
+        "imitation": true,
+        "clean_replay": true,
+        "epsilon_final": 0.05
+      },
+      "reason": "Retain genuine successful paths while annealing exploration.",
+      "curriculum": true,
+      "kind": "shared",
+      "members": 1,
+      "level_rate": 0.0,
+      "prioritize_levels": true
+    },
+    "low_ensemble3": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false,
+        "imitation": false,
+        "clean_replay": false,
+        "epsilon_final": 0.05
+      },
+      "reason": "Average identically defined rule weights from three independent action-exploration streams.",
+      "curriculum": true,
+      "kind": "shared",
+      "members": 3,
+      "level_rate": 0.0,
+      "prioritize_levels": true
+    },
+    "clean_ensemble3": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false,
+        "imitation": true,
+        "clean_replay": true,
+        "epsilon_final": 0.05
+      },
+      "reason": "Test whether averaging reduces errors from self-imitation of lucky outcomes.",
+      "curriculum": true,
+      "kind": "shared",
+      "members": 3,
+      "level_rate": 0.0,
+      "prioritize_levels": true
+    }
+  }
+}

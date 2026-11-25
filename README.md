@@ -119,3 +119,29 @@ The last command uses an independent split for the penalty sweep. A
 training-only penalty of 1,000 applies to an empty exit without ever
 leaving the entrance, not to later retreats. See the
 [results summary](results/learning-search/report.md) for both held-out runs.
+
+## Follow-up: learn exploration and reduce stalls
+
+The [experiment log](results/learned-exploration/experiment-log.md) records
+the designs reviewed with Opus 5.5, the staged validation results, and the
+final confirmation protocol. The LCS still chooses between the six primitive
+commands without a planner, safety inference, hidden map, or action filter.
+The rollout score is always the original reward. Counts and optional
+potential shaping are training-only. Averaging tables merges learned
+strengths for identical rule conditions into a single greedy policy.
+
+The final progress split has 2,000 maps disjoint from all earlier validation
+and test splits. The ensemble has three learners with separate exploration
+seeds. The single-model compute control is trained to exactly the same
+per-seed count of environment actions.
+
+```sh
+python -B -m unittest -v test_transfer test_randomized test_navigation test_shared_rules test_progress_rules test_paired_wumpus
+python -B benchmark_rule_search.py --split progress --profiles replay_wide notebook low_clean low_ensemble3 clean_ensemble3 --checkpoints 16000 --budget replay_wide=5000 --budget low_clean=10000 --test --output results/learned-exploration/final
+python -B benchmark_rule_search.py --split progress --profiles low_clean --checkpoints 70000 --match-training-actions results/learned-exploration/final/validation.csv --test --output results/learned-exploration/matched-actions
+python -B paired_wumpus.py results/learned-exploration/final/test-episodes.csv clean_ensemble3 notebook
+```
+
+See the [results summary](results/learned-exploration/report.md) for the
+held-out comparison, action-matched control, paired confidence intervals,
+and a trace showing return from a previously unseen cave.

@@ -1,7 +1,8 @@
 """An LCS with reusable, automatically instantiated partial-match conditions."""
 
-from collections import deque
+from collections import Counter, defaultdict, deque
 from dataclasses import dataclass
+from math import sqrt
 from random import Random
 
 from benchmark_transfer import terminal_outcome
@@ -30,6 +31,42 @@ class Settings:
     novel_reward: float = 0.0
     replay: int = 0
     wider_memory: bool = False
+    bootstrap_truncation: bool = False
+    loop_memory: bool = False
+    count_bonus: float = 0.0
+    potential_points: float = 0.0
+    anneal_start: int = 5000
+    anneal_end: int = 10000
+    balanced_replay: bool = False
+    imitation: bool = False
+    clean_replay: bool = False
+    epsilon_final: float | None = None
+
+
+class ProgressMemory(RawPerceptMemory):
+    """Summarize actually executed commands and observed movement."""
+
+    def reset(self):
+        super().reset()
+        self.visits = Counter({(self.pose.x, self.pose.y): 1})
+        self.since_new = self.since_move = self.turns_since_move = 0
+
+    def update(self, action, before, after):
+        old = self.pose.x, self.pose.y
+        size = len(self.observations)
+        super().update(action, before, after)
+        current = self.pose.x, self.pose.y
+        if current == old:
+            self.since_move += 1
+            self.turns_since_move += action in ("turn_l", "turn_r")
+        else:
+            self.visits[current] += 1
+            self.since_move = self.turns_since_move = 0
+        self.since_new = self.since_new + 1 if len(self.observations) == size else 0
+
+
+def progress_bucket(steps):
+    return 0 if steps == 0 else 1 if steps <= 3 else 2 if steps <= 8 else 3
 
 
 def condition_keys(memory, sensors, *, wider_memory=False):
@@ -71,6 +108,22 @@ def condition_keys(memory, sensors, *, wider_memory=False):
                 continue
             front, left = dx * fx + dy * fy, dx * lx + dy * ly
             features.append(("record", *context, front, left, clue))
+    if isinstance(memory, ProgressMemory):
+        front_x, front_y = PREVIEW_DIRECTIONS[h][0]
+        here = min(memory.visits[x, y], 3)
+        ahead = min(memory.visits[x + front_x, y + front_y], 2)
+        since_new = progress_bucket(memory.since_new)
+        since_move = progress_bucket(memory.since_move)
+        turns = min(memory.turns_since_move, 2)
+        features.extend(
+            (
+                ("visits", *context, here, ahead),
+                ("progress", *context, since_new, ahead),
+                ("delay", pose.has_gold, mask & LANDMARK_BITS, since_new, since_move),
+                ("spinning", *context, turns, last),
+                ("progress_front", *context, since_new, nearby[0]),
+            )
+        )
     return features
 
 
@@ -83,6 +136,26 @@ def reward_for_learning(reward, outcome, before, after, settings):
     return reward
 
 
+def potential_delta(gamma, before, after, terminal):
+    """Count only observations made by the agent, with zero terminal potential."""
+    next_potential = 0 if terminal else after - 1
+    return gamma * next_potential - (before - 1)
+
+
+def loop_free_indices(states):
+    """Keep the last exit from a repeated state of a single observed episode."""
+    kept, offsets = [], {}
+    for i, state in enumerate(states):
+        if state in offsets:
+            cutoff = offsets[state]
+            for old in kept[cutoff:]:
+                del offsets[states[old]]
+            del kept[cutoff:]
+        offsets[state] = len(kept)
+        kept.append(i)
+    return kept
+
+
 class SharedRuleLCS:
     """Q estimates from a set of overlapping condition–action rules.
 
@@ -92,11 +165,26 @@ class SharedRuleLCS:
     """
 
     def __init__(self, seed, settings):
+        if settings.clean_replay and (
+            settings.loop_memory or settings.potential_points
+        ):
+            raise ValueError(
+                "cycle erasure requires stationary raw-memory conditions and unshaped replay"
+            )
         self.settings = settings
-        self.memory = RawPerceptMemory()
+        self.memory = ProgressMemory() if settings.loop_memory else RawPerceptMemory()
         self.weights = {}
         self.random = Random(seed)
         self.successes = deque(maxlen=128)
+        self.success_buckets = defaultdict(lambda: deque(maxlen=128))
+        self.action_counts = {}
+        self.episode_index = 0
+
+    def annealing(self):
+        begin, end = self.settings.anneal_start, self.settings.anneal_end
+        if not 0 <= begin < end:
+            raise ValueError("annealing requires 0 <= start < end")
+        return min(1.0, max(0.0, (end - self.episode_index) / (end - begin)))
 
     def matching_rules(self, sensors, *, create):
         keys = condition_keys(
@@ -127,55 +215,158 @@ class SharedRuleLCS:
         return a, b, c, d, e, f
 
     def train_episode(self, cave, cap):
-        outcome, _, steps, _, history = self._play(cave, cap, train=True)
-        self.back_up(history)
+        cycle_states = [] if self.settings.clean_replay else None
+        outcome, _, steps, _, history, tail, factors, distance = self._play(
+            cave, cap, train=True, cycle_states=cycle_states
+        )
+        scale = (
+            self.settings.potential_points * self.annealing() / 1000
+            if self.settings.potential_points
+            else 0
+        )
+        self.last_learning_signal = self.back_up(
+            history, bootstrap=tail, potential_factors=factors, scale=scale
+        )
         if self.settings.replay:
             if outcome == "gold":
-                self.successes.append(tuple(history))
-            for _ in range(self.settings.replay if self.successes else 0):
-                self.back_up(self.random.choice(self.successes))
+                kept = (
+                    loop_free_indices(cycle_states)
+                    if cycle_states is not None
+                    else None
+                )
+                replay_history = (
+                    tuple(history) if kept is None else tuple(history[i] for i in kept)
+                )
+                experience = (replay_history, tuple(factors))
+                if self.settings.balanced_replay:
+                    self.success_buckets[min(distance, 3)].append(experience)
+                else:
+                    self.successes.append(experience)
+            if self.settings.balanced_replay:
+                buckets = tuple(self.success_buckets.values())
+                if buckets:
+                    for _ in range(self.settings.replay):
+                        past, past_factors = self.random.choice(
+                            self.random.choice(buckets)
+                        )
+                        self.rehearse(past, past_factors, scale)
+            else:
+                for _ in range(self.settings.replay if self.successes else 0):
+                    past, past_factors = self.random.choice(self.successes)
+                    self.rehearse(past, past_factors, scale)
+        self.episode_index += 1
         return outcome, steps
 
-    def back_up(self, history):
-        """Truncated n-step target, bootstrapped from the highest next value."""
+    def rehearse(self, history, factors, scale):
+        if not self.settings.imitation:
+            self.back_up(history, potential_factors=factors, scale=scale)
+            return
+        # Self-imitation only uses the observed return of a successful trip.
+        # Do not increase a previously stronger estimate with a weaker replay.
+        actual = 0.0
+        for i in range(len(history) - 1, -1, -1):
+            rules, action, reward = history[i]
+            actual = reward + self.settings.gamma * actual
+            if scale:
+                actual += scale * factors[i]
+            advantage = actual - sum(v[action] for v in rules)
+            if advantage > 0:
+                delta = self.settings.alpha * advantage / len(rules)
+                for v in rules:
+                    v[action] += delta
+
+    def back_up(self, history, *, bootstrap=0.0, potential_factors=(), scale=0.0):
+        """Use at most n rewards and bootstrap unless the trajectory terminated."""
         n, gamma, alpha = self.settings.n, self.settings.gamma, self.settings.alpha
         powers = [gamma**i for i in range(n + 1)]
         length = len(history)
         if not length:
-            return
+            return 0.0
         # Accumulate discounted rewards in a reverse rolling window.
         segment = 0.0
+        positive_error = 0.0
         for i in range(length - 1, -1, -1):
             rules, action, reward = history[i]
+            if scale:
+                reward += scale * potential_factors[i]
             segment = reward + gamma * segment
             target = segment
             if i + n < length:
-                segment -= powers[n] * history[i + n][2]
+                expired = history[i + n][2]
+                if scale:
+                    expired += scale * potential_factors[i + n]
+                segment -= powers[n] * expired
                 target = segment + powers[n] * max(self.estimate(history[i + n][0]))
+            elif bootstrap:
+                target += powers[length - i] * bootstrap
             q = sum(v[action] for v in rules)
+            positive_error += max(0.0, target - q)
             delta = alpha * (target - q) / len(rules)
             for v in rules:
                 v[action] += delta
+        return positive_error / length
 
     def evaluate(self, cave, cap, *, trace=False):
-        outcome, score, steps, records, _ = self._play(
+        outcome, score, steps, records, *_ = self._play(
             cave, cap, train=False, trace=trace
         )
         return outcome, score, steps, records
 
-    def _play(self, cave, cap, *, train, trace=False):
+    def _play(self, cave, cap, *, train, trace=False, cycle_states=None):
         sensors = cave.reset()
         memory = self.memory
         memory.prime(sensors)
         memory.reset()
-        history, records = [], []
+        history, records, factors = [], [], []
         score = 0
+        distance = 0
+        arrow_spent = scream_heard = False
+        bonus = (
+            self.settings.count_bonus * self.annealing()
+            if train and self.settings.count_bonus
+            else 0
+        )
+        epsilon = self.settings.epsilon
+        if train and self.settings.epsilon_final is not None:
+            end = self.settings.epsilon_final
+            epsilon = end + (epsilon - end) * self.annealing()
         for t in range(cap):
+            if cycle_states is not None:
+                pose = memory.pose
+                cycle_states.append(
+                    (
+                        pose.x,
+                        pose.y,
+                        pose.heading,
+                        pose.has_gold,
+                        memory.last_action,
+                        sensors,
+                        frozenset(memory.observations.items()),
+                        arrow_spent,
+                        scream_heard,
+                    )
+                )
             rules = self.matching_rules(sensors, create=train)
             if not rules:
-                return "no_matching_action", score, t, records, history
+                return (
+                    "no_matching_action",
+                    score,
+                    t,
+                    records,
+                    history,
+                    0,
+                    factors,
+                    distance,
+                )
             values = self.estimate(rules)
-            if train and self.random.random() < self.settings.epsilon:
+            counts = None
+            if bonus:
+                key = sensors, memory.messages()
+                counts = self.action_counts.setdefault(key, [0] * ACTION_COUNT)
+                values = tuple(
+                    q + bonus / sqrt(1 + count) for q, count in zip(values, counts)
+                )
+            if train and self.random.random() < epsilon:
                 action = self.random.randrange(ACTION_COUNT)
             else:
                 best = max(values)
@@ -184,6 +375,8 @@ class SharedRuleLCS:
                     self.random.choice(tied) if train and len(tied) > 1 else tied[0]
                 )
             effector = EFFECTORS[action]
+            if counts is not None:
+                counts[action] += 1
             if trace:
                 records.append(
                     {
@@ -198,17 +391,46 @@ class SharedRuleLCS:
                 )
             before = len(memory.observations)
             after, reward, done = cave.step(effector)
+            if cycle_states is not None:
+                arrow_spent |= effector == "shoot"
+                scream_heard |= "scream" in after
             outcome = terminal_outcome(cave) if done else None
+            carried = memory.pose.has_gold
             memory.update(effector, sensors, after)
+            if self.settings.balanced_replay and not carried and memory.pose.has_gold:
+                distance = abs(memory.pose.x - 1) + abs(memory.pose.y - 1)
             score += reward
             if train:
                 shaped = reward_for_learning(
                     reward, outcome, before, len(memory.observations), self.settings
                 )
                 history.append((rules, action, shaped / 1000))
+                if self.settings.potential_points:
+                    factors.append(
+                        potential_delta(
+                            self.settings.gamma, before, len(memory.observations), done
+                        )
+                    )
             if trace:
                 records[-1]["reward"] = reward
             if done:
-                return outcome, score, t + 1, records, history
+                return outcome, score, t + 1, records, history, 0, factors, distance
             sensors = after
-        return "timeout", score, cap, records, history
+        tail = 0
+        if train and self.settings.bootstrap_truncation:
+            tail = max(self.estimate(self.matching_rules(sensors, create=True)))
+        return "timeout", score, cap, records, history, tail, factors, distance
+
+
+def average_rule_tables(agents):
+    """Freeze a single LCS with mean scores across identically defined rules."""
+    first = agents[0]
+    if any(agent.settings != first.settings for agent in agents):
+        raise ValueError("rule-table averaging requires identical settings")
+    merged = SharedRuleLCS(0, first.settings)
+    for agent in agents:
+        for key, values in agent.weights.items():
+            combined = merged.weights.setdefault(key, [0.0] * ACTION_COUNT)
+            for i, value in enumerate(values):
+                combined[i] += value / len(agents)
+    return merged

@@ -1,0 +1,77 @@
+{
+  "notebook": {
+    "n_seeds": 5,
+    "n_caves": 2000,
+    "replicates": 2000,
+    "gold_rate": {
+      "delta": -0.0069,
+      "lo": -0.0250025,
+      "hi": 0.012505000000000002
+    },
+    "mean_score": {
+      "delta": -43.4138,
+      "lo": -61.825445,
+      "hi": -25.229354999999998
+    }
+  },
+  "replay_wide": {
+    "n_seeds": 5,
+    "n_caves": 2000,
+    "replicates": 2000,
+    "gold_rate": {
+      "delta": 0.1861,
+      "lo": 0.157495,
+      "hi": 0.21460000000000004
+    },
+    "mean_score": {
+      "delta": 199.0399,
+      "lo": 150.0891575,
+      "hi": 249.20757749999999
+    }
+  },
+  "low_ensemble3": {
+    "n_seeds": 5,
+    "n_caves": 2000,
+    "replicates": 2000,
+    "gold_rate": {
+      "delta": 0.021,
+      "lo": -0.0014025,
+      "hi": 0.0421025
+    },
+    "mean_score": {
+      "delta": 29.7686,
+      "lo": 13.79256,
+      "hi": 47.2915625
+    }
+  },
+  "low_clean": {
+    "n_seeds": 5,
+    "n_caves": 2000,
+    "replicates": 2000,
+    "gold_rate": {
+      "delta": 0.0253,
+      "lo": 0.007799999999999999,
+      "hi": 0.0496
+    },
+    "mean_score": {
+      "delta": 59.2686,
+      "lo": 32.800470000000004,
+      "hi": 83.394925
+    }
+  },
+  "low_clean_matched": {
+    "n_seeds": 5,
+    "n_caves": 2000,
+    "replicates": 2000,
+    "gold_rate": {
+      "delta": 0.0247,
+      "lo": -0.0041,
+      "hi": 0.050705
+    },
+    "mean_score": {
+      "delta": 45.0705,
+      "lo": 10.539562499999999,
+      "hi": 74.87408500000001
+    }
+  }
+}

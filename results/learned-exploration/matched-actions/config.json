@@ -1,0 +1,58 @@
+{
+  "python": "3.14.3",
+  "split": "progress",
+  "validation_seed": 447173,
+  "test_seed": 338959,
+  "training_layout_seed_base": 7000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    70000
+  ],
+  "profile_budgets": {},
+  "matched_training_actions": {
+    "0": 1347170,
+    "1": 1350846,
+    "2": 1326817,
+    "3": 1352583,
+    "4": 1362618
+  },
+  "training_cap": 100,
+  "evaluation_cap": 120,
+  "phase": "test",
+  "profiles": {
+    "low_clean": {
+      "settings": {
+        "n": 12,
+        "gamma": 0.98,
+        "alpha": 0.1,
+        "epsilon": 0.2,
+        "penalty": 0.0,
+        "novel_reward": 0.0,
+        "replay": 1,
+        "wider_memory": true,
+        "bootstrap_truncation": true,
+        "loop_memory": false,
+        "count_bonus": 0.25,
+        "potential_points": 0.0,
+        "anneal_start": 5000,
+        "anneal_end": 10000,
+        "balanced_replay": false,
+        "imitation": true,
+        "clean_replay": true,
+        "epsilon_final": 0.05
+      },
+      "reason": "Retain genuine successful paths while annealing exploration.",
+      "curriculum": true,
+      "kind": "shared",
+      "members": 1,
+      "level_rate": 0.0,
+      "prioritize_levels": true
+    }
+  }
+}
