@@ -36,6 +36,8 @@ VALIDATION_SEED, TEST_SEED = 74207, 180173
 PENALTY_VALIDATION_SEED, PENALTY_TEST_SEED = 29947, 247393
 PROGRESS_VALIDATION_SEED, PROGRESS_TEST_SEED = 447173, 338959
 PROGRESS_VALIDATION_SIZE, PROGRESS_TEST_SIZE = 420, 2000
+TIMEOUT_VALIDATION_SEED, TIMEOUT_TEST_SEED = 617383, 804589
+TIMEOUT_VALIDATION_SIZE, TIMEOUT_TEST_SIZE = 600, 2000
 TRAIN_CAP, EVAL_CAP = MAX_STEPS, 120
 WIDE = Settings(replay=1, wider_memory=True)
 BOOT = replace(WIDE, bootstrap_truncation=True)
@@ -267,7 +269,7 @@ def evaluation_maps(notebook, split="main"):
     test = distinct_layouts(
         notebook.random_layout, TEST_SIZE, Random(TEST_SEED), reserved
     )
-    if split in ("penalty", "progress"):
+    if split in ("penalty", "progress", "timeout"):
         validation = distinct_layouts(
             notebook.random_layout,
             VALIDATION_SIZE,
@@ -277,7 +279,7 @@ def evaluation_maps(notebook, split="main"):
         test = distinct_layouts(
             notebook.random_layout, TEST_SIZE, Random(PENALTY_TEST_SEED), reserved
         )
-    if split == "progress":
+    if split in ("progress", "timeout"):
         validation = distinct_layouts(
             notebook.random_layout,
             PROGRESS_VALIDATION_SIZE,
@@ -288,6 +290,19 @@ def evaluation_maps(notebook, split="main"):
             notebook.random_layout,
             PROGRESS_TEST_SIZE,
             Random(PROGRESS_TEST_SEED),
+            reserved,
+        )
+    if split == "timeout":
+        validation = distinct_layouts(
+            notebook.random_layout,
+            TIMEOUT_VALIDATION_SIZE,
+            Random(TIMEOUT_VALIDATION_SEED),
+            reserved,
+        )
+        test = distinct_layouts(
+            notebook.random_layout,
+            TIMEOUT_TEST_SIZE,
+            Random(TIMEOUT_TEST_SEED),
             reserved,
         )
     return validation, test, frozenset(reserved)

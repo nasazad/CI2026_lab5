@@ -9,7 +9,7 @@ from random import Random
 from statistics import quantiles
 
 
-def outcome_grid(rows, policy):
+def outcome_grid(rows, policy, outcomes=("gold",)):
     cells = {}
     for row in rows:
         if row["policy"] != policy:
@@ -20,16 +20,25 @@ def outcome_grid(rows, policy):
             raise ValueError(
                 f"duplicate seed/cave or non-finite score for {policy}: {key}"
             )
-        cells[key] = (int(row["outcome"] == "gold"), score)
+        cells[key] = (*(int(row["outcome"] == name) for name in outcomes), score)
     return cells
 
 
-def paired_intervals(rows, candidate, reference, n=2000, seed=123):
+def paired_intervals(
+    rows, candidate, reference, n=2000, seed=123, *, outcomes=("gold",)
+):
     """Estimate candidate-minus-reference with percentile product-bootstrap CIs."""
     if candidate == reference or n < 2:
         raise ValueError("specify distinct policies and at least two draws")
     rows = list(rows)
-    cand, ref = outcome_grid(rows, candidate), outcome_grid(rows, reference)
+    outcomes = tuple(outcomes)
+    if len(set(outcomes)) != len(outcomes):
+        raise ValueError("outcome names must be distinct")
+    metrics = (*(f"{name}_rate" for name in outcomes), "mean_score")
+    cand, ref = (
+        outcome_grid(rows, candidate, outcomes),
+        outcome_grid(rows, reference, outcomes),
+    )
     if not cand or cand.keys() != ref.keys():
         raise ValueError("policies need matching, nonempty seed×cave grids")
     seeds = sorted({s for s, _ in cand})
@@ -40,17 +49,18 @@ def paired_intervals(rows, candidate, reference, n=2000, seed=123):
     # Opus independently derived the two-axis resampling. Each replicate
     # draws cave indices once and reuses those indices across its seed draws.
     deltas = [
-        [[cand[s, c][m] - ref[s, c][m] for c in caves] for s in seeds] for m in (0, 1)
+        [[cand[s, c][m] - ref[s, c][m] for c in caves] for s in seeds]
+        for m in range(len(metrics))
     ]
     rng = Random(seed)
-    samples = [[], []]
+    samples = [[] for _ in metrics]
     for _ in range(n):
         si = rng.choices(range(ns), k=ns)
         ci = rng.choices(range(nc), k=nc)
         for matrix, series in zip(deltas, samples):
             series.append(sum(matrix[i][j] for i in si for j in ci) / (ns * nc))
     result = {"n_seeds": ns, "n_caves": nc, "replicates": n}
-    for metric, matrix, series in zip(("gold_rate", "mean_score"), deltas, samples):
+    for metric, matrix, series in zip(metrics, deltas, samples):
         bounds = quantiles(series, n=40, method="inclusive")
         result[metric] = {
             "delta": sum(map(sum, matrix)) / (ns * nc),

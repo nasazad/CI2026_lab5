@@ -41,6 +41,27 @@ class Settings:
     imitation: bool = False
     clean_replay: bool = False
     epsilon_final: float | None = None
+    inventory_memory: bool = False
+    target_mix: float = 0.0
+
+
+class InventoryMemory(RawPerceptMemory):
+    """Remember our own consumed arrow and whether its hit was observed."""
+
+    def reset(self):
+        super().reset()
+        self.spent = self.heard = False
+
+    def update(self, action, before, after):
+        super().update(action, before, after)
+        self.spent |= action == "shoot"
+        self.heard |= "scream" in after
+
+    def messages(self):
+        return super().messages() | {
+            f"arrow_spent:{self.spent}",
+            f"scream_heard:{self.heard}",
+        }
 
 
 class ProgressMemory(RawPerceptMemory):
@@ -124,6 +145,21 @@ def condition_keys(memory, sensors, *, wider_memory=False):
                 ("progress_front", *context, since_new, nearby[0]),
             )
         )
+    if isinstance(memory, InventoryMemory):
+        features.extend(
+            (
+                ("inventory", *context, memory.spent, memory.heard),
+                ("inventory_last", *context, memory.spent, memory.heard, last),
+                (
+                    "inventory_axial",
+                    *context,
+                    memory.spent,
+                    memory.heard,
+                    nearby[0],
+                    nearby[2],
+                ),
+            )
+        )
     return features
 
 
@@ -165,6 +201,10 @@ class SharedRuleLCS:
     """
 
     def __init__(self, seed, settings):
+        if settings.inventory_memory and settings.loop_memory:
+            raise ValueError("inventory and progress memory are separate ablations")
+        if not 0 <= settings.target_mix <= 1:
+            raise ValueError("target_mix must be between zero and one")
         if settings.clean_replay and (
             settings.loop_memory or settings.potential_points
         ):
@@ -172,7 +212,14 @@ class SharedRuleLCS:
                 "cycle erasure requires stationary raw-memory conditions and unshaped replay"
             )
         self.settings = settings
-        self.memory = ProgressMemory() if settings.loop_memory else RawPerceptMemory()
+        memory_type = (
+            ProgressMemory
+            if settings.loop_memory
+            else InventoryMemory
+            if settings.inventory_memory
+            else RawPerceptMemory
+        )
+        self.memory = memory_type()
         self.weights = {}
         self.random = Random(seed)
         self.successes = deque(maxlen=128)
@@ -213,6 +260,12 @@ class SharedRuleLCS:
             e += v[4]
             f += v[5]
         return a, b, c, d, e, f
+
+    def target_value(self, rules):
+        values = self.estimate(rules)
+        best = max(values)
+        mix = self.settings.target_mix
+        return (1 - mix) * best + mix * sum(values) / ACTION_COUNT if mix else best
 
     def train_episode(self, cave, cap):
         cycle_states = [] if self.settings.clean_replay else None
@@ -296,7 +349,7 @@ class SharedRuleLCS:
                 if scale:
                     expired += scale * potential_factors[i + n]
                 segment -= powers[n] * expired
-                target = segment + powers[n] * max(self.estimate(history[i + n][0]))
+                target = segment + powers[n] * self.target_value(history[i + n][0])
             elif bootstrap:
                 target += powers[length - i] * bootstrap
             q = sum(v[action] for v in rules)
@@ -418,7 +471,7 @@ class SharedRuleLCS:
             sensors = after
         tail = 0
         if train and self.settings.bootstrap_truncation:
-            tail = max(self.estimate(self.matching_rules(sensors, create=True)))
+            tail = self.target_value(self.matching_rules(sensors, create=True))
         return "timeout", score, cap, records, history, tail, factors, distance
 
 
